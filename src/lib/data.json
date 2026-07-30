@@ -1,0 +1,370 @@
+{
+  "navbar": {
+    "logoText1": "MUSCLE",
+    "logoText2": "THERAPY",
+    "bookBtn": "BOOK APPOINTMENT",
+    "links": [
+      { "label": "Home", "href": "#", "active": true },
+      { "label": "About", "href": "#", "hasDropdown": true },
+      { "label": "Services", "href": "#" },
+      { "label": "Conditions", "href": "#" },
+      { "label": "Reviews", "href": "#" },
+      { "label": "Blog", "href": "#" },
+      { "label": "Contact", "href": "#" }
+    ]
+  },
+  "hero": {
+    "label": "Muscle Therapy & Sports Recovery",
+    "title1": "Recover Better.",
+    "title2": "Move Stronger.",
+    "description": "Clinical hands-on therapy designed to reduce chronic pain, restore dynamic mobility, and optimize athletic output.",
+    "ctaBook": "BOOK APPOINTMENT",
+    "ctaServices": "OUR SERVICES",
+    "socialProofText": "Trusted by 500+ active clients"
+  },
+  "stats": {
+    "label": "Our Achievements",
+    "titleLine1": "Proven Results.",
+    "titleLine2": "Standards.",
+    "titleItalicWord": "Professional",
+    "items": [
+      { "value": "8+", "label": "Years of Experience", "desc": "Providing dedicated clinical manual therapy and recovery." },
+      { "value": "5,000+", "label": "Clients Treated", "desc": "Helping athletes, active individuals, and professionals." },
+      { "value": "15,000+", "label": "Sessions Completed", "desc": "Targeted bodywork sessions tailored to specific needs." },
+      { "value": "98%", "label": "Client Satisfaction", "desc": "Ensuring every client experiences measurable pain relief." },
+      { "value": "Certified", "label": "& Fully Trained", "desc": "Equipped with advanced manual therapy certifications." },
+      { "value": "Trusted By", "label": "Athletes & Professionals", "desc": "Trusted by competitive teams, trainers, and athletes." }
+    ]
+  },
+  "services": {
+    "label": "Our Services",
+    "titleLine1": "Therapies",
+    "titleLine2": "Designed",
+    "titleLine3": "Around",
+    "titleItalicWord": "You",
+    "description": "Our specialized manual therapies are tailored to target the root causes of chronic pain, release muscle tightness, and improve joint alignment. Whether you are recovering from a sports injury, dealing with everyday tension, or looking to maximize athletic performance, our hands-on treatments facilitate accelerated healing, restore proper posture, and enhance overall body mobility.",
+    "ctaAll": "VIEW ALL SERVICES",
+    "ctaLearnMore": "LEARN MORE",
+    "items": [
+      {
+        "id": "01",
+        "name": "Deep Tissue Therapy",
+        "description": "Targets chronic muscle tension and knots to relieve pain and restore natural movement.",
+        "benefits": [
+          "Relieves tightness & knots",
+          "Improves mobility",
+          "Enhances blood flow",
+          "Reduces pain & stiffness"
+        ]
+      },
+      {
+        "id": "02",
+        "name": "Sports Massage",
+        "description": "Designed specifically for athletes to enhance performance, increase flexibility, and prevent injuries.",
+        "benefits": [
+          "Speeds up recovery times",
+          "Improves range of motion",
+          "Reduces muscle soreness",
+          "Boosts athletic performance"
+        ]
+      },
+      {
+        "id": "03",
+        "name": "Muscle Recovery",
+        "description": "Comprehensive therapy designed to flush lactic acid, reduce inflammation, and restore muscle tissues.",
+        "benefits": [
+          "Flushes metabolic waste",
+          "Minimizes muscle soreness",
+          "Restores muscle energy",
+          "Reduces post-workout fatigue"
+        ]
+      },
+      {
+        "id": "04",
+        "name": "Injury Recovery",
+        "description": "Targeted, rehabilitation-focused manual therapy to speed recovery from strains, sprains, and joint issues.",
+        "benefits": [
+          "Accelerates healing process",
+          "Prevents chronic scar tissue",
+          "Restores functional mobility",
+          "Relieves localized pain"
+        ]
+      },
+      {
+        "id": "05",
+        "name": "Mobility Therapy",
+        "description": "Focuses on unlocking tight joints, lengthening connective tissue, and restoring functional range of motion.",
+        "benefits": [
+          "Restores natural joint motion",
+          "Corrects movement imbalances",
+          "Improves posture & alignment",
+          "Prevents joint stiffness"
+        ]
+      },
+      {
+        "id": "06",
+        "name": "Trigger Point Therapy",
+        "description": "Applies focused pressure to specific hyper-irritable points in muscle tissue to relieve radiating pain.",
+        "benefits": [
+          "Deactivates active trigger points",
+          "Relieves referred pain patterns",
+          "Releases localized muscle spasm",
+          "Restores resting muscle length"
+        ]
+      },
+      {
+        "id": "07",
+        "name": "Stretch Therapy",
+        "description": "Assisted PNF and static stretching to systematically lengthen muscle groups and improve overall flexibility.",
+        "benefits": [
+          "Increases muscle elasticity",
+          "Relieves full-body tension",
+          "Enhances neurological relaxation",
+          "Improves athletic efficiency"
+        ]
+      },
+      {
+        "id": "08",
+        "name": "Performance Recovery",
+        "description": "A holistic combination of bodywork and stretching designed to prime the nervous system and muscles for competition.",
+        "benefits": [
+          "Primes neuromuscular system",
+          "Optimizes muscle tone",
+          "Boosts mental alertness",
+          "Maximizes movement output"
+        ]
+      }
+    ]
+  },
+  "therapist": {
+    "label": "The Founder",
+    "title": "Meet James Mitchell",
+    "tagline": "Clinical Manual Therapist & Recovery Specialist",
+    "desc1": "James Mitchell specializes in target-driven myofascial release, deep tissue therapy, and advanced sports recovery. With an approach focused on structural alignment, he helps resolve chronic pain, restore range of motion, and elevate performance.",
+    "certBadgeLabel": "Certified Therapist",
+    "certBadgeSub": "Advanced Training in Manual Therapy",
+    "photoBadge": "Licensed & Certified",
+    "ctaMore": "MORE ABOUT ME",
+    "signatureName": "James Mitchell",
+    "signatureTitle": "LMT, Clinical Specialist",
+    "features": [
+      { "title": "8+ Years", "desc": "Clinical practice" },
+      { "title": "Advanced", "desc": "Certifications" },
+      { "title": "Athletes", "desc": "Recovery focus" },
+      { "title": "5,000+", "desc": "Clients treated" }
+    ]
+  },
+  "process": {
+    "label": "The Process",
+    "title": "Your Recovery Journey.",
+    "description": "A structured, clinical manual therapy approach to systematically resolve pain, restore correct posture, and optimize movement.",
+    "phaseLabel": "PHASE",
+    "items": [
+      {
+        "id": "01",
+        "title": "Consultation",
+        "description": "We assess your condition and understand your goals.",
+        "actions": ["Full posture assessment", "Muscle trigger point mapping", "Discuss pain & injury history"]
+      },
+      {
+        "id": "02",
+        "title": "Personalized Plan",
+        "description": "A tailored treatment plan just for you.",
+        "actions": ["Select custom manual techniques", "Design session frequency schedule", "Map personalized stretch goals"]
+      },
+      {
+        "id": "03",
+        "title": "Therapy Sessions",
+        "description": "Expert care to reduce pain and restore mobility.",
+        "actions": ["Apply targeted deep tissue pressure", "Release restricted myofascial layers", "Ensure comfort feedback loop"]
+      },
+      {
+        "id": "04",
+        "title": "Move Better",
+        "description": "Feel stronger, move better, and perform at your best.",
+        "actions": ["Measure range of motion gains", "Provide custom home stretch plans", "Outline maintenance schedule"]
+      }
+    ]
+  },
+  "testimonials": {
+    "label": "Clients Love Us",
+    "title1": "Real People.",
+    "title2": "Real Results.",
+    "quoteIcon": "\"",
+    "dash": "—",
+    "items": [
+      {
+        "quote": "James helped me recover from a shoulder injury faster than I expected. I feel stronger, move better, and have zero pain now!",
+        "name": "Competition Athlete",
+        "stars": 5
+      },
+      {
+        "quote": "The deep tissue work was intense but exactly what my lower back needed. The range of motion is completely back to normal.",
+        "name": "Sarah Jenkins, Marathon Runner",
+        "stars": 5
+      },
+      {
+        "quote": "Professional, knowledgeable, and highly effective. I highly recommend James for anyone looking to optimize recovery.",
+        "name": "Marcus Vance, Fitness Coach",
+        "stars": 5
+      },
+      {
+        "quote": "After weeks of chronic neck stiffness, a single targeted session here unlocked my mobility. Simply outstanding work.",
+        "name": "David Choi, Software Engineer",
+        "stars": 5
+      },
+      {
+        "quote": "The PNF stretching combined with sports massage has completely resolved my hamstring tightness. I can sprint with full confidence.",
+        "name": "Elena Rostova, Track Athlete",
+        "stars": 5
+      },
+      {
+        "quote": "James understands sports mechanics deeply. The targeted pressure points released tension I didn’t even know was there.",
+        "name": "Robert Miller, Cyclist",
+        "stars": 5
+      }
+    ],
+    "results": [
+      { "id": 1, "label": "Reduced pain and improved performance.", "image": "/images/testimonial-1.webp" },
+      { "id": 2, "label": "More mobility, less stiffness, better daily life.", "image": "/images/testimonial-2.webp" },
+      { "id": 3, "label": "Back to training stronger than ever before.", "image": "/images/testimonial-3.webp" },
+      { "id": 4, "label": "Restored muscle balance and reduced tension.", "image": "/images/testimonial-4.webp" },
+      { "id": 5, "label": "Faster relief from sports-related soreness.", "image": "/images/testimonial-5.webp" },
+      { "id": 6, "label": "Deep recovery that fits an active lifestyle.", "image": "/images/testimonial-6.webp" }
+    ]
+  },
+  "ctaBanner": {
+    "tagline": "Take the First Step",
+    "title": "Ready to Feel Your Best?",
+    "description": "Book your appointment today and start your journey to a pain-free, stronger you.",
+    "button": "BOOK APPOINTMENT"
+  },
+  "contactFaq": {
+    "label": "Support & Booking",
+    "title": "Booking & Common Questions.",
+    "description": "Find answers to frequently asked questions and request your personalized manual therapy session using our clinical booking portal.",
+    "faqLabel": "Support & FAQ",
+    "faqTitle": "Recovery Information.",
+    "formLabel": "Book A Session",
+    "formTitle": "Request Your Consultation.",
+    "formClinicPortal": "Clinical Recovery Portal",
+    "formNameLabel": "Full Name",
+    "formNamePlaceholder": "John Doe",
+    "formEmailLabel": "Email Address",
+    "formEmailPlaceholder": "john@example.com",
+    "formPhoneLabel": "Phone Number",
+    "formPhonePlaceholder": "(323) 456-7890",
+    "formServiceLabel": "Select Therapy",
+    "formServicePlaceholder": "Choose a service",
+    "formMessageLabel": "Recovery Goals / Symptoms",
+    "formMessagePlaceholder": "Describe target areas, soreness, or injury history...",
+    "formBtnSubmit": "SEND BOOKING REQUEST",
+    "formBtnSuccess": "REQUEST SUBMITTED",
+    "formSuccessToast": "Request submitted! We will call you soon.",
+    "trustHipa": "Secure HIPAA Booking",
+    "trustResponse": "Response within 2 hours",
+    "formServicesOptions": [
+      { "value": "deep-tissue", "label": "Deep Tissue Therapy" },
+      { "value": "sports-massage", "label": "Sports Massage" },
+      { "value": "recovery", "label": "Muscle Recovery" },
+      { "value": "injury-recovery", "label": "Injury Recovery" },
+      { "value": "mobility-therapy", "label": "Mobility Therapy" },
+      { "value": "trigger-point", "label": "Trigger Point Therapy" },
+      { "value": "stretch-therapy", "label": "Stretch Therapy" }
+    ],
+    "faqs": [
+      {
+        "q": "Do you accept health insurance plans?",
+        "a": "Yes, we accept major insurance providers including Aetna, BlueCross BlueShield, Cigna, and United Healthcare. Coverage depends on your specific plan’s manual therapy benefits. We offer direct insurance verification prior to booking."
+      },
+      {
+        "q": "What should I wear to my recovery session?",
+        "a": "For stretch therapy and active mobility sessions, please wear loose, comfortable athletic attire. For deep tissue or targeted massage therapies, standard clinical draping protocols are followed to prioritize your privacy and comfort."
+      },
+      {
+        "q": "How many treatment sessions will I need?",
+        "a": "Many clients experience noticeable relief and mobility improvement after a single session. For chronic postural issues, muscle tightness, or athletic recovery maintenance, a structured series of 4 to 6 sessions is recommended."
+      },
+      {
+        "q": "What is your cancellation and rescheduling policy?",
+        "a": "We require a 24-hour notification for any cancellations or rescheduling. This allows us to allocate the time to clients on our waitlist. Late cancellations or missed appointments may incur a standard fee."
+      },
+      {
+        "q": "Is trigger point or deep tissue therapy painful?",
+        "a": "While releasing restricted muscle tissue can cause temporary tenderness, we practice active communication throughout the session to ensure the pressure remains within your preferred comfort and therapeutic threshold."
+      }
+    ]
+  },
+  "blog": {
+    "label": "Recovery Insights",
+    "title": "Tips, Advice & Insights",
+    "ctaAll": "VIEW ALL ARTICLES",
+    "ctaReadMore": "Read More",
+    "items": [
+      {
+        "id": 1,
+        "tag": "DEEP TISSUE",
+        "title": "5 Signs You Need Deep Tissue Therapy",
+        "excerpt": "Know when it's time to get professional help.",
+        "image": "/images/blog-1.webp"
+      },
+      {
+        "id": 2,
+        "tag": "ATHLETES",
+        "title": "Best Stretches for Athletes",
+        "excerpt": "Improve flexibility and prevent injuries.",
+        "image": "/images/blog-2.webp"
+      },
+      {
+        "id": 3,
+        "tag": "RECOVERY",
+        "title": "How to Speed Up Muscle Recovery",
+        "excerpt": "Simple tips to recover faster and perform better.",
+        "image": "/images/blog-3.webp"
+      }
+    ]
+  },
+  "footer": {
+    "insuranceLabel": "We Accept Most Insurance Plans",
+    "brandDescription": "Professional muscle therapy and sports recovery to help you move better, feel better, and live better.",
+    "quickLinksLabel": "Quick Links",
+    "servicesLabel": "Services",
+    "contactLabel": "Contact Us",
+    "copyright": "© 2024 Muscle Therapy. All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "divider": "|",
+    "quickLinks": ["Home", "About", "Services", "Conditions", "Reviews", "Blog", "Contact"],
+    "services": ["Deep Tissue Therapy", "Sports Massage", "Muscle Recovery", "Injury Recovery", "Mobility Therapy", "Trigger Point Therapy"],
+    "insurers": [
+      {
+        "name": "aetna",
+        "display": "aetna",
+        "tagline": "Health Insurance",
+        "color": "#B8181F"
+      },
+      {
+        "name": "bcbs",
+        "display": "BlueCross",
+        "tagline": "BlueShield",
+        "color": "#005499"
+      },
+      {
+        "name": "cigna",
+        "display": "Cigna",
+        "tagline": "Health Benefits",
+        "color": "#007DBB"
+      },
+      {
+        "name": "uhc",
+        "display": "United",
+        "tagline": "Healthcare",
+        "color": "#0073CF"
+      }
+    ],
+    "address": "125 Wellness Way, Suite 101\nLos Angeles, CA 90001",
+    "phone": "(323) 456-7890",
+    "email": "info@muscletherapy.com",
+    "hours": "Mon–Sat: 8:00 AM – 7:00 PM"
+  }
+}
