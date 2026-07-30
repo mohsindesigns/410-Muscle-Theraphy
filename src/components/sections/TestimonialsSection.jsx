@@ -15,7 +15,7 @@ export default function TestimonialsSection() {
   const next = () => setActiveIdx((i) => (i === items.length - 1 ? 0 : i + 1));
 
   return (
-    <section className="bg-dark py-16 md:py-24 overflow-hidden relative">
+    <section id="testimonials" className="bg-dark py-16 md:py-24 overflow-hidden relative">
 
       {/* Subtle bg texture */}
       <div className="absolute inset-0 opacity-[0.03]"

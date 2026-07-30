@@ -60,7 +60,7 @@ export default function TherapistSection() {
             className="relative"
           >
             {/* Gold backdrop accent square */}
-            <div className="absolute -bottom-4 -right-4 w-full h-full border border-gold/40 rounded-sm pointer-events-none z-0" />
+            <div className="absolute -bottom-4 -right-4 w-full h-full border border-gold-dark/40 rounded-sm pointer-events-none z-0" />
 
             {/* Main photo container */}
             <div className="img-therapist h-[400px] md:h-[600px] rounded-sm overflow-hidden shadow-2xl relative z-10 border border-border-light group">
@@ -90,7 +90,7 @@ export default function TherapistSection() {
             viewport={{ once: true, margin: '-60px' }}
             className="flex flex-col"
           >
-            <motion.p variants={itemVariants} className="section-label mb-4">
+            <motion.p variants={itemVariants} className="section-label text-gold-dark mb-4">
               {label}
             </motion.p>
             
@@ -98,7 +98,7 @@ export default function TherapistSection() {
               {title}
             </motion.h2>
 
-            <motion.p variants={itemVariants} className="text-gold font-serif italic text-[18px] md:text-[20px] mb-6">
+            <motion.p variants={itemVariants} className="text-gold-dark font-serif italic text-[18px] md:text-[20px] mb-6">
               {tagline}
             </motion.p>
 
@@ -116,9 +116,9 @@ export default function TherapistSection() {
                 return (
                   <div
                     key={idx}
-                    className="flex items-center gap-3 bg-warm-white border border-border-light/50 p-4 hover:border-gold/30 hover:bg-white transition-all duration-300 group"
+                    className="flex items-center gap-3 bg-warm-white border border-border-light/50 p-4 hover:border-gold-dark/30 hover:bg-white transition-all duration-300 group"
                   >
-                    <div className="w-9 h-9 rounded-full bg-gold-muted flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-dark transition-colors duration-300 flex-shrink-0">
+                    <div className="w-9 h-9 rounded-full bg-gold-muted flex items-center justify-center text-gold-dark group-hover:bg-gold-dark group-hover:text-white transition-colors duration-300 flex-shrink-0">
                       <Icon size={16} strokeWidth={2} />
                     </div>
                     <div>
@@ -143,7 +143,7 @@ export default function TherapistSection() {
                 {ctaMore} <ArrowRight size={14} className="ml-1" />
               </a>
               <div className="text-center sm:text-right flex flex-col items-center sm:items-end">
-                <p className="font-signature text-[38px] min-[360px]:text-[48px] md:text-[56px] text-gold leading-none mb-1 select-none">
+                <p className="font-signature text-[38px] min-[360px]:text-[48px] md:text-[56px] text-gold-dark leading-none mb-1 select-none">
                   {signatureName}
                 </p>
                 <p className="text-dark/50 text-[11.5px] uppercase tracking-wider font-semibold">

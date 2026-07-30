@@ -65,10 +65,10 @@ export default function ContactFaqSection() {
 
           {/* ── Left Column: Luxury Form Card ──────────── */}
           <div className="w-full h-fit">
-            <p className="section-label mb-4">{formLabel}</p>
+            <p className="section-label text-gold-dark mb-4">{formLabel}</p>
             <h2 className="display-heading text-[36px] md:text-[44px] text-dark leading-tight mb-8">
               {formTitle.split('<br />')[0]}<br />
-              <span className="text-gold italic font-light">{formTitle.split('<br />')[1] || 'Consultation.'}</span>
+              <span className="text-gold-dark italic font-light">{formTitle.split('<br />')[1] || 'Consultation.'}</span>
             </h2>
 
             {/* Form wrapper */}
@@ -76,8 +76,8 @@ export default function ContactFaqSection() {
               
               {/* Gold frame accent in top-right */}
               <div className="absolute top-0 right-0 w-8 h-8 m-4 opacity-40">
-                <div className="absolute top-0 right-0 w-full h-[1px] bg-gold" />
-                <div className="absolute top-0 right-0 h-full w-[1px] bg-gold" />
+                <div className="absolute top-0 right-0 w-full h-[1px] bg-gold-dark" />
+                <div className="absolute top-0 right-0 h-full w-[1px] bg-gold-dark" />
               </div>
 
               <form onSubmit={handleSubmit} className="flex flex-col gap-6">
@@ -94,7 +94,7 @@ export default function ContactFaqSection() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder={formNamePlaceholder}
-                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[13.5px] focus:border-gold focus:outline-none transition-all rounded-sm"
+                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[13.5px] focus:border-gold-dark focus:outline-none transition-all rounded-sm"
                   />
                 </div>
 
@@ -111,7 +111,7 @@ export default function ContactFaqSection() {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder={formEmailPlaceholder}
-                      className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[13.5px] focus:border-gold focus:outline-none transition-all rounded-sm"
+                      className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[13.5px] focus:border-gold-dark focus:outline-none transition-all rounded-sm"
                     />
                   </div>
 
@@ -127,7 +127,7 @@ export default function ContactFaqSection() {
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder={formPhonePlaceholder}
-                      className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[13.5px] focus:border-gold focus:outline-none transition-all rounded-sm"
+                      className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[13.5px] focus:border-gold-dark focus:outline-none transition-all rounded-sm"
                     />
                   </div>
                 </div>
@@ -142,7 +142,7 @@ export default function ContactFaqSection() {
                     required
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark/70 text-[13.5px] focus:border-gold focus:outline-none transition-colors rounded-sm appearance-none cursor-pointer"
+                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark/70 text-[13.5px] focus:border-gold-dark focus:outline-none transition-colors rounded-sm appearance-none cursor-pointer"
                   >
                     <option value="" disabled>{formServicePlaceholder}</option>
                     {formServicesOptions.map((opt) => (
@@ -164,7 +164,7 @@ export default function ContactFaqSection() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder={formMessagePlaceholder}
-                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[13.5px] focus:border-gold focus:outline-none transition-all rounded-sm resize-none"
+                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[13.5px] focus:border-gold-dark focus:outline-none transition-all rounded-sm resize-none"
                   />
                 </div>
 
@@ -189,11 +189,11 @@ export default function ContactFaqSection() {
               {/* Trust Indicators */}
               <div className="flex flex-col sm:flex-row items-center gap-4 justify-between mt-6 pt-6 border-t border-[#EBEAE6]">
                 <div className="flex items-center gap-2 text-dark/45 text-[11px] font-semibold">
-                  <ShieldCheck size={14} className="text-gold flex-shrink-0" />
+                  <ShieldCheck size={14} className="text-gold-dark flex-shrink-0" />
                   <span>{trustHipa}</span>
                 </div>
                 <div className="flex items-center gap-2 text-dark/45 text-[11px] font-semibold">
-                  <Clock size={14} className="text-gold flex-shrink-0" />
+                  <Clock size={14} className="text-gold-dark flex-shrink-0" />
                   <span>{trustResponse}</span>
                 </div>
               </div>
@@ -216,10 +216,10 @@ export default function ContactFaqSection() {
 
           {/* ── Right Column: Editorial Underlined FAQs ──── */}
           <div className="w-full">
-            <p className="section-label mb-4">{faqLabel}</p>
+            <p className="section-label text-gold-dark mb-4">{faqLabel}</p>
             <h2 className="display-heading text-[36px] md:text-[44px] text-dark leading-tight mb-10">
               {faqTitle.split('<br />')[0]}<br />
-              <span className="text-gold italic font-light">{faqTitle.split('<br />')[1] || 'Information.'}</span>
+              <span className="text-gold-dark italic font-light">{faqTitle.split('<br />')[1] || 'Information.'}</span>
             </h2>
 
             {/* Accordion Layout */}
@@ -239,7 +239,7 @@ export default function ContactFaqSection() {
                     >
                       {/* Monospace gold number */}
                       <span className={`text-[12px] md:text-[13px] font-mono font-bold tracking-widest mt-1.5 transition-colors duration-300
-                        ${isOpen ? 'text-gold' : 'text-dark/25 group-hover:text-dark/45'}`}>
+                        ${isOpen ? 'text-gold-dark' : 'text-dark/25 group-hover:text-dark/45'}`}>
                         {i < 9 ? `0${i + 1}` : i + 1}
                       </span>
                       
@@ -250,7 +250,7 @@ export default function ContactFaqSection() {
                       </span>
                       
                       {/* Icon */}
-                      <span className={`text-gold mt-1.5 transition-transform duration-300 ${isOpen ? 'rotate-180 text-dark' : 'group-hover:scale-110'}`}>
+                      <span className={`text-gold-dark mt-1.5 transition-transform duration-300 ${isOpen ? 'rotate-180 text-dark' : 'group-hover:scale-110'}`}>
                         {isOpen ? <Minus size={15} /> : <Plus size={15} />}
                       </span>
                     </button>
@@ -265,7 +265,7 @@ export default function ContactFaqSection() {
                           className="overflow-hidden"
                         >
                           <div className="pl-12 md:pl-14 pr-4 pt-3 pb-2">
-                            <div className="border-l-2 border-gold/45 pl-4 py-0.5">
+                            <div className="border-l-2 border-gold-dark/45 pl-4 py-0.5">
                               <p className="text-dark/55 text-[13.5px] leading-relaxed">
                                 {faq.a}
                               </p>

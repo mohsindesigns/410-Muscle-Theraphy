@@ -12,7 +12,7 @@ export default function ServicesSection() {
   const active = items[activeIdx];
 
   return (
-    <section className="bg-dark py-20 md:py-28 overflow-hidden">
+    <section id="services" className="bg-dark py-20 md:py-28 overflow-hidden">
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-[280px_1.1fr_400px] gap-12 lg:gap-0 items-stretch">
 

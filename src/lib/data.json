@@ -5,12 +5,10 @@
     "bookBtn": "BOOK APPOINTMENT",
     "links": [
       { "label": "Home", "href": "#", "active": true },
-      { "label": "About", "href": "#", "hasDropdown": true },
-      { "label": "Services", "href": "#" },
-      { "label": "Conditions", "href": "#" },
-      { "label": "Reviews", "href": "#" },
-      { "label": "Blog", "href": "#" },
-      { "label": "Contact", "href": "#" }
+      { "label": "Services", "href": "#services" },
+      { "label": "Gallery", "href": "#testimonials" },
+      { "label": "Blogs", "href": "#blog" },
+      { "label": "Reviews", "href": "#testimonials" }
     ]
   },
   "hero": {

@@ -23,7 +23,7 @@ export default function HowItWorksSection() {
 
         {/* ── Header ────────────────────────────────── */}
         <div className="mb-12 md:mb-20 max-w-xl">
-          <p className="section-label mb-4">{label}</p>
+          <p className="section-label text-gold-dark mb-4">{label}</p>
           <h2 className="display-heading text-[34px] md:text-[48px] text-dark leading-tight">
             {title}
           </h2>
@@ -83,7 +83,7 @@ export default function HowItWorksSection() {
                   className={`py-6 md:py-8 border-b border-border-light transition-all duration-300 flex flex-col justify-center min-h-[220px] md:min-h-[300px]
                     ${isActive ? 'opacity-100 pl-2 md:pl-4' : 'opacity-100 md:opacity-35 pl-0'}`}
                 >
-                  <span className="text-[36px] md:text-[44px] font-serif font-light text-gold leading-none mb-3 select-none">
+                  <span className="text-[36px] md:text-[44px] font-serif font-light text-gold-dark leading-none mb-3 select-none">
                     {step.id}
                   </span>
 
@@ -100,7 +100,7 @@ export default function HowItWorksSection() {
                     {actions.map((act) => (
                       <li key={act} className="flex items-center gap-3 text-dark/70 text-[12.5px] md:text-[13px]">
                         <div className={`w-[18px] h-[18px] md:w-5 md:h-5 rounded-full flex items-center justify-center flex-shrink-0 transition-colors duration-300
-                          ${isActive ? 'bg-gold text-dark' : 'bg-gold-muted text-gold'}`}>
+                          ${isActive ? 'bg-gold-dark text-white' : 'bg-gold-dark/15 text-gold-dark'}`}>
                           <Check size={10} strokeWidth={2.5} className="md:w-3 md:h-3" />
                         </div>
                         <span className="font-semibold">{act}</span>
