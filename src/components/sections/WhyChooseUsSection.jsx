@@ -6,7 +6,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function WhyChooseUsSection() {
-  const { label, titleLine1, titleLine2, titleItalicWord, items } = data.whyChooseUs;
+  const {
+    label, titleLine1, titleLine2, titleItalicWord,
+    description, imageBadgeLabel, established,
+    provenLabel, provenStat, provenDescription,
+    provenCheck1, provenCheck2, cta, items
+  } = data.whyChooseUs;
 
   return (
     <section className="bg-[#FAF8F5] relative py-24 md:py-36 border-b border-black/10 overflow-hidden">
@@ -36,22 +41,21 @@ export default function WhyChooseUsSection() {
           </div>
 
           <p className="text-dark/70 text-[15px] leading-[1.8] font-light max-w-[380px]">
-            We go beyond temporary relief to provide lasting results through targeted manual therapy and clinical recovery plans.
+            {description}
           </p>
         </div>
 
-        {/* ── Award-Level Asymmetric Bento Grid ── */}
+        {/* ── Bento Grid ── */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
-          {/* ── Bento Card 1: Featured Image & Clinical Guarantee (5 Cols) ── */}
+          {/* Card 1: Featured Image */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="lg:col-span-5 relative rounded-3xl overflow-hidden border border-black/10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] bg-white group min-h-[420px] flex flex-col justify-between p-8"
+            className="lg:col-span-5 relative rounded-3xl overflow-hidden border border-black/10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] bg-white group min-h-[400px] flex flex-col justify-between p-5 sm:p-8"
           >
-            {/* Background Photo with Gradient Blend */}
             <div className="absolute inset-0">
               <Image
                 src="/images/therapist-portrait.webp"
@@ -63,50 +67,45 @@ export default function WhyChooseUsSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-dark/95 via-dark/40 to-transparent" />
             </div>
 
-            {/* Top Badge */}
             <div className="relative z-10 flex items-center justify-between">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-dark/75 backdrop-blur-md border border-white/20 text-white text-[11px] font-bold tracking-wider uppercase shadow-md">
-                <ShieldCheck size={14} className="text-gold-dark" />
-                Clinical Standard
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-dark/75 backdrop-blur-md border border-white/20 text-white text-[10.5px] font-bold tracking-wider uppercase shadow-md">
+                <ShieldCheck size={13} className="text-gold-dark" />
+                {imageBadgeLabel}
               </span>
-              <span className="text-white/60 text-[12px] font-mono font-bold tracking-widest uppercase">
-                Est. 2016
+              <span className="text-white/60 text-[11px] font-mono font-bold tracking-widest uppercase">
+                {established}
               </span>
             </div>
 
-            {/* Bottom Floating Glass Card Overlay */}
-            <div className="relative z-10 mt-auto pt-20">
-              <div className="p-5 rounded-2xl bg-white/90 backdrop-blur-md border border-white/40 shadow-xl">
+            <div className="relative z-10 mt-auto pt-16">
+              <div className="p-4 sm:p-5 rounded-2xl bg-white/90 backdrop-blur-md border border-white/40 shadow-xl">
                 <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center gap-2 text-gold-dark">
-                    <Sparkles size={16} />
-                    <span className="text-[12px] font-bold tracking-wider uppercase">Proven Standard</span>
+                  <div className="flex items-center gap-1.5 text-gold-dark">
+                    <Sparkles size={15} />
+                    <span className="text-[11px] font-bold tracking-wider uppercase">{provenLabel}</span>
                   </div>
-                  <span className="text-[18px] font-heading font-bold text-dark">98% Success</span>
+                  <span className="text-[16px] font-heading font-bold text-dark">{provenStat}</span>
                 </div>
-                
-                <p className="text-dark/75 text-[13px] font-light leading-relaxed mb-3">
-                  Every treatment plan is built on diagnostic postural mapping and targeted manual therapy protocols.
+                <p className="text-dark/75 text-[12.5px] sm:text-[13px] font-light leading-relaxed mb-3">
+                  {provenDescription}
                 </p>
-
-                <div className="flex items-center gap-4 text-dark/80 text-[12px] font-medium pt-2 border-t border-black/5">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-dark/80 text-[11.5px] font-medium pt-2 border-t border-black/5">
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 size={13} className="text-gold-dark" />
-                    <span>Postural Analysis</span>
+                    <CheckCircle2 size={13} className="text-gold-dark flex-shrink-0" />
+                    <span>{provenCheck1}</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 size={13} className="text-gold-dark" />
-                    <span>Myofascial Isolation</span>
+                    <CheckCircle2 size={13} className="text-gold-dark flex-shrink-0" />
+                    <span>{provenCheck2}</span>
                   </div>
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* ── Bento Cards 2, 3, 4: Feature Grid (7 Cols) ── */}
+          {/* Cards 2, 3, 4 */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
             
-            {/* Card 2: Clinical Precision */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -120,25 +119,22 @@ export default function WhyChooseUsSection() {
                     <Target size={22} />
                   </div>
                   <span className="text-[36px] font-serif font-bold text-gold-dark/20 group-hover:text-gold-dark transition-colors duration-500 select-none">
-                    01
+                    {items[0]?.id}
                   </span>
                 </div>
-
                 <h3 className="display-heading text-[22px] text-dark leading-tight mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                  {items[0]?.title || "Clinical Precision"}
+                  {items[0]?.title}
                 </h3>
                 <p className="text-dark/65 text-[13.5px] leading-relaxed font-light group-hover:text-dark transition-colors duration-300">
-                  {items[0]?.description || "Customized manual techniques mapping specific muscle trigger points to eliminate pain."}
+                  {items[0]?.description}
                 </p>
               </div>
-
               <div className="pt-4 mt-6 border-t border-black/5 flex items-center justify-between text-dark/40 group-hover:text-gold-dark transition-colors">
-                <span className="text-[11px] font-bold tracking-widest uppercase">Targeted Technique</span>
+                <span className="text-[11px] font-bold tracking-widest uppercase">{items[0]?.footerLabel}</span>
                 <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </div>
             </motion.div>
 
-            {/* Card 3: Certified Specialists */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -152,25 +148,22 @@ export default function WhyChooseUsSection() {
                     <Award size={22} />
                   </div>
                   <span className="text-[36px] font-serif font-bold text-gold-dark/20 group-hover:text-gold-dark transition-colors duration-500 select-none">
-                    02
+                    {items[1]?.id}
                   </span>
                 </div>
-
                 <h3 className="display-heading text-[22px] text-dark leading-tight mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                  {items[1]?.title || "Certified Specialists"}
+                  {items[1]?.title}
                 </h3>
                 <p className="text-dark/65 text-[13.5px] leading-relaxed font-light group-hover:text-dark transition-colors duration-300">
-                  {items[1]?.description || "Over 8+ years of clinical experience treating competitive athletes and professionals."}
+                  {items[1]?.description}
                 </p>
               </div>
-
               <div className="pt-4 mt-6 border-t border-black/5 flex items-center justify-between text-dark/40 group-hover:text-gold-dark transition-colors">
-                <span className="text-[11px] font-bold tracking-widest uppercase">Expert Practice</span>
+                <span className="text-[11px] font-bold tracking-widest uppercase">{items[1]?.footerLabel}</span>
                 <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </div>
             </motion.div>
 
-            {/* Card 4: Biomechanical Results (Spans Full Width on Small Grid) */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -184,17 +177,16 @@ export default function WhyChooseUsSection() {
                 </div>
                 <div>
                   <div className="flex items-center gap-3 mb-1">
-                    <span className="text-[11px] font-bold font-mono text-gold-dark tracking-widest">03</span>
+                    <span className="text-[11px] font-bold font-mono text-gold-dark tracking-widest">{items[2]?.id}</span>
                     <h3 className="display-heading text-[22px] text-dark leading-tight group-hover:text-gold-dark transition-colors duration-300">
-                      {items[2]?.title || "Biomechanical Results"}
+                      {items[2]?.title}
                     </h3>
                   </div>
                   <p className="text-dark/65 text-[13.5px] leading-relaxed font-light max-w-[440px] group-hover:text-dark transition-colors duration-300">
-                    {items[2]?.description || "We focus on structural alignment and joint decompression rather than temporary symptom masking."}
+                    {items[2]?.description}
                   </p>
                 </div>
               </div>
-
               <div className="flex-shrink-0">
                 <Link href="/contact" className="w-11 h-11 rounded-full border border-black/10 flex items-center justify-center text-dark/40 group-hover:bg-gold-dark group-hover:border-gold-dark group-hover:text-white transition-all duration-300">
                   <ArrowUpRight size={18} />
@@ -206,10 +198,10 @@ export default function WhyChooseUsSection() {
 
         </div>
 
-        {/* Bottom Action Strip */}
+        {/* Bottom CTA */}
         <div className="mt-16 text-center">
           <Link href="/contact" className="btn-gold">
-            Experience 410 Muscle Therapy <ArrowRight size={14} className="ml-1" />
+            {cta} <ArrowRight size={14} className="ml-1" />
           </Link>
         </div>
 

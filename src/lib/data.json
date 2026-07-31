@@ -26,28 +26,76 @@
     "titleLine1": "More Than Relief.",
     "titleLine2": "It's a Return to",
     "titleItalicWord": "You.",
+    "description": "We go beyond temporary relief to provide lasting results through targeted manual therapy and clinical recovery plans.",
+    "imageBadgeLabel": "Clinical Standard",
+    "established": "Est. 2016",
+    "provenLabel": "Proven Standard",
+    "provenStat": "98% Success",
+    "provenDescription": "Every treatment plan is built on diagnostic postural mapping and targeted manual therapy protocols.",
+    "provenCheck1": "Postural Analysis",
+    "provenCheck2": "Myofascial Isolation",
+    "cta": "Experience 410 Muscle Therapy",
     "items": [
       {
         "id": "01",
         "title": "Clinical Precision",
-        "description": "Customized manual techniques mapping specific muscle trigger points to eliminate root-cause pain."
+        "description": "Customized manual techniques mapping specific muscle trigger points to eliminate root-cause pain.",
+        "footerLabel": "Targeted Technique"
       },
       {
         "id": "02",
         "title": "Certified Specialists",
-        "description": "Over 8+ years of clinical experience treating competitive athletes, professionals, and active clients."
+        "description": "Over 8+ years of clinical experience treating competitive athletes, professionals, and active clients.",
+        "footerLabel": "Expert Practice"
       },
       {
         "id": "03",
         "title": "Biomechanical Results",
-        "description": "We focus on structural alignment and joint decompression rather than temporary symptom masking."
+        "description": "We focus on structural alignment and joint decompression rather than temporary symptom masking.",
+        "footerLabel": "Proven Outcomes"
       },
       {
         "id": "04",
         "title": "Accelerated Recovery",
-        "description": "Specialized myofascial release designed to flush metabolic waste and restore full range of motion."
+        "description": "Specialized myofascial release designed to flush metabolic waste and restore full range of motion.",
+        "footerLabel": "Rapid Relief"
       }
     ]
+  },
+  "serviceDetailPage": {
+    "backLink": "Back to All Services",
+    "specialtyBadge": "Clinical Specialty",
+    "tailoredLabel": "100% Tailored Therapy",
+    "tailoredSub": "Individualized Protocols",
+    "specDurationLabel": "Duration",
+    "specDurationValue": "60 / 90 Mins",
+    "specIntensityLabel": "Intensity",
+    "specIntensityValue": "Targeted Deep",
+    "specFocusLabel": "Focus",
+    "specFocusValue": "Trigger Mapping",
+    "specResultsLabel": "Results",
+    "specResultsValue": "Immediate Relief",
+    "bookingDesc": "Schedule your consultation with James Mitchell and start feeling pain-free.",
+    "bookingCta": "Book Appointment Now",
+    "benefitsTitle": "Key Clinical Benefits",
+    "benefitCardDesc": "Targeted mechanical input designed to accelerate tissue recovery and restore movement.",
+    "whoTitle": "Who Is This Therapy For?",
+    "whoProfiles": [
+      { "label": "01. Athletes", "desc": "Competitive athletes needing accelerated recovery between high-intensity training sessions." },
+      { "label": "02. Desk Professionals", "desc": "Individuals suffering from postural neck, shoulder, or lower back tightness from prolonged sitting." },
+      { "label": "03. Chronic Pain Sufferers", "desc": "Anyone dealing with persistent muscle knots, joint stiffness, or old injury scar tissue buildup." },
+      { "label": "04. Post-Rehab Patients", "desc": "People looking to safely regain full range of motion following physical therapy or injury rehabilitation." }
+    ],
+    "sessionTitle": "What To Expect During Your Session",
+    "sessionSteps": [
+      { "num": "01", "title": "Postural & Palpation Assessment", "desc": "We begin with an active range-of-motion test and palpation to pinpoint tight muscle groups and trigger points." },
+      { "num": "02", "title": "Targeted Clinical Bodywork", "desc": "Hands-on application of deep tissue pressure, myofascial release, and cross-fiber friction adjusted to your comfort level." },
+      { "num": "03", "title": "Post-Session Recovery Plan", "desc": "We measure mobility improvements post-therapy and provide personalized home stretching recommendations." }
+    ],
+    "relatedLabel": "Explore More",
+    "relatedTitle": "Related Therapies",
+    "relatedViewAll": "View All",
+    "relatedCardCta": "Explore Therapy"
   },
   "globalMetadata": {
     "title": "Muscle Therapy & Sports Recovery | Expert Muscle Therapy",
@@ -68,13 +116,20 @@
     "label": "Book A Session",
     "titleLine1": "Get in",
     "titleLine2": "Touch.",
-    "description": "Ready to optimize your performance and reduce pain? Fill out the form below or reach out directly to schedule your clinical manual therapy session."
+    "description": "Ready to optimize your performance and reduce pain? Fill out the form below or reach out directly to schedule your clinical manual therapy session.",
+    "infoHeading": "Contact Information",
+    "infoAddressLabel": "Address",
+    "infoPhoneLabel": "Phone",
+    "infoEmailLabel": "Email",
+    "infoHoursLabel": "Clinic Hours",
+    "mapLabel": "Map Location"
   },
   "blogsPage": {
     "label": "Recovery Insights",
     "titleLine1": "Our",
     "titleLine2": "Journal.",
-    "description": "Explore our latest articles, insights, and clinical tips on deep tissue therapy, mobility, and athletic recovery."
+    "description": "Explore our latest articles, insights, and clinical tips on deep tissue therapy, mobility, and athletic recovery.",
+    "ctaReadMore": "Read More"
   },
   "blogDetailPage": {
     "backLink": "Back to Blogs"
@@ -116,16 +171,22 @@
   },
   "services": {
     "label": "Our Services",
+    "stickyLabel": "Capabilities",
+    "stickyHeading": "Our Services",
+    "servicePrefix": "Service",
+    "ctaExplore": "Explore Therapy",
+    "ctaBook": "Book Session",
     "titleLine1": "Therapies",
     "titleLine2": "Designed",
     "titleLine3": "Around",
     "titleItalicWord": "You",
-    "description": "Our specialized manual therapies are tailored to target the root causes of chronic pain, release muscle tightness, and improve joint alignment. Whether you are recovering from a sports injury, dealing with everyday tension, or looking to maximize athletic performance, our hands-on treatments facilitate accelerated healing, restore proper posture, and enhance overall body mobility.",
     "ctaAll": "VIEW ALL SERVICES",
     "ctaLearnMore": "LEARN MORE",
+    "description": "Our specialized manual therapies are tailored to target the root causes of chronic pain, release muscle tightness, and improve joint alignment. Whether you are recovering from a sports injury, dealing with everyday tension, or looking to maximize athletic performance, our hands-on treatments facilitate accelerated healing, restore proper posture, and enhance overall body mobility.",
     "items": [
       {
         "id": "01",
+        "slug": "deep-tissue-therapy",
         "name": "Deep Tissue Therapy",
         "description": "Targets chronic muscle tension and knots to relieve pain and restore natural movement.",
         "image": "/images/service-massage.webp",
@@ -139,6 +200,7 @@
       },
       {
         "id": "02",
+        "slug": "sports-massage",
         "name": "Sports Massage",
         "description": "Designed specifically for athletes to enhance performance, increase flexibility, and prevent injuries.",
         "image": "/images/testimonial-1.webp",
@@ -151,6 +213,7 @@
       },
       {
         "id": "03",
+        "slug": "muscle-recovery",
         "name": "Muscle Recovery",
         "description": "Comprehensive therapy designed to flush lactic acid, reduce inflammation, and restore muscle tissues.",
         "image": "/images/testimonial-2.webp",
@@ -163,6 +226,7 @@
       },
       {
         "id": "04",
+        "slug": "injury-recovery",
         "name": "Injury Recovery",
         "description": "Targeted, rehabilitation-focused manual therapy to speed recovery from strains, sprains, and joint issues.",
         "image": "/images/testimonial-3.webp",
@@ -175,6 +239,7 @@
       },
       {
         "id": "05",
+        "slug": "mobility-therapy",
         "name": "Mobility Therapy",
         "description": "Focuses on unlocking tight joints, lengthening connective tissue, and restoring functional range of motion.",
         "image": "/images/testimonial-4.webp",
@@ -187,6 +252,7 @@
       },
       {
         "id": "06",
+        "slug": "trigger-point-therapy",
         "name": "Trigger Point Therapy",
         "description": "Applies focused pressure to specific hyper-irritable points in muscle tissue to relieve radiating pain.",
         "image": "/images/testimonial-5.webp",
@@ -199,6 +265,7 @@
       },
       {
         "id": "07",
+        "slug": "stretch-therapy",
         "name": "Stretch Therapy",
         "description": "Assisted PNF and static stretching to systematically lengthen muscle groups and improve overall flexibility.",
         "image": "/images/testimonial-6.webp",
@@ -211,6 +278,7 @@
       },
       {
         "id": "08",
+        "slug": "performance-recovery",
         "name": "Performance Recovery",
         "description": "A holistic combination of bodywork and stretching designed to prime the nervous system and muscles for competition.",
         "image": "/images/blog-1.webp",

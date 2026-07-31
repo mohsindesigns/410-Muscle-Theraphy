@@ -95,13 +95,13 @@ export default function ContactPage() {
             {/* ── Contact Details ── */}
             <div className="flex flex-col gap-10">
               <div className="bg-black/40 border border-border-dark/50 p-8 rounded-sm shadow-2xl">
-                <h3 className="text-white font-bold text-[14px] tracking-widest uppercase mb-8">Contact Information</h3>
+                <h3 className="text-white font-bold text-[14px] tracking-widest uppercase mb-8">{data.contactPage.infoHeading}</h3>
                 <ul className="flex flex-col gap-8">
                   {[
-                    { label: 'Address', value: address },
-                    { label: 'Phone', value: phone },
-                    { label: 'Email', value: email },
-                    { label: 'Clinic Hours', value: hours },
+                    { label: data.contactPage.infoAddressLabel, value: address },
+                    { label: data.contactPage.infoPhoneLabel, value: phone },
+                    { label: data.contactPage.infoEmailLabel, value: email },
+                    { label: data.contactPage.infoHoursLabel, value: hours },
                   ].map((item, i) => (
                     <li key={i} className="flex flex-col gap-1.5 border-l-2 border-gold/30 pl-4 hover:border-gold transition-colors duration-300">
                       <span className="text-gold text-[10px] font-bold tracking-widest uppercase">{item.label}</span>
@@ -113,7 +113,7 @@ export default function ContactPage() {
               
               <div className="h-[250px] bg-black/40 border border-border-dark/50 relative flex items-center justify-center rounded-sm shadow-2xl">
                  <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'repeating-linear-gradient(0deg, #fff 0px, #fff 1px, transparent 1px, transparent 20px), repeating-linear-gradient(90deg, #fff 0px, #fff 1px, transparent 1px, transparent 20px)' }} />
-                 <span className="relative z-10 text-gold/40 text-[11px] font-bold tracking-widest uppercase">Map Location</span>
+                 <span className="relative z-10 text-gold/40 text-[11px] font-bold tracking-widest uppercase">{data.contactPage.mapLabel}</span>
               </div>
             </div>
             

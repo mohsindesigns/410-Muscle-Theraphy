@@ -66,13 +66,13 @@ export default function ContactFaqSection() {
           {/* ── Left Column: Luxury Form Card ──────────── */}
           <div className="w-full h-fit">
             <p className="section-label text-gold-dark mb-4">{formLabel}</p>
-            <h2 className="display-heading text-[30px] min-[400px]:text-[36px] md:text-[44px] text-dark leading-tight mb-8">
+            <h2 className="display-heading text-[26px] min-[360px]:text-[30px] min-[400px]:text-[36px] md:text-[44px] text-dark leading-tight mb-8">
               {formTitle.split('<br />')[0]}<br />
               <span className="text-gold-dark italic font-light">{formTitle.split('<br />')[1] || 'Consultation.'}</span>
             </h2>
 
             {/* Form wrapper */}
-            <div className="bg-white border border-[#EBEAE6] p-5 min-[400px]:p-8 md:p-10 rounded-sm shadow-xl relative h-fit transition-all duration-300">
+            <div className="bg-white border border-[#EBEAE6] p-4 min-[360px]:p-5 min-[400px]:p-8 md:p-10 rounded-sm shadow-xl relative h-fit transition-all duration-300">
               
               {/* Gold frame accent in top-right */}
               <div className="absolute top-0 right-0 w-8 h-8 m-4 opacity-40">

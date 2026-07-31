@@ -54,7 +54,7 @@ export default function BlogsPage() {
                     href={`/blogs/${post.slug}`}
                     className="flex items-center gap-2 text-gold text-[12px] font-bold tracking-wide uppercase hover:gap-3 transition-all duration-200 mt-auto"
                   >
-                    Read More <ArrowRight size={14} />
+                    {data.blogsPage.ctaReadMore} <ArrowRight size={14} />
                   </Link>
                 </div>
               </article>

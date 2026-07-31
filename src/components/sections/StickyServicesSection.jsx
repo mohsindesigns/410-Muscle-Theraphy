@@ -7,7 +7,7 @@ import data from '@/lib/data.json';
 import { motion } from 'framer-motion';
 
 export default function StickyServicesSection() {
-  const { items } = data.services;
+  const { items, stickyLabel, stickyHeading, servicePrefix, ctaExplore, ctaBook } = data.services;
   const [activeId, setActiveId] = useState(items[0].id);
 
   // Bulletproof Sentinel-based Observer for 100% synchronized sidebar active state
@@ -57,8 +57,8 @@ export default function StickyServicesSection() {
         <div className="w-full lg:w-[320px] lg:sticky lg:top-[140px] z-30 bg-dark/90 lg:bg-transparent backdrop-blur-md lg:backdrop-blur-none py-4 lg:py-0 border-b lg:border-b-0 border-border-dark/50">
           <div className="flex flex-col gap-6">
             <div>
-              <p className="text-gold text-[10px] font-bold tracking-[0.25em] uppercase mb-2">Capabilities</p>
-              <h2 className="display-heading text-[28px] md:text-[36px] text-white">Our Services</h2>
+              <p className="text-gold text-[10px] font-bold tracking-[0.25em] uppercase mb-2">{stickyLabel}</p>
+              <h2 className="display-heading text-[28px] md:text-[36px] text-white">{stickyHeading}</h2>
             </div>
 
             <nav className="relative mt-4">
@@ -122,64 +122,69 @@ export default function StickyServicesSection() {
                   zIndex: index + 1
                 }}
               >
-                <div className="flex flex-col lg:flex-row min-h-[500px]">
+                <div className="flex flex-col lg:flex-row lg:min-h-[440px]">
 
                   {/* Content Area */}
-                  <div className="p-8 md:p-12 lg:w-[58%] flex flex-col justify-between relative bg-gradient-to-br from-white/[0.04] to-transparent">
+                  <div className="p-4 min-[360px]:p-6 md:p-8 lg:w-[58%] flex flex-col justify-between relative bg-gradient-to-br from-white/[0.04] to-transparent">
                     <div>
-                      <div className="flex items-center justify-between mb-6">
-                        <span className="text-gold text-[12px] font-bold tracking-[0.2em] uppercase px-3 py-1 bg-gold/10 rounded-full border border-gold/20">
-                          Service {service.id}
+                      <div className="flex items-center justify-between mb-4">
+                        <span className="text-gold text-[11px] font-bold tracking-[0.2em] uppercase px-3 py-1 bg-gold/10 rounded-full border border-gold/20">
+                          {servicePrefix} {service.id}
                         </span>
                         <span className="text-white/30 text-[11px] font-mono tracking-widest uppercase">
                           {index + 1} / {items.length}
                         </span>
                       </div>
 
-                      <h3 className="display-heading text-[28px] md:text-[38px] text-white leading-tight mb-4 group-hover:text-gold transition-colors duration-300">
-                        {service.name}
+                      <h3 className="display-heading text-[26px] md:text-[32px] text-white leading-tight mb-3 group-hover:text-gold transition-colors duration-300">
+                        <Link href={`/services/${service.slug || service.id}`}>
+                          {service.name}
+                        </Link>
                       </h3>
 
-                      <div className="w-12 h-px bg-gold/40 mb-6" />
-
-                      <p className="text-white/70 text-[14px] md:text-[15px] leading-[1.8] font-light mb-8">
+                      <p className="text-white/70 text-[13.5px] md:text-[14px] leading-relaxed font-light mb-4">
                         {service.description}
                       </p>
 
-                      {/* Key Benefits Vertical List */}
-                      <div className="flex flex-col gap-3 mb-8">
-                        {service.benefits.map((benefit, i) => (
-                          <div key={i} className="flex items-start gap-2.5">
-                            <div className="mt-1 text-gold flex-shrink-0">
-                              <CheckCircle2 size={15} />
-                            </div>
-                            <span className="text-[13px] text-white/80 font-medium leading-snug">{benefit}</span>
+                      {/* Key Benefits Vertical List (Top 3) */}
+                      <div className="flex flex-col gap-2 mb-5">
+                        {service.benefits.slice(0, 3).map((benefit, i) => (
+                          <div key={i} className="flex items-center gap-2.5">
+                            <CheckCircle2 size={14} className="text-gold flex-shrink-0" />
+                            <span className="text-[12.5px] md:text-[13px] text-white/80 font-medium leading-snug">{benefit}</span>
                           </div>
                         ))}
                       </div>
                     </div>
 
-                    {/* CTA Button */}
-                    <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center gap-4">
+                    {/* CTA Buttons */}
+                    <div className="pt-4 border-t border-white/10 flex flex-wrap items-center gap-4 sm:gap-6">
+                      <Link
+                        href={`/services/${service.slug || service.id}`}
+                        className="btn-gold"
+                      >
+                        {ctaExplore} <ArrowRight size={14} className="ml-1" />
+                      </Link>
+
                       <Link
                         href="/contact"
-                        className="btn-gold w-full sm:w-auto text-center justify-center text-[12px] uppercase tracking-wider py-3.5 px-6 font-bold"
+                        className="inline-flex items-center gap-2 text-white/60 hover:text-gold text-[11.5px] font-bold tracking-widest uppercase transition-colors py-1"
                       >
-                        Book {service.name} <ArrowRight size={14} className="ml-2" />
+                        {ctaBook} <ArrowRight size={13} />
                       </Link>
                     </div>
                   </div>
 
-                  {/* Image Area */}
-                  <div className="relative h-[280px] lg:h-auto lg:w-[42%] overflow-hidden bg-black/60">
+                  {/* Image Area (Clickable) */}
+                  <Link href={`/services/${service.slug || service.id}`} className="relative h-[280px] lg:h-auto lg:w-[42%] overflow-hidden bg-black/60 block group/img">
                     <Image
                       src={service.image}
                       alt={service.name}
                       fill
-                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100"
+                      className="object-cover object-center group-hover/img:scale-105 transition-transform duration-700 opacity-90 group-hover/img:opacity-100"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent lg:bg-gradient-to-r lg:from-dark/80 lg:to-transparent pointer-events-none" />
-                  </div>
+                  </Link>
 
                 </div>
               </div>
