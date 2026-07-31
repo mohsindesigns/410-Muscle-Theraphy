@@ -23,41 +23,41 @@
   },
   "whyChooseUs": {
     "label": "WHY CHOOSE 410 MUSCLE THERAPY",
-    "titleLine1": "More Than Relief.",
-    "titleLine2": "It's a Return to",
-    "titleItalicWord": "You.",
-    "description": "We go beyond temporary relief to provide lasting results through targeted manual therapy and clinical recovery plans.",
-    "imageBadgeLabel": "Clinical Standard",
-    "established": "Est. 2016",
+    "titleLine1": "Engineered For Peak",
+    "titleLine2": "Human",
+    "titleItalicWord": "Performance.",
+    "description": "Since 2020, we've evolved beyond traditional massage to deliver targeted performance bodywork, rapid athletic recovery, mobility optimization, and root-cause injury prevention.",
+    "imageBadgeLabel": "Performance Recovery",
+    "established": "Est. 2020",
     "provenLabel": "Proven Standard",
     "provenStat": "98% Success",
-    "provenDescription": "Every treatment plan is built on diagnostic postural mapping and targeted manual therapy protocols.",
-    "provenCheck1": "Postural Analysis",
-    "provenCheck2": "Myofascial Isolation",
-    "cta": "Experience 410 Muscle Therapy",
+    "provenDescription": "Every protocol is built on diagnostic movement assessment, targeted bodywork, and athletic recovery science.",
+    "provenCheck1": "Movement & Posture Analysis",
+    "provenCheck2": "Targeted Myofascial Release",
+    "cta": "Experience Performance Recovery",
     "items": [
       {
         "id": "01",
-        "title": "Clinical Precision",
-        "description": "Customized manual techniques mapping specific muscle trigger points to eliminate root-cause pain.",
-        "footerLabel": "Targeted Technique"
+        "title": "Performance Precision",
+        "description": "Targeted bodywork mapping specific trigger points and fascial restrictions to eliminate pain and boost output.",
+        "footerLabel": "Specialized Technique"
       },
       {
         "id": "02",
-        "title": "Certified Specialists",
-        "description": "Over 8+ years of clinical experience treating competitive athletes, professionals, and active clients.",
+        "title": "Recovery Specialist",
+        "description": "Years of hands-on experience helping competitive athletes, runners, lifters, and active adults stay at their peak.",
         "footerLabel": "Expert Practice"
       },
       {
         "id": "03",
         "title": "Biomechanical Results",
-        "description": "We focus on structural alignment and joint decompression rather than temporary symptom masking.",
+        "description": "We focus on structural alignment, mobility restoration, and joint decompression rather than symptom masking.",
         "footerLabel": "Proven Outcomes"
       },
       {
         "id": "04",
         "title": "Accelerated Recovery",
-        "description": "Specialized myofascial release designed to flush metabolic waste and restore full range of motion.",
+        "description": "Specialized myofascial bodywork designed to flush metabolic waste, relieve soreness, and restore full range of motion.",
         "footerLabel": "Rapid Relief"
       }
     ]
@@ -98,8 +98,8 @@
     "relatedCardCta": "Explore Therapy"
   },
   "globalMetadata": {
-    "title": "Muscle Therapy & Sports Recovery | Expert Muscle Therapy",
-    "description": "Expert muscle therapy to reduce pain, restore mobility, and elevate your performance. Trusted by 500+ clients."
+    "title": "Performance Recovery Specialist | 410 Muscle Therapy",
+    "description": "Elite performance recovery bodywork, mobility restoration, and injury prevention for athletes & active adults. Est. 2020. #bodywork #performancerecovery"
   },
   "galleryPage": {
     "metadata": {
@@ -147,13 +147,13 @@
     ]
   },
   "hero": {
-    "label": "Muscle Therapy & Sports Recovery",
-    "title1": "Recover Better.",
-    "title2": "Move Stronger.",
-    "description": "Clinical hands-on therapy designed to reduce chronic pain, restore dynamic mobility, and optimize athletic output.",
-    "ctaBook": "BOOK APPOINTMENT",
-    "ctaServices": "OUR SERVICES",
-    "socialProofText": "Trusted by 500+ active clients"
+    "label": "Performance Recovery Specialist • Est. 2020",
+    "title1": "Recover Faster.",
+    "title2": "Perform Higher.",
+    "description": "Specialized performance bodywork, mobility restoration, and injury prevention designed for athletes and active adults since 2020. #bodywork #performancerecovery",
+    "ctaBook": "BOOK RECOVERY SESSION",
+    "ctaServices": "EXPLORE SERVICES",
+    "socialProofText": "Trusted by 500+ athletes & active adults"
   },
   "stats": {
     "label": "Our Achievements",
@@ -292,21 +292,21 @@
     ]
   },
   "therapist": {
-    "label": "The Founder",
+    "label": "The Specialist",
     "title": "Meet James Mitchell",
-    "tagline": "Clinical Manual Therapist & Recovery Specialist",
-    "desc1": "James Mitchell specializes in target-driven myofascial release, deep tissue therapy, and advanced sports recovery. With an approach focused on structural alignment, he helps resolve chronic pain, restore range of motion, and elevate performance.",
-    "certBadgeLabel": "Certified Therapist",
-    "certBadgeSub": "Advanced Training in Manual Therapy",
-    "photoBadge": "Licensed & Certified",
-    "ctaMore": "MORE ABOUT ME",
+    "tagline": "Performance Recovery Specialist",
+    "desc1": "Since founding 410 Muscle Therapy in 2020, James Mitchell has evolved the practice beyond standard therapy into a premier sports recovery destination. Specializing in performance bodywork, structural mobility restoration, targeted myofascial release, and injury prevention, he helps athletes and active adults eliminate pain, recover faster, and perform at their highest potential. #bodywork #performancerecovery",
+    "certBadgeLabel": "Certified Specialist",
+    "certBadgeSub": "Advanced Performance Recovery & Movement Science",
+    "photoBadge": "PERFORMANCE RECOVERY SPECIALIST",
+    "ctaMore": "LEARN MORE ABOUT JAMES",
     "signatureName": "James Mitchell",
-    "signatureTitle": "LMT, Clinical Specialist",
+    "signatureTitle": "Performance Recovery Specialist",
     "features": [
-      { "title": "8+ Years", "desc": "Clinical practice" },
+      { "title": "Est. 2020", "desc": "Performance practice" },
       { "title": "Advanced", "desc": "Certifications" },
       { "title": "Athletes", "desc": "Recovery focus" },
-      { "title": "5,000+", "desc": "Clients treated" }
+      { "title": "5,000+", "desc": "Sessions completed" }
     ]
   },
   "process": {
@@ -564,7 +564,7 @@
   },
   "footer": {
     "insuranceLabel": "We Accept Most Insurance Plans",
-    "brandDescription": "Professional muscle therapy and sports recovery to help you move better, feel better, and live better.",
+    "brandDescription": "Elite performance recovery bodywork, mobility optimization, and injury prevention for athletes and active adults since 2020. #bodywork #performancerecovery",
     "quickLinksLabel": "Quick Links",
     "servicesLabel": "Services",
     "contactLabel": "Contact Us",

@@ -67,7 +67,7 @@ export default function TherapistSection() {
             <div className="img-therapist h-[400px] md:h-[600px] rounded-sm overflow-hidden shadow-2xl relative z-10 border border-border-light group">
               <Image
                 src="/images/therapist-portrait.webp"
-                alt="James Mitchell — Licensed Massage Therapist"
+                alt="James Mitchell — Performance Recovery Specialist"
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"
                 className="object-cover object-top transition-transform duration-750 group-hover:scale-105"
