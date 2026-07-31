@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import data from '@/lib/data.json';
 import { ArrowRight, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -83,12 +84,12 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-10 md:mb-12">
-            <a href="#" className="btn-gold w-full sm:w-auto justify-center text-center px-8">
+            <Link href="/contact" className="btn-gold w-full sm:w-auto justify-center text-center px-8">
               {ctaBook} <ArrowRight size={14} className="ml-1" />
-            </a>
-            <a href="#" className="btn-outline-white w-full sm:w-auto justify-center text-center px-8">
+            </Link>
+            <Link href="/#services" className="btn-outline-white w-full sm:w-auto justify-center text-center px-8">
               {ctaServices} <ArrowRight size={14} className="ml-1" />
-            </a>
+            </Link>
           </motion.div>
 
           {/* Social Proof */}

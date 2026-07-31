@@ -99,57 +99,21 @@ export default function Footer() {
     <footer>
 
       {/* ══ Insurance Strip ════════════════════════════ */}
-      <div className="bg-warm-gray border-t border-border-light py-8">
-        <div className="site-container">
-          <div className="flex flex-col xl:flex-row items-center gap-6 xl:gap-8">
+      <div className="bg-dark border-t border-border-dark py-6 relative overflow-hidden">
+        <div className="site-container relative z-10">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 opacity-70">
+            
+            <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-gold/80 whitespace-nowrap">
+              {insuranceLabel}
+            </p>
 
-            {/* Label */}
-            <div className="flex-shrink-0 text-center xl:text-right pr-0 xl:pr-8 xl:border-r border-border-light">
-              <p className="text-[11px] md:text-[10.5px] font-bold tracking-[0.14em] uppercase text-muted leading-snug">
-                {insuranceLabel.split(' ')[0]} {insuranceLabel.split(' ')[1]}<br className="hidden xl:block" /> {insuranceLabel.split(' ').slice(2).join(' ')}
-              </p>
-            </div>
+            <div className="hidden md:block w-px h-3 bg-white/20" />
 
-            {/* Brand Tiles */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:flex xl:items-center gap-4 flex-1 w-full">
+            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
               {insurers.map((ins) => (
-                <div
-                  key={ins.name}
-                  className="flex-1 flex items-center gap-3 bg-white border border-border-light px-5 py-3 hover:border-gold/30 transition-colors duration-200 cursor-pointer group"
-                >
-                  <div className="flex-shrink-0">
-                    {ins.name === 'aetna' && (
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill={ins.color}>
-                        <path d="M12 2L4 7v5c0 5 3.5 9.74 8 11 4.5-1.26 8-6 8-11V7z" />
-                      </svg>
-                    )}
-                    {ins.name === 'bcbs' && (
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={ins.color} strokeWidth="2" strokeLinecap="round">
-                        <path d="M12 2v20M2 12h20" />
-                      </svg>
-                    )}
-                    {ins.name === 'cigna' && (
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={ins.color} strokeWidth="1.6" strokeLinecap="round">
-                        <path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10" />
-                        <path d="M16 12c0 2.21-1.79 4-4 4s-4-1.79-4-4 1.79-4 4-4" />
-                        <path d="M20 16l2 2-2 2" />
-                        <path d="M22 18h-6" />
-                      </svg>
-                    )}
-                    {ins.name === 'uhc' && (
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={ins.color} strokeWidth="1.6" strokeLinecap="round">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-                        <path d="M9 22V12h6v10" />
-                      </svg>
-                    )}
-                  </div>
-                  <div>
-                    <p className="font-bold text-[13.5px] md:text-[14px] leading-none" style={{ color: ins.color }}>
-                      {ins.display}
-                    </p>
-                    <p className="text-[10px] md:text-[10.5px] text-muted mt-0.5">{ins.tagline}</p>
-                  </div>
-                </div>
+                <span key={ins.name} className="font-bold text-[10px] tracking-widest uppercase text-white/40 hover:text-white transition-colors duration-300 cursor-default">
+                  {ins.display}
+                </span>
               ))}
             </div>
 

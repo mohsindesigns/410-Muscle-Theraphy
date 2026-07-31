@@ -62,7 +62,7 @@ export default function StatsSection() {
           {/* ── Right Column: Rich Stats List with 3D Entry ── */}
           <div style={{ perspective: '1200px' }}>
             <p className="section-label text-gold-dark mb-4">{label}</p>
-            <h2 className="display-heading text-[36px] md:text-[44px] text-dark leading-tight mb-10">
+            <h2 className="display-heading text-[30px] min-[400px]:text-[36px] md:text-[44px] text-dark leading-tight mb-10">
               {titleLine1}<br />
               {titleLine2} <span className="text-gold-dark italic">{titleItalicWord}</span>
             </h2>

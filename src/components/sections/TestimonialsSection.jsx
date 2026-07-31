@@ -30,8 +30,8 @@ export default function TestimonialsSection() {
               <p className="section-label mb-4 md:mb-5">{label}</p>
 
               <h2 className="display-heading text-white leading-[1.06] mb-8 md:mb-10">
-                <span className="text-[38px] md:text-[48px]">{title1}</span><br />
-                <span className="text-[38px] md:text-[48px] text-gold italic">{title2}</span>
+                <span className="text-[32px] min-[400px]:text-[38px] md:text-[48px]">{title1}</span><br />
+                <span className="text-[32px] min-[400px]:text-[38px] md:text-[48px] text-gold italic">{title2}</span>
               </h2>
 
               {/* Quote card */}

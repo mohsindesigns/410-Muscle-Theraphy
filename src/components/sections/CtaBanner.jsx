@@ -1,5 +1,6 @@
 'use client';
 import data from '@/lib/data.json';
+import Link from 'next/link';
 import { CalendarRange, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -41,7 +42,7 @@ export default function CtaBanner() {
             <p className="text-dark/60 text-[10px] md:text-[12px] font-bold tracking-[0.15em] uppercase mb-1">
               {tagline}
             </p>
-            <h3 className="display-heading text-[24px] md:text-[30px] text-dark leading-tight mb-1.5">
+            <h3 className="display-heading text-[20px] min-[400px]:text-[24px] md:text-[30px] text-dark leading-tight mb-1.5">
               {title}
             </h3>
             <p className="text-dark/65 text-[13px] md:text-[14px]">
@@ -52,9 +53,9 @@ export default function CtaBanner() {
 
         {/* Right: CTA */}
         <div className="flex-shrink-0 w-full md:w-auto">
-          <a href="#" className="btn-dark text-[11px] md:text-[12px] px-8 py-3.5 md:py-4 shadow-lg w-full md:w-auto justify-center text-center">
+          <Link href="/contact" className="btn-dark text-[11px] md:text-[12px] px-8 py-3.5 md:py-4 shadow-lg w-full md:w-auto justify-center text-center">
             {button} <ArrowRight size={14} className="ml-1" />
-          </a>
+          </Link>
         </div>
 
       </motion.div>

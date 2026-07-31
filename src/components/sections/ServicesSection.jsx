@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import data from '@/lib/data.json';
 import { ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -20,7 +21,7 @@ export default function ServicesSection() {
           <div className="w-full lg:pr-10 lg:border-r border-border-dark flex flex-col justify-between py-2">
             <div>
               <p className="section-label mb-4 md:mb-5">{label}</p>
-              <h2 className="display-heading text-[32px] md:text-[36px] text-white leading-[1.15] mb-4 md:mb-5">
+              <h2 className="display-heading text-[28px] min-[400px]:text-[32px] md:text-[36px] text-white leading-[1.15] mb-4 md:mb-5">
                 {titleLine1}<br className="hidden lg:block" /> {titleLine2}<br className="hidden lg:block" /> {titleLine3}{' '}
                 <em className="text-gold not-italic italic">{titleItalicWord}</em>
               </h2>
@@ -28,9 +29,9 @@ export default function ServicesSection() {
                 {description}
               </p>
             </div>
-            <a href="#" className="btn-outline-white text-[11px] self-start mt-8 lg:mt-auto">
+            <Link href="/contact" className="btn-outline-white text-[11px] self-start mt-8 lg:mt-auto">
               {ctaAll} <ArrowRight size={14} className="ml-1" />
-            </a>
+            </Link>
           </div>
 
           {/* ── Col 2: Service List (33%) ────────────────── */}
@@ -110,9 +111,9 @@ export default function ServicesSection() {
                 </div>
 
                 {/* Lower block (Pushed to bottom) */}
-                <a href="#" className="btn-gold self-start mt-auto">
+                <Link href="/contact" className="btn-gold self-start mt-auto">
                   {ctaLearnMore} <ArrowRight size={14} className="ml-1" />
-                </a>
+                </Link>
               </motion.div>
             </AnimatePresence>
           </div>

@@ -66,7 +66,7 @@ export default function ContactFaqSection() {
           {/* ── Left Column: Luxury Form Card ──────────── */}
           <div className="w-full h-fit">
             <p className="section-label text-gold-dark mb-4">{formLabel}</p>
-            <h2 className="display-heading text-[36px] md:text-[44px] text-dark leading-tight mb-8">
+            <h2 className="display-heading text-[30px] min-[400px]:text-[36px] md:text-[44px] text-dark leading-tight mb-8">
               {formTitle.split('<br />')[0]}<br />
               <span className="text-gold-dark italic font-light">{formTitle.split('<br />')[1] || 'Consultation.'}</span>
             </h2>
@@ -217,7 +217,7 @@ export default function ContactFaqSection() {
           {/* ── Right Column: Editorial Underlined FAQs ──── */}
           <div className="w-full">
             <p className="section-label text-gold-dark mb-4">{faqLabel}</p>
-            <h2 className="display-heading text-[36px] md:text-[44px] text-dark leading-tight mb-10">
+            <h2 className="display-heading text-[30px] min-[400px]:text-[36px] md:text-[44px] text-dark leading-tight mb-10">
               {faqTitle.split('<br />')[0]}<br />
               <span className="text-gold-dark italic font-light">{faqTitle.split('<br />')[1] || 'Information.'}</span>
             </h2>

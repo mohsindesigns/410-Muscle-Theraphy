@@ -1,5 +1,6 @@
 import { Inter, Playfair_Display, Herr_Von_Muellerhoff } from 'next/font/google';
 import './globals.css';
+import data from '@/lib/data.json';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -23,9 +24,8 @@ const signatureFont = Herr_Von_Muellerhoff({
 });
 
 export const metadata = {
-  title: 'Muscle Therapy & Sports Recovery | Expert Muscle Therapy',
-  description:
-    'Expert muscle therapy to reduce pain, restore mobility, and elevate your performance. Trusted by 500+ clients.',
+  title: data.globalMetadata.title,
+  description: data.globalMetadata.description,
 };
 
 export default function RootLayout({ children }) {

@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import data from '@/lib/data.json';
+import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -29,14 +30,14 @@ export default function BlogSection() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
             <p className="section-label text-gold-dark mb-3 md:mb-4">{label}</p>
-            <h2 className="display-heading text-[32px] md:text-[44px] text-dark">{title}</h2>
+            <h2 className="display-heading text-[28px] min-[400px]:text-[32px] md:text-[44px] text-dark">{title}</h2>
           </div>
-          <a
-            href="#"
+          <Link
+            href="/blogs"
             className="flex items-center gap-2 text-gold-dark text-[12px] font-bold tracking-[0.12em] uppercase hover:gap-3 transition-all duration-200"
           >
             {ctaAll} <ArrowRight size={14} />
-          </a>
+          </Link>
         </div>
 
         {/* ── Article Grid ────────────────────────────── */}
@@ -76,12 +77,12 @@ export default function BlogSection() {
               <p className="text-muted text-[13.5px] leading-relaxed mb-5">
                 {post.excerpt}
               </p>
-              <a
-                href="#"
+              <Link
+                href={`/blogs/${post.slug}`}
                 className="flex items-center gap-2 text-gold-dark text-[12px] font-bold tracking-wide uppercase hover:gap-3 transition-all duration-200"
               >
                 {ctaReadMore} <ArrowRight size={14} />
-              </a>
+              </Link>
 
             </motion.article>
           ))}

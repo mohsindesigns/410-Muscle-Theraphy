@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import data from '@/lib/data.json';
+import { usePathname } from 'next/navigation';
 import { ChevronDown, ArrowRight, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../../../public/images/logo.png';
@@ -17,6 +18,7 @@ function LogoMark() {
 }
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { logoText1, logoText2, bookBtn, links } = data.navbar;
@@ -27,12 +29,16 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Helper to determine if link is active
+  const isLinkActive = (href) => {
+    if (href === '/') return pathname === '/';
+    if (href.startsWith('/#')) return false; // Hard to track hash accurately without scroll spy
+    return pathname.startsWith(href);
+  };
+
   return (
     <>
-      <motion.nav
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
+      <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || mobileMenuOpen ? 'bg-dark shadow-[0_4px_24px_rgba(0,0,0,0.6)] py-1' : 'bg-transparent py-3'}`}
       >
         <div className="site-container flex items-center justify-between h-[76px]">
@@ -44,26 +50,29 @@ export default function Navbar() {
 
           {/* ── Desktop Nav Links ──────────────────────── */}
           <ul className="hidden md:flex items-center gap-7">
-            {links.map((link) => (
-              <li key={link.label}>
-                <Link
-                  href={link.href}
-                  className={`flex items-center gap-1 text-[13.5px] font-medium transition-colors duration-200
-                    ${link.active
-                      ? 'text-gold border-b border-gold pb-0.5'
-                      : 'text-white/75 hover:text-white'
-                    }`}
-                >
-                  {link.label}
-                  {link.hasDropdown && <ChevronDown size={14} className="opacity-70" />}
-                </Link>
-              </li>
-            ))}
+            {links.map((link) => {
+              const active = isLinkActive(link.href);
+              return (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className={`flex items-center gap-1 text-[13.5px] font-medium transition-colors duration-200
+                      ${active
+                        ? 'text-gold border-b border-gold pb-0.5'
+                        : 'text-white/75 hover:text-white'
+                      }`}
+                  >
+                    {link.label}
+                    {link.hasDropdown && <ChevronDown size={14} className="opacity-70" />}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
 
           {/* ── Desktop CTA / Mobile Trigger ───────────── */}
           <div className="flex items-center gap-3">
-            <Link href="#" className="hidden md:inline-flex btn-gold">
+            <Link href="/contact" className="hidden md:inline-flex btn-gold">
               {bookBtn} <ArrowRight size={14} className="ml-1" />
             </Link>
 
@@ -78,7 +87,7 @@ export default function Navbar() {
           </div>
 
         </div>
-      </motion.nav>
+      </nav>
 
       {/* ── Mobile Menu Drawer ─────────────────────── */}
       <AnimatePresence>
@@ -91,21 +100,24 @@ export default function Navbar() {
             className="fixed inset-x-0 top-[76px] z-40 bg-dark border-b border-border-dark flex flex-col px-6 py-8 md:hidden gap-6 shadow-[0_12px_32px_rgba(0,0,0,0.8)]"
           >
             <ul className="flex flex-col gap-4">
-              {links.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className={`block text-[15px] font-medium py-1 transition-colors
-                      ${link.active ? 'text-gold' : 'text-white/70 hover:text-white'}`}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              {links.map((link) => {
+                const active = isLinkActive(link.href);
+                return (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={`block text-[15px] font-medium py-1 transition-colors
+                        ${active ? 'text-gold' : 'text-white/70 hover:text-white'}`}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
             <Link
-              href="#"
+              href="/contact"
               onClick={() => setMobileMenuOpen(false)}
               className="btn-gold justify-center w-full py-3.5"
             >

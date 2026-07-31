@@ -72,7 +72,17 @@
   .site-container {
     max-width: 1280px;
     margin-inline: auto;
-    padding-inline: 40px;
+    padding-inline: 16px;
+  }
+  @media (min-width: 640px) {
+    .site-container {
+      padding-inline: 24px;
+    }
+  }
+  @media (min-width: 768px) {
+    .site-container {
+      padding-inline: 40px;
+    }
   }
 
   /* ── Typography ─────────────────────────────────────── */

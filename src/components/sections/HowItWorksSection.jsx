@@ -24,7 +24,7 @@ export default function HowItWorksSection() {
         {/* ── Header ────────────────────────────────── */}
         <div className="mb-12 md:mb-20 max-w-xl">
           <p className="section-label text-gold-dark mb-4">{label}</p>
-          <h2 className="display-heading text-[34px] md:text-[48px] text-dark leading-tight">
+          <h2 className="display-heading text-[28px] min-[400px]:text-[34px] md:text-[48px] text-dark leading-tight">
             {title}
           </h2>
           <p className="text-dark/55 text-[14px] md:text-[15px] leading-relaxed mt-4">

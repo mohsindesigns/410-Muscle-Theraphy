@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import data from '@/lib/data.json';
+import Link from 'next/link';
 import { ArrowRight, Trophy, Sparkles, HeartHandshake, ShieldCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -94,7 +95,7 @@ export default function TherapistSection() {
               {label}
             </motion.p>
             
-            <motion.h2 variants={itemVariants} className="display-heading text-[38px] md:text-[48px] text-dark leading-tight mb-4">
+            <motion.h2 variants={itemVariants} className="display-heading text-[32px] min-[400px]:text-[38px] md:text-[48px] text-dark leading-tight mb-4">
               {title}
             </motion.h2>
 
@@ -139,9 +140,9 @@ export default function TherapistSection() {
               variants={itemVariants}
               className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-border-light mt-auto"
             >
-              <a href="#" className="btn-gold w-full sm:w-auto justify-center text-center">
+              <Link href="/contact" className="btn-gold w-full sm:w-auto justify-center text-center">
                 {ctaMore} <ArrowRight size={14} className="ml-1" />
-              </a>
+              </Link>
               <div className="text-center sm:text-right flex flex-col items-center sm:items-end">
                 <p className="font-signature text-[38px] min-[360px]:text-[48px] md:text-[56px] text-gold-dark leading-none mb-1 select-none">
                   {signatureName}
