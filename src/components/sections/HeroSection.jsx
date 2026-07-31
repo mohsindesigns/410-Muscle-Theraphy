@@ -25,36 +25,35 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative bg-dark min-h-screen flex items-center overflow-hidden">
+    <section className="relative bg-dark min-h-screen flex items-center overflow-hidden border-b border-border-dark">
       
       {/* Subtle gold glow behind text for luxury depth */}
-      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[350px] h-[350px] bg-gold/[0.04] rounded-full blur-[100px] pointer-events-none z-0" />
+      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[400px] h-[400px] bg-gold/[0.05] rounded-full blur-[120px] pointer-events-none z-0" />
 
-      {/* ── Hero Image (right side on desktop, background overlay on mobile) ── */}
+      {/* ── Blended Hero Image Background (More Visible Photo) ── */}
       <motion.div
-        initial={{ scale: 1.08, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1.2, ease: 'easeOut' }}
-        className="img-hero-side z-0"
+        initial={{ opacity: 0, scale: 1.05 }}
+        animate={{ opacity: 0.8, scale: 1 }}
+        transition={{ duration: 1.5, ease: 'easeOut' }}
+        className="absolute inset-0 z-0 pointer-events-none"
       >
         <Image
           src="/images/hero-bg.webp"
           alt="Expert muscle therapy session"
           fill
-          sizes="(max-width: 768px) 100vw, 54vw"
-          className="object-cover object-top"
+          sizes="100vw"
+          className="object-cover object-right lg:object-center opacity-85 filter contrast-105"
           priority
         />
-        {/* Luxury Gold Frame Overlay inside the image */}
-        <div className="absolute inset-4 border border-gold/25 pointer-events-none hidden md:block" />
         
-        {/* Dark overlay on mobile to keep text completely readable */}
-        <div className="absolute inset-0 bg-dark/65 md:bg-transparent hero-img-overlay" />
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-dark to-transparent" />
+        {/* Multi-directional Luxury Gradient Masks */}
+        <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-dark/50 via-transparent to-dark/80" />
+        <div className="absolute inset-0 bg-gradient-to-l from-dark/40 via-transparent to-transparent" />
       </motion.div>
 
       {/* ── Main Content ───────────────────────────────── */}
-      <div className="relative site-container pt-28 pb-16 md:pt-36 md:pb-24 w-full z-10">
+      <div className="relative site-container pt-32 pb-16 md:pt-40 md:pb-24 w-full z-10">
         <motion.div
           variants={containerVariants}
           initial="hidden"

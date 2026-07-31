@@ -2,8 +2,7 @@
 import { useParams, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+
 import { ArrowLeft } from 'lucide-react';
 import data from '@/lib/data.json';
 import { useEffect, useState } from 'react';
@@ -34,7 +33,7 @@ export default function BlogPostPage() {
 
   return (
     <>
-      <Navbar />
+
       <main className="bg-dark min-h-screen pt-[140px] pb-24 relative">
         {/* Subtle background texture */}
         <div className="absolute inset-0 opacity-[0.03]"
@@ -104,7 +103,7 @@ export default function BlogPostPage() {
           </div>
         </div>
       </main>
-      <Footer />
+
     </>
   );
 }

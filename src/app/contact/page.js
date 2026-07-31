@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+
 import { ArrowRight, Send } from 'lucide-react';
 import data from '@/lib/data.json';
 
@@ -29,7 +28,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <Navbar />
+
       <main className="bg-dark min-h-screen pt-[140px] pb-24 relative overflow-hidden">
         {/* Subtle background texture */}
         <div className="absolute inset-0 opacity-[0.03]"
@@ -121,7 +120,7 @@ export default function ContactPage() {
           </div>
         </div>
       </main>
-      <Footer />
+
     </>
   );
 }

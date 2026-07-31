@@ -1,8 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+
 import { ArrowRight } from 'lucide-react';
 import data from '@/lib/data.json';
 
@@ -11,7 +10,7 @@ export default function BlogsPage() {
 
   return (
     <>
-      <Navbar />
+
       <main className="bg-dark min-h-screen pt-[140px] pb-24 relative overflow-hidden">
         {/* Subtle background texture */}
         <div className="absolute inset-0 opacity-[0.03]"
@@ -63,7 +62,7 @@ export default function BlogsPage() {
           </div>
         </div>
       </main>
-      <Footer />
+
     </>
   );
 }

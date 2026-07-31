@@ -1,5 +1,4 @@
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+
 import HeroSection from '@/components/sections/HeroSection';
 import StatsSection from '@/components/sections/StatsSection';
 import ServicesSection from '@/components/sections/ServicesSection';
@@ -13,7 +12,7 @@ import BlogSection from '@/components/sections/BlogSection';
 export default function Home() {
   return (
     <>
-      <Navbar />
+
       <main>
         <HeroSection />
         <StatsSection />
@@ -25,7 +24,7 @@ export default function Home() {
         <ContactFaqSection />
         <BlogSection />
       </main>
-      <Footer />
+
     </>
   );
 }

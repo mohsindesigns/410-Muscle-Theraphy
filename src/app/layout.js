@@ -1,6 +1,8 @@
 import { Inter, Playfair_Display, Herr_Von_Muellerhoff } from 'next/font/google';
 import './globals.css';
 import data from '@/lib/data.json';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -32,7 +34,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable} ${signatureFont.variable}`}>
       <body style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
