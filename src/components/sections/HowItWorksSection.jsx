@@ -33,39 +33,41 @@ export default function HowItWorksSection() {
         </div>
 
         {/* ── Sticky Scroll Reveal Grid ───────────────── */}
-        <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-12 md:gap-20 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-12 md:gap-20">
 
-          {/* Left Column: Sticky Image Frame (Desktop only) */}
-          <div className="hidden md:block sticky top-32 h-[450px] w-full overflow-hidden rounded-sm shadow-xl border border-border-light bg-dark-3">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeIdx}
-                initial={{ opacity: 0, scale: 1.02 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.98 }}
-                transition={{ duration: 0.35, ease: 'easeInOut' }}
-                className="absolute inset-0 w-full h-full"
-              >
-                <Image
-                  src={stepImages[activeIdx]}
-                  alt="Recovery Step visual"
-                  fill
-                  sizes="45vw"
-                  className="object-cover"
-                  priority
-                />
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-dark/10" />
-              </motion.div>
-            </AnimatePresence>
-            {/* Step indicator tag */}
-            <div className="absolute bottom-6 left-6 bg-dark/80 backdrop-blur-md px-4 py-2 border border-border-dark rounded-sm">
-              <p className="text-gold font-mono font-bold text-[12px] tracking-widest mb-0.5">
-                {data.process.phaseLabel} 0{activeIdx + 1}
-              </p>
-              <p className="text-white/60 text-[10px] uppercase tracking-wider font-semibold">
-                {items[activeIdx]?.title}
-              </p>
+          {/* Left Column: full-height wrapper, sticky image inside */}
+          <div className="hidden md:block">
+            <div className="sticky top-32 h-[450px] w-full overflow-hidden rounded-sm shadow-xl border border-border-light bg-dark-3">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeIdx}
+                  initial={{ opacity: 0, scale: 1.02 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.98 }}
+                  transition={{ duration: 0.35, ease: 'easeInOut' }}
+                  className="absolute inset-0 w-full h-full"
+                >
+                  <Image
+                    src={stepImages[activeIdx]}
+                    alt="Recovery Step visual"
+                    fill
+                    sizes="45vw"
+                    className="object-cover"
+                    priority
+                  />
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-dark/10" />
+                </motion.div>
+              </AnimatePresence>
+              {/* Step indicator tag */}
+              <div className="absolute bottom-6 left-6 bg-dark/80 backdrop-blur-md px-4 py-2 border border-border-dark rounded-sm">
+                <p className="text-gold font-mono font-bold text-[12px] tracking-widest mb-0.5">
+                  {data.process.phaseLabel} 0{activeIdx + 1}
+                </p>
+                <p className="text-white/60 text-[10px] uppercase tracking-wider font-semibold">
+                  {items[activeIdx]?.title}
+                </p>
+              </div>
             </div>
           </div>
 

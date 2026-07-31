@@ -51,10 +51,11 @@ export default function StickyServicesSection() {
       {/* Subtle Ambient Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-gold/10 via-transparent to-transparent pointer-events-none" />
 
-      <div className="site-container relative flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
+      <div className="site-container relative flex flex-col lg:flex-row gap-12 lg:gap-16">
 
-        {/* Left Sticky Sidebar */}
-        <div className="w-full lg:w-[320px] lg:sticky lg:top-[140px] z-30 bg-dark/90 lg:bg-transparent backdrop-blur-md lg:backdrop-blur-none py-4 lg:py-0 border-b lg:border-b-0 border-border-dark/50">
+        {/* Left Sticky Sidebar — wrapper column, sticky lives inside */}
+        <div className="w-full lg:w-[320px] flex-shrink-0">
+          <div className="lg:sticky lg:top-[140px] z-30 bg-dark/90 lg:bg-transparent backdrop-blur-md lg:backdrop-blur-none py-4 lg:py-0 border-b lg:border-b-0 border-border-dark/50">
           <div className="flex flex-col gap-6">
             <div>
               <p className="text-gold text-[10px] font-bold tracking-[0.25em] uppercase mb-2">{stickyLabel}</p>
@@ -101,6 +102,7 @@ export default function StickyServicesSection() {
                 })}
               </ul>
             </nav>
+          </div>
           </div>
         </div>
 
