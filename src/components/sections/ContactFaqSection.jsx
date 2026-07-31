@@ -80,6 +80,22 @@ export default function ContactFaqSection() {
                 <div className="absolute top-0 right-0 h-full w-[1px] bg-gold-dark" />
               </div>
 
+              {/* Direct StyleSeat Booking Banner */}
+              <div className="mb-6 p-4 rounded-sm bg-warm-white border border-gold-dark/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                  <span className="text-gold-dark font-mono text-[10px] font-bold tracking-widest uppercase block mb-0.5">INSTANT ONLINE BOOKING</span>
+                  <p className="text-dark font-bold text-[13.5px]">Book directly on StyleSeat</p>
+                </div>
+                <a
+                  href="https://www.styleseat.com/m/v/410muscletherapy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-gold px-6 py-2.5 text-[11.5px] font-bold tracking-wider flex-shrink-0"
+                >
+                  BOOK ON STYLESEAT <ArrowRight size={12} className="ml-1" />
+                </a>
+              </div>
+
               <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                 
                 {/* Name */}

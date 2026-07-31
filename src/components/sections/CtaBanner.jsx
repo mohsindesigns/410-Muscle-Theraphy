@@ -53,9 +53,14 @@ export default function CtaBanner() {
 
         {/* Right: CTA */}
         <div className="flex-shrink-0 w-full md:w-auto">
-          <Link href="/contact" className="btn-dark text-[11px] md:text-[12px] px-8 py-3.5 md:py-4 shadow-lg w-full md:w-auto justify-center text-center">
+          <a
+            href="https://www.styleseat.com/m/v/410muscletherapy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-dark text-[11px] md:text-[12px] px-8 py-3.5 md:py-4 shadow-lg w-full md:w-auto justify-center text-center"
+          >
             {button} <ArrowRight size={14} className="ml-1" />
-          </Link>
+          </a>
         </div>
 
       </motion.div>

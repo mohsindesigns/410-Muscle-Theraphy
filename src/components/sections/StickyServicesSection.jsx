@@ -168,12 +168,14 @@ export default function StickyServicesSection() {
                         {ctaExplore} <ArrowRight size={14} className="ml-1" />
                       </Link>
 
-                      <Link
-                        href="/contact"
+                      <a
+                        href="https://www.styleseat.com/m/v/410muscletherapy"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-white/60 hover:text-gold text-[11.5px] font-bold tracking-widest uppercase transition-colors py-1"
                       >
                         {ctaBook} <ArrowRight size={13} />
-                      </Link>
+                      </a>
                     </div>
                   </div>
 

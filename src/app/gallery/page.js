@@ -14,7 +14,7 @@ import img8 from '../../../public/images/blog-1.webp';
 import img9 from '../../../public/images/blog-2.webp';
 import img10 from '../../../public/images/blog-3.webp';
 import img11 from '../../../public/images/hero-bg.webp';
-import img12 from '../../../public/images/therapist-portrait.webp';
+import img12 from '../../../public/images/theraphist.jpeg';
 
 const galleryImages = [
   img1, img11, img3, img8, img5, img12, img7, img9, img6, img2, img10, img4
@@ -61,7 +61,12 @@ export default function GalleryPage() {
           </div>
           
           <div className="mt-20 flex justify-center">
-            <a href="/contact" className="btn-gold shadow-2xl">
+            <a
+              href="https://www.styleseat.com/m/v/410muscletherapy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gold shadow-2xl"
+            >
               {data.galleryPage.ctaBook}
             </a>
           </div>

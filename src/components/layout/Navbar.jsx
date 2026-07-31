@@ -72,9 +72,14 @@ export default function Navbar() {
 
           {/* ── Desktop CTA / Mobile Trigger ───────────── */}
           <div className="flex items-center gap-3">
-            <Link href="/contact" className="hidden md:inline-flex btn-gold">
+            <a
+              href="https://www.styleseat.com/m/v/410muscletherapy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:inline-flex btn-gold"
+            >
               {bookBtn} <ArrowRight size={14} className="ml-1" />
-            </Link>
+            </a>
 
             {/* Hamburger Button */}
             <button
@@ -116,13 +121,15 @@ export default function Navbar() {
                 );
               })}
             </ul>
-            <Link
-              href="/contact"
+            <a
+              href="https://www.styleseat.com/m/v/410muscletherapy"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="btn-gold justify-center w-full py-3.5"
             >
               {bookBtn} <ArrowRight size={14} className="ml-1" />
-            </Link>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

@@ -66,7 +66,7 @@ export default function TherapistSection() {
             {/* Main photo container */}
             <div className="img-therapist h-[400px] md:h-[600px] rounded-sm overflow-hidden shadow-2xl relative z-10 border border-border-light group">
               <Image
-                src="/images/therapist-portrait.webp"
+                src="/images/theraphist.jpeg"
                 alt="James Mitchell — Performance Recovery Specialist"
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"
@@ -140,9 +140,14 @@ export default function TherapistSection() {
               variants={itemVariants}
               className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-border-light mt-auto"
             >
-              <Link href="/contact" className="btn-gold w-full sm:w-auto justify-center text-center">
+              <a
+                href="https://www.styleseat.com/m/v/410muscletherapy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-gold w-full sm:w-auto justify-center text-center"
+              >
                 {ctaMore} <ArrowRight size={14} className="ml-1" />
-              </Link>
+              </a>
               <div className="text-center sm:text-right flex flex-col items-center sm:items-end">
                 <p className="font-signature text-[38px] min-[360px]:text-[48px] md:text-[56px] text-gold-dark leading-none mb-1 select-none">
                   {signatureName}

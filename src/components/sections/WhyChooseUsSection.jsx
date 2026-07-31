@@ -58,7 +58,7 @@ export default function WhyChooseUsSection() {
           >
             <div className="absolute inset-0">
               <Image
-                src="/images/therapist-portrait.webp"
+                src="/images/theraphist.jpeg"
                 alt="Clinical Precision Therapy"
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
@@ -188,9 +188,14 @@ export default function WhyChooseUsSection() {
                 </div>
               </div>
               <div className="flex-shrink-0">
-                <Link href="/contact" className="w-11 h-11 rounded-full border border-black/10 flex items-center justify-center text-dark/40 group-hover:bg-gold-dark group-hover:border-gold-dark group-hover:text-white transition-all duration-300">
+                <a
+                  href="https://www.styleseat.com/m/v/410muscletherapy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 rounded-full border border-black/10 flex items-center justify-center text-dark/40 group-hover:bg-gold-dark group-hover:border-gold-dark group-hover:text-white transition-all duration-300"
+                >
                   <ArrowUpRight size={18} />
-                </Link>
+                </a>
               </div>
             </motion.div>
 
@@ -200,9 +205,14 @@ export default function WhyChooseUsSection() {
 
         {/* Bottom CTA */}
         <div className="mt-16 text-center">
-          <Link href="/contact" className="btn-gold">
+          <a
+            href="https://www.styleseat.com/m/v/410muscletherapy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-gold"
+          >
             {cta} <ArrowRight size={14} className="ml-1" />
-          </Link>
+          </a>
         </div>
 
       </div>

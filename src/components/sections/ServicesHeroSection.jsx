@@ -79,9 +79,14 @@ export default function ServicesHeroSection() {
 
           {/* CTA Buttons */}
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-10 md:mb-12">
-            <Link href="/contact" className="btn-gold w-full sm:w-auto justify-center text-center px-8">
+            <a
+              href="https://www.styleseat.com/m/v/410muscletherapy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gold w-full sm:w-auto justify-center text-center px-8"
+            >
               {btn1} <ArrowRight size={14} className="ml-1" />
-            </Link>
+            </a>
             <a href="#services-list" className="btn-outline-white w-full sm:w-auto justify-center text-center px-8">
               {btn2} <ArrowRight size={14} className="ml-1" />
             </a>

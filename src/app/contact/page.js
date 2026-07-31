@@ -49,6 +49,22 @@ export default function ContactPage() {
             
             {/* ── Dark Luxury Form ── */}
             <div className="bg-black/40 border border-border-dark/50 p-6 sm:p-10 rounded-sm shadow-2xl relative">
+              {/* StyleSeat Direct Booking Banner */}
+              <div className="mb-8 p-5 rounded-sm bg-gold/10 border border-gold/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                  <span className="text-gold font-mono text-[10.5px] font-bold tracking-widest uppercase block mb-0.5">INSTANT ONLINE BOOKING</span>
+                  <p className="text-white font-bold text-[14px]">Book Directly via StyleSeat</p>
+                </div>
+                <a
+                  href="https://www.styleseat.com/m/v/410muscletherapy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-gold px-6 py-3 text-[12px] font-bold tracking-wider flex-shrink-0"
+                >
+                  BOOK ON STYLESEAT <ArrowRight size={13} className="ml-1" />
+                </a>
+              </div>
+
               <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                 
                 <div className="flex flex-col gap-2">
