@@ -1,140 +1,32 @@
 {
-  "servicesPageHero": {
+  "globalSite": {
     "metadata": {
-      "title": "Services | Muscle Therapy & Sports Recovery",
-      "description": "Explore our comprehensive manual therapy and sports recovery services designed to optimize your performance and health."
+      "title": "Performance Recovery Specialist | 410 Muscle Therapy",
+      "description": "Elite performance recovery bodywork, mobility restoration, and injury prevention for athletes & active adults. Est. 2020. #bodywork #performancerecovery",
+      "bookingUrl": "https://www.styleseat.com/m/v/410muscletherapy",
+      "established": "2020"
     },
-    "label": "OUR SERVICES",
-    "title1": "Therapies",
-    "title2": "Designed Around",
-    "title3": "You.",
-    "description": "Evidence-based treatments. Personalized care. Real results. Move better, feel better, perform better.",
-    "btn1": "BOOK APPOINTMENT",
-    "btn2": "SEE HOW WE HELP",
-    "image": "/images/service-massage.webp",
-    "sealText": "PRECISION CARE • REAL RESULTS • FEEL BETTER • MOVE BETTER •",
-    "features": [
-      { "icon": "shield", "title": "Personalized", "subtitle": "Treatments" },
-      { "icon": "users", "title": "Advanced", "subtitle": "Techniques" },
-      { "icon": "award", "title": "Experienced", "subtitle": "Therapists" },
-      { "icon": "check", "title": "Proven", "subtitle": "Results" },
-      { "icon": "star", "title": "Athlete & Active", "subtitle": "Focused" }
-    ]
+    "branding": {
+      "name": "410 Muscle Therapy",
+      "tagline": "Performance Recovery Specialist",
+      "hashtag": "#bodywork #performancerecovery",
+      "logoText1": "MUSCLE",
+      "logoText2": "THERAPY"
+    },
+    "contactInfo": {
+      "address": "125 Wellness Way, Suite 101\nLos Angeles, CA 90001",
+      "phone": "(323) 456-7890",
+      "email": "info@muscletherapy.com",
+      "hours": "Mon–Sat: 8:00 AM – 7:00 PM"
+    }
   },
-  "whyChooseUs": {
-    "label": "WHY CHOOSE 410 MUSCLE THERAPY",
-    "titleLine1": "Engineered For Peak",
-    "titleLine2": "Human",
-    "titleItalicWord": "Performance.",
-    "description": "Since 2020, we've evolved beyond traditional massage to deliver targeted performance bodywork, rapid athletic recovery, mobility optimization, and root-cause injury prevention.",
-    "imageBadgeLabel": "Performance Recovery",
-    "established": "Est. 2020",
-    "provenLabel": "Proven Standard",
-    "provenStat": "98% Success",
-    "provenDescription": "Every protocol is built on diagnostic movement assessment, targeted bodywork, and athletic recovery science.",
-    "provenCheck1": "Movement & Posture Analysis",
-    "provenCheck2": "Targeted Myofascial Release",
-    "cta": "Experience Performance Recovery",
-    "items": [
-      {
-        "id": "01",
-        "title": "Performance Precision",
-        "description": "Targeted bodywork mapping specific trigger points and fascial restrictions to eliminate pain and boost output.",
-        "footerLabel": "Specialized Technique"
-      },
-      {
-        "id": "02",
-        "title": "Recovery Specialist",
-        "description": "Years of hands-on experience helping competitive athletes, runners, lifters, and active adults stay at their peak.",
-        "footerLabel": "Expert Practice"
-      },
-      {
-        "id": "03",
-        "title": "Biomechanical Results",
-        "description": "We focus on structural alignment, mobility restoration, and joint decompression rather than symptom masking.",
-        "footerLabel": "Proven Outcomes"
-      },
-      {
-        "id": "04",
-        "title": "Accelerated Recovery",
-        "description": "Specialized myofascial bodywork designed to flush metabolic waste, relieve soreness, and restore full range of motion.",
-        "footerLabel": "Rapid Relief"
-      }
-    ]
-  },
-  "serviceDetailPage": {
-    "backLink": "Back to All Services",
-    "specialtyBadge": "Clinical Specialty",
-    "tailoredLabel": "100% Tailored Therapy",
-    "tailoredSub": "Individualized Protocols",
-    "specDurationLabel": "Duration",
-    "specDurationValue": "60 / 90 Mins",
-    "specIntensityLabel": "Intensity",
-    "specIntensityValue": "Targeted Deep",
-    "specFocusLabel": "Focus",
-    "specFocusValue": "Trigger Mapping",
-    "specResultsLabel": "Results",
-    "specResultsValue": "Immediate Relief",
-    "bookingDesc": "Schedule your consultation with James Mitchell and start feeling pain-free.",
-    "bookingCta": "Book Appointment Now",
-    "benefitsTitle": "Key Clinical Benefits",
-    "benefitCardDesc": "Targeted mechanical input designed to accelerate tissue recovery and restore movement.",
-    "whoTitle": "Who Is This Therapy For?",
-    "whoProfiles": [
-      { "label": "01. Athletes", "desc": "Competitive athletes needing accelerated recovery between high-intensity training sessions." },
-      { "label": "02. Desk Professionals", "desc": "Individuals suffering from postural neck, shoulder, or lower back tightness from prolonged sitting." },
-      { "label": "03. Chronic Pain Sufferers", "desc": "Anyone dealing with persistent muscle knots, joint stiffness, or old injury scar tissue buildup." },
-      { "label": "04. Post-Rehab Patients", "desc": "People looking to safely regain full range of motion following physical therapy or injury rehabilitation." }
-    ],
-    "sessionTitle": "What To Expect During Your Session",
-    "sessionSteps": [
-      { "num": "01", "title": "Postural & Palpation Assessment", "desc": "We begin with an active range-of-motion test and palpation to pinpoint tight muscle groups and trigger points." },
-      { "num": "02", "title": "Targeted Clinical Bodywork", "desc": "Hands-on application of deep tissue pressure, myofascial release, and cross-fiber friction adjusted to your comfort level." },
-      { "num": "03", "title": "Post-Session Recovery Plan", "desc": "We measure mobility improvements post-therapy and provide personalized home stretching recommendations." }
-    ],
-    "relatedLabel": "Explore More",
-    "relatedTitle": "Related Therapies",
-    "relatedViewAll": "View All",
-    "relatedCardCta": "Explore Therapy"
-  },
+
   "globalMetadata": {
     "title": "Performance Recovery Specialist | 410 Muscle Therapy",
     "description": "Elite performance recovery bodywork, mobility restoration, and injury prevention for athletes & active adults. Est. 2020. #bodywork #performancerecovery",
     "bookingUrl": "https://www.styleseat.com/m/v/410muscletherapy"
   },
-  "galleryPage": {
-    "metadata": {
-      "title": "Gallery | Muscle Therapy & Sports Recovery",
-      "description": "Take a look inside our clinic and see the professional environment where we restore mobility, alleviate pain, and optimize performance."
-    },
-    "label": "Our Environment",
-    "titleLine1": "The",
-    "titleLine2": "Gallery.",
-    "description": "Step inside our world. Experience the dedicated environment where we alleviate chronic pain, restore dynamic mobility, and optimize athletic output.",
-    "ctaBook": "BOOK YOUR SESSION"
-  },
-  "contactPage": {
-    "label": "Book A Session",
-    "titleLine1": "Get in",
-    "titleLine2": "Touch.",
-    "description": "Ready to optimize your performance and reduce pain? Fill out the form below or reach out directly to schedule your clinical manual therapy session.",
-    "infoHeading": "Contact Information",
-    "infoAddressLabel": "Address",
-    "infoPhoneLabel": "Phone",
-    "infoEmailLabel": "Email",
-    "infoHoursLabel": "Clinic Hours",
-    "mapLabel": "Map Location"
-  },
-  "blogsPage": {
-    "label": "Recovery Insights",
-    "titleLine1": "Our",
-    "titleLine2": "Journal.",
-    "description": "Explore our latest articles, insights, and clinical tips on deep tissue therapy, mobility, and athletic recovery.",
-    "ctaReadMore": "Read More"
-  },
-  "blogDetailPage": {
-    "backLink": "Back to Blogs"
-  },
+
   "navbar": {
     "logoText1": "MUSCLE",
     "logoText2": "THERAPY",
@@ -147,6 +39,7 @@
       { "label": "Contact", "href": "/contact" }
     ]
   },
+
   "hero": {
     "label": "Performance Recovery Specialist • Est. 2020",
     "title1": "Recover Faster.",
@@ -156,6 +49,7 @@
     "ctaServices": "EXPLORE SERVICES",
     "socialProofText": "Trusted by 500+ athletes & active adults"
   },
+
   "stats": {
     "label": "Our Achievements",
     "titleLine1": "Proven Results.",
@@ -170,6 +64,7 @@
       { "value": "Trusted By", "label": "Athletes & Professionals", "desc": "Trusted by competitive teams, trainers, and athletes." }
     ]
   },
+
   "services": {
     "label": "Our Services",
     "stickyLabel": "Capabilities",
@@ -292,16 +187,59 @@
       }
     ]
   },
+
+  "whyChooseUs": {
+    "label": "WHY CHOOSE 410 MUSCLE THERAPY",
+    "titleLine1": "Engineered For Peak",
+    "titleLine2": "Human",
+    "titleItalicWord": "Performance.",
+    "description": "Since 2020, we've evolved beyond traditional massage to deliver targeted performance bodywork, rapid athletic recovery, mobility optimization, and root-cause injury prevention.",
+    "imageBadgeLabel": "Performance Recovery",
+    "established": "Est. 2020",
+    "provenLabel": "Proven Standard",
+    "provenStat": "98% Success",
+    "provenDescription": "Every protocol is built on diagnostic movement assessment, targeted bodywork, and athletic recovery science.",
+    "provenCheck1": "Movement & Posture Analysis",
+    "provenCheck2": "Targeted Myofascial Release",
+    "cta": "Experience Performance Recovery",
+    "items": [
+      {
+        "id": "01",
+        "title": "Performance Precision",
+        "description": "Targeted bodywork mapping specific trigger points and fascial restrictions to eliminate pain and boost output.",
+        "footerLabel": "Specialized Technique"
+      },
+      {
+        "id": "02",
+        "title": "Recovery Specialist",
+        "description": "Years of hands-on experience helping competitive athletes, runners, lifters, and active adults stay at their peak.",
+        "footerLabel": "Expert Practice"
+      },
+      {
+        "id": "03",
+        "title": "Biomechanical Results",
+        "description": "We focus on structural alignment, mobility restoration, and joint decompression rather than symptom masking.",
+        "footerLabel": "Proven Outcomes"
+      },
+      {
+        "id": "04",
+        "title": "Accelerated Recovery",
+        "description": "Specialized myofascial bodywork designed to flush metabolic waste, relieve soreness, and restore full range of motion.",
+        "footerLabel": "Rapid Relief"
+      }
+    ]
+  },
+
   "therapist": {
     "label": "The Specialist",
-    "title": "Meet James Mitchell",
+    "title": "Meet Antoine Lyles",
     "tagline": "Performance Recovery Specialist",
-    "desc1": "Since founding 410 Muscle Therapy in 2020, James Mitchell has evolved the practice beyond standard therapy into a premier sports recovery destination. Specializing in performance bodywork, structural mobility restoration, targeted myofascial release, and injury prevention, he helps athletes and active adults eliminate pain, recover faster, and perform at their highest potential. #bodywork #performancerecovery",
+    "desc1": "Since founding 410 Muscle Therapy in 2020, Antoine Lyles has evolved the practice beyond standard therapy into a premier sports recovery destination. Specializing in performance bodywork, structural mobility restoration, targeted myofascial release, and injury prevention, he helps athletes and active adults eliminate pain, recover faster, and perform at their highest potential. #bodywork #performancerecovery",
     "certBadgeLabel": "Certified Specialist",
     "certBadgeSub": "Advanced Performance Recovery & Movement Science",
     "photoBadge": "PERFORMANCE RECOVERY SPECIALIST",
-    "ctaMore": "LEARN MORE ABOUT JAMES",
-    "signatureName": "James Mitchell",
+    "ctaMore": "LEARN MORE ABOUT ANTOINE",
+    "signatureName": "Antoine Lyles",
     "signatureTitle": "Performance Recovery Specialist",
     "features": [
       { "title": "Est. 2020", "desc": "Performance practice" },
@@ -310,6 +248,7 @@
       { "title": "5,000+", "desc": "Sessions completed" }
     ]
   },
+
   "process": {
     "label": "THE CLINICAL PROCESS",
     "title": "Your Recovery Journey.",
@@ -370,6 +309,7 @@
       }
     ]
   },
+
   "testimonials": {
     "label": "Clients Love Us",
     "title1": "Real People.",
@@ -378,7 +318,7 @@
     "dash": "—",
     "items": [
       {
-        "quote": "James helped me recover from a shoulder injury faster than I expected. I feel stronger, move better, and have zero pain now!",
+        "quote": "Antoine helped me recover from a shoulder injury faster than I expected. I feel stronger, move better, and have zero pain now!",
         "name": "Competition Athlete",
         "stars": 5
       },
@@ -388,7 +328,7 @@
         "stars": 5
       },
       {
-        "quote": "Professional, knowledgeable, and highly effective. I highly recommend James for anyone looking to optimize recovery.",
+        "quote": "Professional, knowledgeable, and highly effective. I highly recommend Antoine for anyone looking to optimize recovery.",
         "name": "Marcus Vance, Fitness Coach",
         "stars": 5
       },
@@ -403,7 +343,7 @@
         "stars": 5
       },
       {
-        "quote": "James understands sports mechanics deeply. The targeted pressure points released tension I didn’t even know was there.",
+        "quote": "Antoine understands sports mechanics deeply. The targeted pressure points released tension I didn’t even know was there.",
         "name": "Robert Miller, Cyclist",
         "stars": 5
       }
@@ -417,12 +357,14 @@
       { "id": 6, "label": "Deep recovery that fits an active lifestyle.", "image": "/images/testimonial-6.webp" }
     ]
   },
+
   "ctaBanner": {
     "tagline": "Take the First Step",
     "title": "Ready to Feel Your Best?",
     "description": "Book your appointment today and start your journey to a pain-free, stronger you.",
     "button": "BOOK APPOINTMENT"
   },
+
   "contactFaq": {
     "label": "Support & Booking",
     "title": "Booking & Common Questions.",
@@ -431,7 +373,9 @@
     "faqTitle": "Recovery Information.",
     "formLabel": "Book A Session",
     "formTitle": "Request Your Consultation.",
-    "formClinicPortal": "Clinical Recovery Portal",
+    "formClinicPortal": "INSTANT ONLINE BOOKING",
+    "formClinicPortalSub": "Book Directly via StyleSeat",
+    "formStyleSeatBtn": "BOOK ON STYLESEAT",
     "formNameLabel": "Full Name",
     "formNamePlaceholder": "John Doe",
     "formEmailLabel": "Email Address",
@@ -479,6 +423,144 @@
       }
     ]
   },
+
+  "servicesPageHero": {
+    "metadata": {
+      "title": "Services | Muscle Therapy & Sports Recovery",
+      "description": "Explore our comprehensive manual therapy and sports recovery services designed to optimize your performance and health."
+    },
+    "label": "OUR SERVICES",
+    "title1": "Therapies",
+    "title2": "Designed Around",
+    "title3": "You.",
+    "description": "Evidence-based treatments. Personalized care. Real results. Move better, feel better, perform better.",
+    "btn1": "BOOK APPOINTMENT",
+    "btn2": "SEE HOW WE HELP",
+    "image": "/images/service-massage.webp",
+    "sealText": "PRECISION CARE • REAL RESULTS • FEEL BETTER • MOVE BETTER •",
+    "features": [
+      { "icon": "shield", "title": "Personalized", "subtitle": "Treatments" },
+      { "icon": "users", "title": "Advanced", "subtitle": "Techniques" },
+      { "icon": "award", "title": "Experienced", "subtitle": "Therapists" },
+      { "icon": "check", "title": "Proven", "subtitle": "Results" },
+      { "icon": "star", "title": "Athlete & Active", "subtitle": "Focused" }
+    ]
+  },
+
+  "serviceDetailPage": {
+    "backLink": "Back to All Services",
+    "heroSectionLabel": "CLINICAL RECOVERY PROTOCOL",
+    "profileBadgePrefix": "PROFILE",
+    "specialtyBadge": "Clinical Specialty",
+    "tailoredLabel": "100% Tailored Therapy",
+    "tailoredSub": "Individualized Protocols",
+    "specDurationLabel": "Duration",
+    "specDurationValue": "60 / 90 Mins",
+    "specIntensityLabel": "Intensity",
+    "specIntensityValue": "Targeted Deep",
+    "specFocusLabel": "Focus",
+    "specFocusValue": "Trigger Mapping",
+    "specResultsLabel": "Results",
+    "specResultsValue": "Immediate Relief",
+    "bookingDesc": "Schedule your consultation with Antoine Lyles and start feeling pain-free.",
+    "bookingCta": "Book Appointment Now",
+    "heroDescriptionSuffix": "Targeted manual therapy engineered to eliminate chronic pain, unlock joint mobility, and accelerate athletic recovery.",
+    "heroCtaSecondary": "SEE HOW IT HELPS",
+    "statsItem1Val": "98%",
+    "statsItem1Label": "Pain Relief Success",
+    "statsItem2Val": "5,000+",
+    "statsItem2Label": "Sessions Completed",
+    "statsItem3Val": "Est. 2020",
+    "statsItem3Label": "Clinical Standard",
+    "statsItem4Val": "100%",
+    "statsItem4Label": "Targeted Protocols",
+    "overviewSectionLabel": "WHY THIS THERAPY WORKS",
+    "overviewTitle1": "Targeted Bodywork.",
+    "overviewTitle2": "Engineered For Recovery.",
+    "overviewWatermark": "SPECIALIST PRACTICE • EST. 2020",
+    "overviewSuccessRate": "98% SUCCESS",
+    "overviewIntroSuffix": "We map postural compensations and active muscle trigger points to eliminate root-cause pain, flush soreness, and decompress joint structures.",
+    "overviewCtaText": "BOOK YOUR SESSION NOW",
+    "overviewHipaaText": "HIPAA Compliant & Certified",
+    "candidateSectionLabel": "TARGET CANDIDATES",
+    "candidateTitle1": "Who Benefits Most.",
+    "candidateTitle2": "Clinical Indications.",
+    "candidateSuitability": "SUITABILITY: OPTIMAL",
+    "protocolSectionLabel": "02 / SESSION PROTOCOL",
+    "protocolTitle1": "3-Phase Clinical",
+    "protocolTitle2": "Treatment Sequence.",
+    "protocolPhasePrefix": "PHASE 0",
+    "protocolDurations": ["15 MIN", "45 MIN", "15 MIN"],
+    "protocolBannerBadge": "CLINICAL EXCELLENCE",
+    "protocolBannerTitlePrefix": "Ready to experience",
+    "protocolBannerTitleSuffix": "?",
+    "protocolBannerCta": "BOOK YOUR SESSION NOW",
+    "benefitsTitle": "Key Clinical Benefits",
+    "benefitCardDesc": "Targeted mechanical input designed to accelerate tissue recovery and restore movement.",
+    "whoTitle": "Who Is This Therapy For?",
+    "whoProfiles": [
+      { "label": "01. Athletes", "desc": "Competitive athletes needing accelerated recovery between high-intensity training sessions." },
+      { "label": "02. Desk Professionals", "desc": "Individuals suffering from postural neck, shoulder, or lower back tightness from prolonged sitting." },
+      { "label": "03. Chronic Pain Sufferers", "desc": "Anyone dealing with persistent muscle knots, joint stiffness, or old injury scar tissue buildup." },
+      { "label": "04. Post-Rehab Patients", "desc": "People looking to safely regain full range of motion following physical therapy or injury rehabilitation." }
+    ],
+    "sessionTitle": "What To Expect During Your Session",
+    "sessionSteps": [
+      { "num": "01", "title": "Postural & Palpation Assessment", "desc": "We begin with an active range-of-motion test and palpation to pinpoint tight muscle groups and trigger points." },
+      { "num": "02", "title": "Targeted Clinical Bodywork", "desc": "Hands-on application of deep tissue pressure, myofascial release, and cross-fiber friction adjusted to your comfort level." },
+      { "num": "03", "title": "Post-Session Recovery Plan", "desc": "We measure mobility improvements post-therapy and provide personalized home stretching recommendations." }
+    ],
+    "relatedLabel": "Explore More",
+    "relatedTitle": "Related Therapies",
+    "relatedViewAll": "View All",
+    "relatedCardCta": "Explore Therapy"
+  },
+
+  "galleryPage": {
+    "metadata": {
+      "title": "Gallery | Muscle Therapy & Sports Recovery",
+      "description": "Take a look inside our clinic and see the professional environment where we restore mobility, alleviate pain, and optimize performance."
+    },
+    "label": "Our Environment",
+    "titleLine1": "The",
+    "titleLine2": "Gallery.",
+    "description": "Step inside our world. Experience the dedicated environment where we alleviate chronic pain, restore dynamic mobility, and optimize athletic output.",
+    "ctaBook": "BOOK YOUR SESSION"
+  },
+
+  "contactPage": {
+    "metadata": {
+      "title": "Contact | 410 Muscle Therapy",
+      "description": "Contact 410 Muscle Therapy for consultation and booking."
+    },
+    "label": "Book A Session",
+    "titleLine1": "Get in",
+    "titleLine2": "Touch.",
+    "description": "Ready to optimize your performance and reduce pain? Fill out the form below or reach out directly to schedule your clinical manual therapy session.",
+    "infoHeading": "Contact Information",
+    "infoAddressLabel": "Address",
+    "infoPhoneLabel": "Phone",
+    "infoEmailLabel": "Email",
+    "infoHoursLabel": "Clinic Hours",
+    "mapLabel": "Map Location"
+  },
+
+  "blogsPage": {
+    "metadata": {
+      "title": "Blogs | Muscle Therapy Insights",
+      "description": "Read our latest recovery insights and clinical articles."
+    },
+    "label": "Recovery Insights",
+    "titleLine1": "Our",
+    "titleLine2": "Journal.",
+    "description": "Explore our latest articles, insights, and clinical tips on deep tissue therapy, mobility, and athletic recovery.",
+    "ctaReadMore": "Read More"
+  },
+
+  "blogDetailPage": {
+    "backLink": "Back to Blogs"
+  },
+
   "blog": {
     "label": "Recovery Insights",
     "title": "Tips, Advice & Insights",
@@ -563,6 +645,7 @@
       }
     ]
   },
+
   "footer": {
     "insuranceLabel": "We Accept Most Insurance Plans",
     "brandDescription": "Elite performance recovery bodywork, mobility optimization, and injury prevention for athletes and active adults since 2020. #bodywork #performancerecovery",

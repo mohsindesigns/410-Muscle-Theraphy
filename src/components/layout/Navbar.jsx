@@ -73,7 +73,7 @@ export default function Navbar() {
           {/* ── Desktop CTA / Mobile Trigger ───────────── */}
           <div className="flex items-center gap-3">
             <a
-              href="https://www.styleseat.com/m/v/410muscletherapy"
+              href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-flex btn-gold"
@@ -122,7 +122,7 @@ export default function Navbar() {
               })}
             </ul>
             <a
-              href="https://www.styleseat.com/m/v/410muscletherapy"
+              href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}

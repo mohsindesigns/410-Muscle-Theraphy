@@ -67,7 +67,7 @@ export default function TherapistSection() {
             <div className="img-therapist h-[400px] md:h-[600px] rounded-sm overflow-hidden shadow-2xl relative z-10 border border-border-light group">
               <Image
                 src="/images/theraphist.jpeg"
-                alt="James Mitchell — Performance Recovery Specialist"
+                alt="Antoine Lyles — Performance Recovery Specialist"
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"
                 className="object-cover object-top transition-transform duration-750 group-hover:scale-105"
@@ -141,7 +141,7 @@ export default function TherapistSection() {
               className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-border-light mt-auto"
             >
               <a
-                href="https://www.styleseat.com/m/v/410muscletherapy"
+                href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-gold w-full sm:w-auto justify-center text-center"

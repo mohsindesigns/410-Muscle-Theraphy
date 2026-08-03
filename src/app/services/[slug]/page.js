@@ -23,6 +23,7 @@ export default function ServiceDetailPage() {
   const params = useParams();
   const router = useRouter();
   const [service, setService] = useState(null);
+  const [activeCandidateTab, setActiveCandidateTab] = useState(0);
 
   const pg = data.serviceDetailPage;
 
@@ -92,7 +93,7 @@ export default function ServiceDetailPage() {
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-6 h-[1px] bg-gold flex-shrink-0" />
                 <p className="section-label text-gold">
-                  CLINICAL RECOVERY PROTOCOL
+                  {pg.heroSectionLabel || "CLINICAL RECOVERY PROTOCOL"}
                 </p>
               </div>
 
@@ -104,7 +105,7 @@ export default function ServiceDetailPage() {
 
               {/* Description */}
               <p className="text-white/75 md:text-white/65 text-[15px] md:text-[17px] leading-[1.8] max-w-[540px] mb-8 font-light">
-                {service.description} Targeted manual therapy engineered to eliminate chronic pain, unlock joint mobility, and accelerate athletic recovery.
+                {service.description} {pg.heroDescriptionSuffix}
               </p>
 
               {/* Quick Specs Pill Strip */}
@@ -131,7 +132,7 @@ export default function ServiceDetailPage() {
                   {pg.bookingCta} <ArrowRight size={14} className="ml-1" />
                 </Link>
                 <a href="#overview" className="btn-outline-white w-full sm:w-auto justify-center text-center px-8 py-4">
-                  SEE HOW IT HELPS <ArrowRight size={14} className="ml-1" />
+                  {pg.heroCtaSecondary} <ArrowRight size={14} className="ml-1" />
                 </a>
               </div>
             </div>
@@ -141,24 +142,24 @@ export default function ServiceDetailPage() {
         {/* ════════════════════════════════════════════════════════
            1.5 HIGHLIGHT STATS STRIP (Dark Luxury Accent)
            ════════════════════════════════════════════════════════ */}
-        <div className="bg-dark-2 border-b border-border-dark py-6 relative z-10">
+        <div className="bg-dark-2 border-b border-border-dark py-8 relative z-10">
           <div className="site-container">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div className="border-r border-white/10 last:border-r-0 pr-4">
-                <span className="text-gold font-serif text-[24px] md:text-[30px] font-bold block leading-none mb-1">98%</span>
-                <span className="text-white/50 text-[10.5px] font-mono uppercase tracking-widest">Pain Relief Success</span>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+              <div className="p-5 rounded-lg bg-white/[0.03] border border-white/10 hover:border-gold/40 shadow-xl transition-all duration-300 group text-center">
+                <span className="text-gold font-serif text-[26px] md:text-[32px] font-bold block leading-none mb-1 group-hover:scale-105 transition-transform">{pg.statsItem1Val}</span>
+                <span className="text-white/60 text-[10.5px] font-mono uppercase tracking-widest">{pg.statsItem1Label}</span>
               </div>
-              <div className="border-r border-white/10 last:border-r-0 pr-4">
-                <span className="text-gold font-serif text-[24px] md:text-[30px] font-bold block leading-none mb-1">5,000+</span>
-                <span className="text-white/50 text-[10.5px] font-mono uppercase tracking-widest">Sessions Completed</span>
+              <div className="p-5 rounded-lg bg-white/[0.03] border border-white/10 hover:border-gold/40 shadow-xl transition-all duration-300 group text-center">
+                <span className="text-gold font-serif text-[26px] md:text-[32px] font-bold block leading-none mb-1 group-hover:scale-105 transition-transform">{pg.statsItem2Val}</span>
+                <span className="text-white/60 text-[10.5px] font-mono uppercase tracking-widest">{pg.statsItem2Label}</span>
               </div>
-              <div className="border-r border-white/10 last:border-r-0 pr-4">
-                <span className="text-gold font-serif text-[24px] md:text-[30px] font-bold block leading-none mb-1">Est. 2020</span>
-                <span className="text-white/50 text-[10.5px] font-mono uppercase tracking-widest">Clinical Standard</span>
+              <div className="p-5 rounded-lg bg-white/[0.03] border border-white/10 hover:border-gold/40 shadow-xl transition-all duration-300 group text-center">
+                <span className="text-gold font-serif text-[26px] md:text-[32px] font-bold block leading-none mb-1 group-hover:scale-105 transition-transform">{pg.statsItem3Val}</span>
+                <span className="text-white/60 text-[10.5px] font-mono uppercase tracking-widest">{pg.statsItem3Label}</span>
               </div>
-              <div>
-                <span className="text-gold font-serif text-[24px] md:text-[30px] font-bold block leading-none mb-1">100%</span>
-                <span className="text-white/50 text-[10.5px] font-mono uppercase tracking-widest">Targeted Protocols</span>
+              <div className="p-5 rounded-lg bg-white/[0.03] border border-white/10 hover:border-gold/40 shadow-xl transition-all duration-300 group text-center">
+                <span className="text-gold font-serif text-[26px] md:text-[32px] font-bold block leading-none mb-1 group-hover:scale-105 transition-transform">{pg.statsItem4Val}</span>
+                <span className="text-white/60 text-[10.5px] font-mono uppercase tracking-widest">{pg.statsItem4Label}</span>
               </div>
             </div>
           </div>
@@ -172,20 +173,20 @@ export default function ServiceDetailPage() {
           <div className="absolute top-1/3 left-0 w-[450px] h-[450px] bg-gold-dark/[0.03] rounded-full blur-[140px] pointer-events-none" />
 
           <div className="site-container relative z-10">
-            
+
             {/* Magazine Header Statement */}
             <div className="max-w-3xl mb-16 md:mb-20">
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-8 h-[1px] bg-gold-dark" />
                 <p className="section-label text-gold-dark">
-                  WHY THIS THERAPY WORKS
+                  {pg.overviewSectionLabel}
                 </p>
               </div>
 
               <h2 className="display-heading text-[36px] min-[400px]:text-[48px] md:text-[60px] text-dark leading-[1.06] tracking-tight">
-                Targeted Bodywork.{' '}
+                {pg.overviewTitle1}{' '}
                 <span className="text-gold-dark italic font-light block sm:inline">
-                  Engineered For Recovery.
+                  {pg.overviewTitle2}
                 </span>
               </h2>
             </div>
@@ -195,8 +196,8 @@ export default function ServiceDetailPage() {
 
               {/* Left Column: Offset Photography Frame with Floating Badge */}
               <div className="lg:col-span-5 flex flex-col">
-                <div className="relative w-full h-full min-h-[460px] rounded-sm overflow-hidden shadow-2xl border border-border-light p-2 bg-warm-white/60 group">
-                  <div className="relative w-full h-full min-h-[440px] rounded-sm overflow-hidden">
+                <div className="relative w-full h-full min-h-[460px] rounded-lg overflow-hidden shadow-2xl border border-border-light p-2.5 bg-warm-white/80 group">
+                  <div className="relative w-full h-full min-h-[440px] rounded-md overflow-hidden">
                     <Image
                       src={service.image}
                       alt={service.name}
@@ -209,12 +210,12 @@ export default function ServiceDetailPage() {
                     {/* Top Watermark Tag */}
                     <div className="absolute top-5 left-5 bg-dark/85 backdrop-blur-md px-3.5 py-1.5 rounded-sm border border-white/20">
                       <span className="text-gold font-mono text-[10px] font-bold tracking-[0.2em] uppercase">
-                        SPECIALIST PRACTICE • EST. 2020
+                        {pg.overviewWatermark}
                       </span>
                     </div>
 
                     {/* Floating Clinical Badge */}
-                    <div className="absolute bottom-6 left-6 right-6 p-5 rounded-sm bg-white/95 backdrop-blur-md border border-border-light shadow-2xl flex items-center justify-between text-dark">
+                    <div className="absolute bottom-6 left-6 right-6 p-5 rounded-md bg-white/95 backdrop-blur-md border border-border-light shadow-2xl flex items-center justify-between text-dark">
                       <div className="flex items-center gap-3.5">
                         <div className="w-10 h-10 rounded-sm bg-gold-dark/15 border border-gold-dark/30 flex items-center justify-center text-gold-dark flex-shrink-0">
                           <ShieldCheck size={20} />
@@ -224,31 +225,33 @@ export default function ServiceDetailPage() {
                           <p className="text-dark/50 text-[10.5px] font-mono uppercase tracking-wider">{pg.tailoredSub}</p>
                         </div>
                       </div>
-                      <span className="text-gold-dark font-mono text-[11px] font-bold">98% SUCCESS</span>
+                      <span className="text-gold-dark font-mono text-[11px] font-bold">{pg.overviewSuccessRate}</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Right Column: Editorial Numbered Feature Rows */}
+              {/* Right Column: Editorial Feature Cards */}
               <div className="lg:col-span-7 flex flex-col justify-between">
                 <div>
-                  <p className="text-dark/75 text-[16px] md:text-[17.5px] leading-[1.85] font-light mb-10">
-                    {service.description} We map postural compensations and active muscle trigger points to eliminate root-cause pain, flush soreness, and decompress joint structures.
+                  <p className="text-dark/75 text-[16px] md:text-[17.5px] leading-[1.85] font-light mb-8">
+                    {service.description} {pg.overviewIntroSuffix}
                   </p>
 
-                  {/* 4 Numbered Editorial Rows */}
-                  <div className="space-y-6 mb-10">
+                  {/* 4 Feature Row Cards */}
+                  <div className="space-y-4 mb-10">
                     {service.benefits.map((benefit, idx) => (
                       <div
                         key={idx}
-                        className="pb-6 border-b border-border-light/80 last:border-b-0 flex items-start gap-5 group"
+                        className="p-5 rounded-lg bg-[#FAF9F6] border border-border-light/80 hover:border-gold-dark/60 hover:bg-white transition-all duration-300 shadow-sm hover:shadow-xl flex items-start gap-4 group relative overflow-hidden"
                       >
-                        <span className="text-gold-dark font-serif font-bold text-[28px] leading-none select-none flex-shrink-0 opacity-90 group-hover:scale-110 transition-transform">
+                        <div className="h-[2px] w-full bg-gradient-to-r from-gold-dark/60 via-gold-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity absolute top-0 left-0" />
+                        
+                        <div className="w-10 h-10 rounded-md bg-gold-dark/15 border border-gold-dark/30 flex items-center justify-center text-gold-dark font-serif font-bold text-[18px] flex-shrink-0 group-hover:bg-gold-dark group-hover:text-white transition-colors">
                           0{idx + 1}
-                        </span>
+                        </div>
                         <div>
-                          <h3 className="text-dark font-bold text-[17px] md:text-[18px] mb-1.5 leading-snug group-hover:text-gold-dark transition-colors">
+                          <h3 className="text-dark font-bold text-[17px] mb-1 group-hover:text-gold-dark transition-colors">
                             {benefit}
                           </h3>
                           <p className="text-dark/65 text-[13.5px] font-light leading-relaxed">
@@ -263,17 +266,17 @@ export default function ServiceDetailPage() {
                 {/* Bottom Action Footer */}
                 <div className="pt-6 border-t border-border-light flex flex-wrap items-center justify-between gap-4">
                   <a
-                    href="https://www.styleseat.com/m/v/410muscletherapy"
+                    href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-gold px-9 py-4 text-[13px] font-bold tracking-wider"
+                    className="btn-gold px-9 py-4 text-[13px] font-bold tracking-wider rounded-md shadow-lg"
                   >
-                    BOOK YOUR SESSION NOW <ArrowRight size={14} className="ml-1" />
+                    {pg.overviewCtaText} <ArrowRight size={14} className="ml-1" />
                   </a>
 
                   <div className="flex items-center gap-2 text-dark/50 text-[12px] font-mono">
                     <CheckCircle2 size={15} className="text-gold-dark" />
-                    <span>HIPAA Compliant & Certified</span>
+                    <span>{pg.overviewHipaaText}</span>
                   </div>
                 </div>
               </div>
@@ -284,130 +287,137 @@ export default function ServiceDetailPage() {
         </section>
 
         {/* ════════════════════════════════════════════════════════
-           3. TARGET CANDIDATES (High-Impact 2x2 Feature Card Grid)
+           3. TARGET CANDIDATES (Clean Light-Mode Luxury Editorial Grid)
            ════════════════════════════════════════════════════════ */}
-        <section className="py-20 md:py-28 bg-warm-white border-b border-border-light relative">
+        <section className="py-20 md:py-28 bg-[#FAF8F5] border-b border-border-light relative">
           <div className="site-container">
             
-            {/* Centered Section Header */}
+            {/* Centered Editorial Header */}
             <div className="max-w-3xl mx-auto text-center mb-16">
               <div className="inline-flex items-center gap-3 mb-3.5">
                 <span className="w-6 h-[1px] bg-gold-dark" />
                 <p className="section-label text-gold-dark">
-                  TARGET CANDIDATES
+                  {pg.candidateSectionLabel}
                 </p>
                 <span className="w-6 h-[1px] bg-gold-dark" />
               </div>
               <h2 className="display-heading text-[34px] min-[400px]:text-[44px] md:text-[52px] text-dark leading-[1.08] tracking-tight">
-                Who Benefits Most From <br />
-                <span className="text-gold-dark italic font-light">This Clinical Protocol.</span>
-              </h2>
-            </div>
-
-            {/* 2x2 High-Impact Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {pg.whoProfiles.map((profile, idx) => (
-                <div
-                  key={idx}
-                  className="p-8 rounded-sm bg-white border border-border-light hover:border-gold-dark/40 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between group"
-                >
-                  <div>
-                    <div className="flex items-center justify-between mb-6">
-                      <div className="w-11 h-11 rounded-sm bg-gold-dark/15 border border-gold-dark/30 flex items-center justify-center text-gold-dark font-mono font-bold text-[14px] group-hover:bg-gold-dark group-hover:text-white transition-colors">
-                        0{idx + 1}
-                      </div>
-                      <span className="text-gold-dark/50 font-mono text-[10.5px] font-bold tracking-widest uppercase">
-                        PROFILE 0{idx + 1}
-                      </span>
-                    </div>
-
-                    <h3 className="text-dark font-bold text-[18px] mb-2.5 leading-snug group-hover:text-gold-dark transition-colors">
-                      {profile.label}
-                    </h3>
-
-                    <p className="text-dark/65 text-[14px] font-light leading-relaxed">
-                      {profile.desc}
-                    </p>
-                  </div>
-
-                  <div className="mt-8 pt-4 border-t border-border-light/80 flex items-center justify-between text-gold-dark text-[11.5px] font-bold tracking-wider uppercase">
-                    <span>SUITABILITY: HIGH</span>
-                    <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </div>
-              ))}
-            </div>
-
-          </div>
-        </section>
-
-        {/* ════════════════════════════════════════════════════════
-           4. SESSION SEQUENCE PROTOCOL (Ultra-Modern Horizontal Stepper)
-           ════════════════════════════════════════════════════════ */}
-        <section className="py-24 md:py-32 bg-white border-b border-border-light relative overflow-hidden">
-          <div className="site-container relative z-10">
-            <div className="max-w-3xl mb-16 md:mb-20">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="w-8 h-[1px] bg-gold-dark" />
-                <p className="section-label text-gold-dark">
-                  02 / SESSION PROTOCOL
-                </p>
-              </div>
-              <h2 className="display-heading text-[36px] min-[400px]:text-[48px] md:text-[58px] text-dark leading-[1.05] tracking-tight">
-                3-Phase Treatment.{' '}
+                {pg.candidateTitle1}{' '}
                 <span className="text-gold-dark italic font-light block sm:inline">
-                  Step-By-Step Recovery.
+                  {pg.candidateTitle2}
                 </span>
               </h2>
             </div>
 
-            {/* 3 Step Horizontal Stepper */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {pg.sessionSteps.map((step, idx) => (
+            {/* 2x2 Clean Editorial Feature Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {pg.whoProfiles.map((profile, idx) => (
                 <div
-                  key={step.num}
-                  className="pt-6 border-t-2 border-gold-dark/40 flex flex-col justify-between group"
+                  key={idx}
+                  className="p-8 rounded-xl bg-white border border-border-light hover:border-gold-dark/60 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] flex flex-col justify-between group relative overflow-hidden"
                 >
+                  <span className="text-dark/[0.04] font-serif font-bold text-[72px] absolute -top-4 right-4 leading-none select-none pointer-events-none">
+                    0{idx + 1}
+                  </span>
+
                   <div>
-                    <div className="flex items-center justify-between mb-5">
-                      <span className="text-gold-dark font-serif font-bold text-[26px]">
+                    <div className="flex items-center justify-between mb-6 border-b border-border-light/70 pb-4 relative z-10">
+                      <span className="text-gold-dark font-serif font-bold text-[28px] leading-none">
                         0{idx + 1}
                       </span>
-                      <span className="px-3 py-1 rounded-sm bg-gold-dark/10 text-gold-dark text-[10.5px] font-mono font-bold tracking-widest uppercase">
-                        {idx === 0 ? '15 MIN' : idx === 1 ? '45 MIN' : '15 MIN'}
+                      <span className="px-3 py-1 rounded-full bg-gold-dark/10 text-gold-dark text-[10.5px] font-mono font-bold tracking-widest uppercase">
+                        {pg.profileBadgePrefix || "PROFILE"} 0{idx + 1}
                       </span>
                     </div>
 
-                    <h3 className="text-dark font-bold text-[18px] mb-3 leading-snug group-hover:text-gold-dark transition-colors">
-                      {step.title}
+                    <h3 className="text-dark font-bold text-[19px] mb-2.5 leading-snug group-hover:text-gold-dark transition-colors relative z-10">
+                      {profile.label}
                     </h3>
 
-                    <p className="text-dark/65 text-[14px] font-light leading-relaxed">
-                      {step.desc}
+                    <p className="text-dark/65 text-[14px] font-light leading-relaxed relative z-10">
+                      {profile.desc}
                     </p>
                   </div>
 
-                  <div className="mt-8 flex items-center justify-between pt-4 border-t border-border-light/80 text-gold-dark text-[12px] font-bold tracking-wider uppercase">
-                    <span>PHASE 0{idx + 1}</span>
+                  <div className="mt-8 pt-4 border-t border-border-light/80 flex items-center justify-between text-gold-dark text-[11.5px] font-mono font-bold tracking-wider uppercase relative z-10">
+                    <span>{pg.candidateSuitability}</span>
                     <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* Bottom Action Card */}
-            <div className="mt-16 p-8 md:p-10 rounded-sm bg-dark text-white border border-border-dark flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
+          </div>
+        </section>
+
+        {/* ════════════════════════════════════════════════════════
+           4. SESSION SEQUENCE PROTOCOL (Dark Luxury Connected Stepper Stage)
+           ════════════════════════════════════════════════════════ */}
+        <section className="py-24 md:py-32 bg-dark text-white relative border-b border-white/10 overflow-hidden">
+          {/* Ambient Gold Glow Orbs */}
+          <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[500px] h-[500px] bg-gold/[0.04] rounded-full blur-[160px] pointer-events-none" />
+
+          <div className="site-container relative z-10">
+            <div className="max-w-3xl mb-16 md:mb-20">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-8 h-[1px] bg-gold" />
+                <p className="text-gold font-mono text-[11px] font-bold tracking-[0.25em] uppercase">
+                  {pg.protocolSectionLabel}
+                </p>
+              </div>
+              <h2 className="display-heading text-[36px] min-[400px]:text-[46px] md:text-[54px] text-white leading-[1.06] tracking-tight">
+                {pg.protocolTitle1} <br />
+                <span className="text-gold italic font-light">{pg.protocolTitle2}</span>
+              </h2>
+            </div>
+
+            {/* 3 Step Connected Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {pg.sessionSteps.map((step, idx) => (
+                <div
+                  key={step.num}
+                  className="p-8 md:p-9 rounded-xl bg-gradient-to-b from-white/[0.04] to-white/[0.01] border border-white/12 hover:border-gold/60 transition-all duration-300 shadow-2xl flex flex-col justify-between group relative overflow-hidden backdrop-blur-md"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-6">
+                      <div className="w-12 h-12 rounded-lg bg-gold/15 border border-gold/30 flex items-center justify-center text-gold font-mono font-bold text-[15px] group-hover:bg-gold group-hover:text-dark transition-all">
+                        {step.num}
+                      </div>
+                      <span className="px-3 py-1 rounded-full bg-gold/10 border border-gold/25 text-gold text-[10px] font-mono font-bold tracking-widest uppercase">
+                        {pg.protocolDurations[idx] || '15 MIN'}
+                      </span>
+                    </div>
+
+                    <h3 className="text-white font-bold text-[19px] mb-3 leading-snug group-hover:text-gold transition-colors">
+                      {step.title}
+                    </h3>
+
+                    <p className="text-white/65 text-[14px] font-light leading-relaxed">
+                      {step.desc}
+                    </p>
+                  </div>
+
+                  <div className="mt-8 pt-4 border-t border-white/10 flex items-center justify-between text-gold text-[12px] font-bold tracking-wider uppercase">
+                    <span>{pg.protocolPhasePrefix}{idx + 1}</span>
+                    <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Bottom Action Banner */}
+            <div className="mt-16 p-8 md:p-10 rounded-xl bg-gradient-to-r from-gold/20 via-dark to-dark border border-gold/35 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
               <div>
-                <span className="text-gold font-mono text-[10.5px] font-bold tracking-widest uppercase block mb-1">CLINICAL EXCELLENCE</span>
-                <h3 className="display-heading text-[22px] md:text-[28px] text-white">Ready to experience {service.name}?</h3>
+                <span className="text-gold font-mono text-[10.5px] font-bold tracking-widest uppercase block mb-1">{pg.protocolBannerBadge}</span>
+                <h3 className="display-heading text-[22px] md:text-[28px] text-white">{pg.protocolBannerTitlePrefix} {service.name}{pg.protocolBannerTitleSuffix}</h3>
               </div>
               <a
-                href="https://www.styleseat.com/m/v/410muscletherapy"
+                href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-gold px-9 py-4 text-[13px] font-bold tracking-wider flex-shrink-0 shadow-[0_10px_30px_rgba(200,150,12,0.25)]"
+                className="btn-gold px-9 py-4 text-[13px] font-bold tracking-wider flex-shrink-0 rounded-md shadow-[0_10px_30px_rgba(200,150,12,0.25)]"
               >
-                BOOK YOUR SESSION NOW <ArrowRight size={14} className="ml-1" />
+                {pg.protocolBannerCta} <ArrowRight size={14} className="ml-1" />
               </a>
             </div>
 

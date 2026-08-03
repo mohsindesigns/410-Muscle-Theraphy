@@ -62,7 +62,7 @@ export default function GalleryPage() {
           
           <div className="mt-20 flex justify-center">
             <a
-              href="https://www.styleseat.com/m/v/410muscletherapy"
+              href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold shadow-2xl"

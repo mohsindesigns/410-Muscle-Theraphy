@@ -52,16 +52,16 @@ export default function ContactPage() {
               {/* StyleSeat Direct Booking Banner */}
               <div className="mb-8 p-5 rounded-sm bg-gold/10 border border-gold/30 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div>
-                  <span className="text-gold font-mono text-[10.5px] font-bold tracking-widest uppercase block mb-0.5">INSTANT ONLINE BOOKING</span>
-                  <p className="text-white font-bold text-[14px]">Book Directly via StyleSeat</p>
+                  <span className="text-gold font-mono text-[10.5px] font-bold tracking-widest uppercase block mb-0.5">{data.contactFaq.formClinicPortal || "INSTANT ONLINE BOOKING"}</span>
+                  <p className="text-white font-bold text-[14px]">{data.contactFaq.formClinicPortalSub || "Book Directly via StyleSeat"}</p>
                 </div>
                 <a
-                  href="https://www.styleseat.com/m/v/410muscletherapy"
+                  href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-gold px-6 py-3 text-[12px] font-bold tracking-wider flex-shrink-0"
                 >
-                  BOOK ON STYLESEAT <ArrowRight size={13} className="ml-1" />
+                  {data.contactFaq.formStyleSeatBtn || "BOOK ON STYLESEAT"} <ArrowRight size={13} className="ml-1" />
                 </a>
               </div>
 

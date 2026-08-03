@@ -72,27 +72,27 @@ export default function ContactFaqSection() {
             </h2>
 
             {/* Form wrapper */}
-            <div className="bg-white border border-[#EBEAE6] p-4 min-[360px]:p-5 min-[400px]:p-8 md:p-10 rounded-sm shadow-xl relative h-fit transition-all duration-300">
+            <div className="bg-white border border-[#EBEAE6] p-6 min-[400px]:p-8 md:p-10 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.06)] relative h-fit transition-all duration-300">
               
               {/* Gold frame accent in top-right */}
-              <div className="absolute top-0 right-0 w-8 h-8 m-4 opacity-40">
+              <div className="absolute top-0 right-0 w-8 h-8 m-5 opacity-40 pointer-events-none">
                 <div className="absolute top-0 right-0 w-full h-[1px] bg-gold-dark" />
                 <div className="absolute top-0 right-0 h-full w-[1px] bg-gold-dark" />
               </div>
 
               {/* Direct StyleSeat Booking Banner */}
-              <div className="mb-6 p-4 rounded-sm bg-warm-white border border-gold-dark/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="mb-8 p-5 rounded-lg bg-gradient-to-r from-gold-dark/15 via-[#FAF9F5] to-warm-white border border-gold-dark/40 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div>
-                  <span className="text-gold-dark font-mono text-[10px] font-bold tracking-widest uppercase block mb-0.5">INSTANT ONLINE BOOKING</span>
-                  <p className="text-dark font-bold text-[13.5px]">Book directly on StyleSeat</p>
+                  <span className="text-gold-dark font-mono text-[10.5px] font-bold tracking-widest uppercase block mb-0.5">{formClinicPortal || "INSTANT ONLINE BOOKING"}</span>
+                  <p className="text-dark font-bold text-[14px]">{formClinicPortalSub || "Book directly on StyleSeat portal"}</p>
                 </div>
                 <a
-                  href="https://www.styleseat.com/m/v/410muscletherapy"
+                  href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-gold px-6 py-2.5 text-[11.5px] font-bold tracking-wider flex-shrink-0"
+                  className="btn-gold px-6 py-3 text-[11.5px] font-bold tracking-wider flex-shrink-0 shadow-md"
                 >
-                  BOOK ON STYLESEAT <ArrowRight size={12} className="ml-1" />
+                  {formStyleSeatBtn || "BOOK ON STYLESEAT"} <ArrowRight size={13} className="ml-1" />
                 </a>
               </div>
 
@@ -100,7 +100,7 @@ export default function ContactFaqSection() {
                 
                 {/* Name */}
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="name" className="text-dark/45 text-[10px] font-bold tracking-widest uppercase">
+                  <label htmlFor="name" className="text-dark/60 text-[10.5px] font-bold tracking-widest uppercase font-mono">
                     {formNameLabel}
                   </label>
                   <input
@@ -110,14 +110,14 @@ export default function ContactFaqSection() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder={formNamePlaceholder}
-                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[13.5px] focus:border-gold-dark focus:outline-none transition-all rounded-sm"
+                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md"
                   />
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   {/* Email */}
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="email" className="text-dark/45 text-[10px] font-bold tracking-widest uppercase">
+                    <label htmlFor="email" className="text-dark/60 text-[10.5px] font-bold tracking-widest uppercase font-mono">
                       {formEmailLabel}
                     </label>
                     <input
@@ -127,13 +127,13 @@ export default function ContactFaqSection() {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder={formEmailPlaceholder}
-                      className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[13.5px] focus:border-gold-dark focus:outline-none transition-all rounded-sm"
+                      className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md"
                     />
                   </div>
 
                   {/* Phone */}
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="phone" className="text-dark/45 text-[10px] font-bold tracking-widest uppercase">
+                    <label htmlFor="phone" className="text-dark/60 text-[10.5px] font-bold tracking-widest uppercase font-mono">
                       {formPhoneLabel}
                     </label>
                     <input
@@ -143,14 +143,14 @@ export default function ContactFaqSection() {
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder={formPhonePlaceholder}
-                      className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[13.5px] focus:border-gold-dark focus:outline-none transition-all rounded-sm"
+                      className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md"
                     />
                   </div>
                 </div>
 
                 {/* Service Select */}
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="service" className="text-dark/45 text-[10px] font-bold tracking-widest uppercase">
+                  <label htmlFor="service" className="text-dark/60 text-[10.5px] font-bold tracking-widest uppercase font-mono">
                     {formServiceLabel}
                   </label>
                   <select
@@ -158,7 +158,7 @@ export default function ContactFaqSection() {
                     required
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark/70 text-[13.5px] focus:border-gold-dark focus:outline-none transition-colors rounded-sm appearance-none cursor-pointer"
+                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md appearance-none cursor-pointer"
                   >
                     <option value="" disabled>{formServicePlaceholder}</option>
                     {formServicesOptions.map((opt) => (
@@ -171,7 +171,7 @@ export default function ContactFaqSection() {
 
                 {/* Message */}
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="message" className="text-dark/45 text-[10px] font-bold tracking-widest uppercase">
+                  <label htmlFor="message" className="text-dark/60 text-[10.5px] font-bold tracking-widest uppercase font-mono">
                     {formMessageLabel}
                   </label>
                   <textarea
@@ -180,7 +180,7 @@ export default function ContactFaqSection() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder={formMessagePlaceholder}
-                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[13.5px] focus:border-gold-dark focus:outline-none transition-all rounded-sm resize-none"
+                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md resize-none"
                   />
                 </div>
 
@@ -188,7 +188,7 @@ export default function ContactFaqSection() {
                 <button
                   type="submit"
                   disabled={submitted}
-                  className="btn-gold justify-center py-4 w-full text-[11.5px] font-bold shadow-lg tracking-widest group relative overflow-hidden transition-all duration-300 mt-2"
+                  className="btn-gold justify-center py-4 w-full text-[12px] font-bold shadow-xl tracking-widest group relative overflow-hidden transition-all duration-300 mt-2 rounded-md"
                 >
                   {submitted ? (
                     <span className="flex items-center gap-2">
@@ -196,22 +196,22 @@ export default function ContactFaqSection() {
                     </span>
                   ) : (
                     <span className="flex items-center gap-2">
-                      {formBtnSubmit} <Send size={12} className="group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform" />
+                      {formBtnSubmit} <Send size={13} className="group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform" />
                     </span>
                   )}
                 </button>
               </form>
 
-              {/* Trust Indicators */}
-              <div className="flex flex-col sm:flex-row items-center gap-4 justify-between mt-6 pt-6 border-t border-[#EBEAE6]">
-                <div className="flex items-center gap-2 text-dark/45 text-[11px] font-semibold">
-                  <ShieldCheck size={14} className="text-gold-dark flex-shrink-0" />
-                  <span>{trustHipa}</span>
-                </div>
-                <div className="flex items-center gap-2 text-dark/45 text-[11px] font-semibold">
-                  <Clock size={14} className="text-gold-dark flex-shrink-0" />
-                  <span>{trustResponse}</span>
-                </div>
+              {/* Trust markers */}
+              <div className="mt-8 pt-6 border-t border-[#EBEAE6] flex items-center justify-between gap-4 text-[12px] text-dark/50 font-mono">
+                <span className="flex items-center gap-2">
+                  <ShieldCheck size={16} className="text-gold-dark" />
+                  {trustHipa}
+                </span>
+                <span className="flex items-center gap-2">
+                  <Clock size={16} className="text-gold-dark" />
+                  {trustResponse}
+                </span>
               </div>
 
               {/* Success Notification Alert */}

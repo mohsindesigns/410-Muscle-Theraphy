@@ -169,7 +169,7 @@ export default function StickyServicesSection() {
                       </Link>
 
                       <a
-                        href="https://www.styleseat.com/m/v/410muscletherapy"
+                        href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-white/60 hover:text-gold text-[11.5px] font-bold tracking-widest uppercase transition-colors py-1"

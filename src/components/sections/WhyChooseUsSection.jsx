@@ -189,7 +189,7 @@ export default function WhyChooseUsSection() {
               </div>
               <div className="flex-shrink-0">
                 <a
-                  href="https://www.styleseat.com/m/v/410muscletherapy"
+                  href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-full border border-black/10 flex items-center justify-center text-dark/40 group-hover:bg-gold-dark group-hover:border-gold-dark group-hover:text-white transition-all duration-300"
@@ -206,7 +206,7 @@ export default function WhyChooseUsSection() {
         {/* Bottom CTA */}
         <div className="mt-16 text-center">
           <a
-            href="https://www.styleseat.com/m/v/410muscletherapy"
+            href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold"
