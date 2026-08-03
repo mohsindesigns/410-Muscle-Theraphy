@@ -16,6 +16,8 @@ export default function ContactFaqSection() {
     formLabel,
     formTitle,
     formClinicPortal,
+    formClinicPortalSub,
+    formStyleSeatBtn,
     formNameLabel,
     formNamePlaceholder,
     formEmailLabel,
