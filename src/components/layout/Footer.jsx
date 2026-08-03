@@ -6,9 +6,9 @@ import logo from '../../../public/images/logo.png';
 /* ── Logo ──────────────────────────────────────────────── */
 function FooterLogo() {
   return (
-    <div className="flex items-center gap-3 mb-6">
-      <Image src={logo} width={150} height={150} alt="logo" className="object-contain w-[100px] h-[100px] sm:w-[150px] sm:h-[150px]" />
-    </div>
+    <Link href="/" className="inline-flex items-center gap-3 mb-4">
+      <Image src={logo} width={130} height={130} alt="410 Muscle Therapy Logo" className="object-contain w-[110px] h-[110px] sm:w-[130px] sm:h-[130px]" />
+    </Link>
   );
 }
 
@@ -25,7 +25,7 @@ function SocialIcons() {
     },
     {
       label: 'Google',
-      path: 'M21.35 11.1H12.18V13.83H18.69C18.36 17.64 15.19 19.27(12.19 19.27C8.36 19.27 5 16.25 5 12C5 7.9 8.2 4.73 12.2 4.73C15.29 4.73 17.1 6.7 17.1 6.7L19 4.72C19 4.72 16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12C2.03 17.05 6.16 22 12.25 22C17.6 22 21.5 18.33 21.5 12.91C21.5 11.76 21.35 11.1 21.35 11.1Z',
+      path: 'M21.35 11.1H12.18V13.83H18.69C18.36 17.64 15.19 19.27 12.19 19.27C8.36 19.27 5 16.25 5 12C5 7.9 8.2 4.73 12.2 4.73C15.29 4.73 17.1 6.7 17.1 6.7L19 4.72C19 4.72 16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12C2.03 17.05 6.16 22 12.25 22C17.6 22 21.5 18.33 21.5 12.91C21.5 11.76 21.35 11.1 21.35 11.1Z',
     },
     {
       label: 'YouTube',
@@ -34,13 +34,13 @@ function SocialIcons() {
   ];
 
   return (
-    <div className="flex gap-2.5 mt-2 justify-center sm:justify-start">
+    <div className="flex gap-2.5 mt-4 justify-start">
       {socials.map((s) => (
         <a
           key={s.label}
           href="#"
           aria-label={s.label}
-          className="w-9 h-9 rounded-full border border-border-dark flex items-center justify-center text-white/35 hover:text-gold hover:border-gold transition-all duration-200"
+          className="w-9 h-9 rounded-full border border-border-dark flex items-center justify-center text-white/40 hover:text-gold hover:border-gold transition-all duration-200"
         >
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
             <path d={s.path} />
@@ -54,7 +54,7 @@ function SocialIcons() {
 /* ── Map Placeholder ───────────────────────────────────── */
 function MapPlaceholder({ addressText }) {
   return (
-    <div className="mt-5 h-28 bg-dark-3 overflow-hidden relative flex items-center justify-center border border-border-dark">
+    <div className="mt-5 h-24 sm:h-28 bg-dark-3 rounded-md overflow-hidden relative flex items-center justify-center border border-border-dark">
       <div
         className="absolute inset-0"
         style={{
@@ -62,10 +62,10 @@ function MapPlaceholder({ addressText }) {
         }}
       />
       <div className="relative flex flex-col items-center gap-1.5">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="#C8960C">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#C8960C">
           <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
         </svg>
-        <span className="text-white/35 text-[10.5px] font-medium text-center px-2 whitespace-pre-line">
+        <span className="text-white/40 text-[10.5px] font-medium text-center px-2 whitespace-pre-line">
           {addressText}
         </span>
       </div>
@@ -84,8 +84,6 @@ export default function Footer() {
     privacy,
     terms,
     divider,
-    quickLinks,
-    services,
     insurers,
     address,
     phone,
@@ -93,7 +91,22 @@ export default function Footer() {
     hours
   } = data.footer;
 
-  const { logoText1, logoText2 } = data.navbar;
+  const quickLinksData = [
+    { label: 'Home', href: '/' },
+    { label: 'Services', href: '/services' },
+    { label: 'Gallery', href: '/gallery' },
+    { label: 'Blogs', href: '/blogs' },
+    { label: 'Contact', href: '/contact' }
+  ];
+
+  const servicesData = [
+    { label: 'Deep Tissue Therapy', href: '/services/deep-tissue-therapy' },
+    { label: 'Sports Massage', href: '/services/sports-massage' },
+    { label: 'Muscle Recovery', href: '/services/muscle-recovery' },
+    { label: 'Injury Recovery', href: '/services/injury-recovery' },
+    { label: 'Mobility Therapy', href: '/services/mobility-therapy' },
+    { label: 'Trigger Point Therapy', href: '/services/trigger-point-therapy' }
+  ];
 
   return (
     <footer>
@@ -103,13 +116,13 @@ export default function Footer() {
         <div className="site-container relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 opacity-70">
             
-            <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-gold/80 whitespace-nowrap">
+            <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-gold/80 whitespace-nowrap text-center">
               {insuranceLabel}
             </p>
 
             <div className="hidden md:block w-px h-3 bg-white/20" />
 
-            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+            <div className="flex flex-wrap items-center justify-center gap-4 min-[400px]:gap-6 md:gap-10">
               {insurers.map((ins) => (
                 <span key={ins.name} className="font-bold text-[10px] tracking-widest uppercase text-white/40 hover:text-white transition-colors duration-300 cursor-default">
                   {ins.display}
@@ -122,34 +135,32 @@ export default function Footer() {
       </div>
 
       {/* ══ Main Footer ════════════════════════════════ */}
-      <div className="bg-dark-2 pt-16 pb-0">
+      <div className="bg-dark-2 pt-12 md:pt-16 pb-0 border-t border-border-dark/60">
         <div className="site-container">
 
           {/* Responsive grid wrapping from 1 to 4 columns */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.7fr_1fr_1fr_1.5fr] gap-10 md:gap-12 pb-12 border-b border-border-dark">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1.2fr_1.5fr] gap-10 md:gap-12 pb-12 border-b border-border-dark">
 
             {/* Col 1 — Brand */}
-            <div className="text-center sm:text-left">
-              <div className="flex justify-center sm:justify-start">
-                <FooterLogo />
-              </div>
-              <p className="text-white/40 text-[13.5px] leading-[1.85] mb-6 max-w-[250px] mx-auto sm:mx-0">
+            <div className="flex flex-col items-start text-left">
+              <FooterLogo />
+              <p className="text-white/45 text-[13.5px] leading-[1.8] mb-4 max-w-[280px]">
                 {brandDescription}
               </p>
               <SocialIcons />
             </div>
 
             {/* Col 2 — Quick Links */}
-            <div>
-              <h4 className="text-white font-bold text-[11.5px] tracking-[0.16em] uppercase mb-6">
+            <div className="flex flex-col items-start text-left">
+              <h4 className="text-white font-bold text-[11.5px] tracking-[0.16em] uppercase mb-5">
                 {quickLinksLabel}
               </h4>
-              <ul className="flex flex-col gap-3.5">
-                {quickLinks.map((link) => (
-                  <li key={link}>
-                    <Link href="#" className="text-white/40 text-[13.5px] hover:text-gold transition-colors duration-200 flex items-center gap-2 group">
+              <ul className="flex flex-col gap-3">
+                {quickLinksData.map((link) => (
+                  <li key={link.label}>
+                    <Link href={link.href} className="text-white/45 text-[13.5px] hover:text-gold transition-colors duration-200 flex items-center gap-2 group py-0.5">
                       <span className="w-0 h-px bg-gold transition-all duration-200 group-hover:w-3" />
-                      {link}
+                      {link.label}
                     </Link>
                   </li>
                 ))}
@@ -157,16 +168,16 @@ export default function Footer() {
             </div>
 
             {/* Col 3 — Services */}
-            <div>
-              <h4 className="text-white font-bold text-[11.5px] tracking-[0.16em] uppercase mb-6">
+            <div className="flex flex-col items-start text-left">
+              <h4 className="text-white font-bold text-[11.5px] tracking-[0.16em] uppercase mb-5">
                 {servicesLabel}
               </h4>
-              <ul className="flex flex-col gap-3.5">
-                {services.map((svc) => (
-                  <li key={svc}>
-                    <Link href="#" className="text-white/40 text-[13.5px] hover:text-gold transition-colors duration-200 flex items-center gap-2 group">
+              <ul className="flex flex-col gap-3">
+                {servicesData.map((svc) => (
+                  <li key={svc.label}>
+                    <Link href={svc.href} className="text-white/45 text-[13.5px] hover:text-gold transition-colors duration-200 flex items-center gap-2 group py-0.5">
                       <span className="w-0 h-px bg-gold transition-all duration-200 group-hover:w-3" />
-                      {svc}
+                      {svc.label}
                     </Link>
                   </li>
                 ))}
@@ -174,11 +185,11 @@ export default function Footer() {
             </div>
 
             {/* Col 4 — Contact */}
-            <div>
-              <h4 className="text-white font-bold text-[11.5px] tracking-[0.16em] uppercase mb-6">
+            <div className="flex flex-col items-start text-left">
+              <h4 className="text-white font-bold text-[11.5px] tracking-[0.16em] uppercase mb-5">
                 {contactLabel}
               </h4>
-              <ul className="flex flex-col gap-4">
+              <ul className="flex flex-col gap-3.5 w-full">
                 {[
                   {
                     icon: <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />,
@@ -206,7 +217,7 @@ export default function Footer() {
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="mt-0.5 flex-shrink-0"
+                      className="mt-1 flex-shrink-0"
                     >
                       {item.icon}
                     </svg>
@@ -214,20 +225,22 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-              <MapPlaceholder addressText={address} />
+              <div className="w-full">
+                <MapPlaceholder addressText={address} />
+              </div>
             </div>
 
           </div>
 
           {/* ── Bottom bar ───────────────────────────── */}
-          <div className="flex flex-col sm:flex-row items-center justify-between py-5 gap-4">
-            <p className="text-white/22 text-[12px] text-center sm:text-left">
+          <div className="flex flex-col sm:flex-row items-center justify-between py-6 gap-3 text-center sm:text-left">
+            <p className="text-white/30 text-[12px]">
               {copyright}
             </p>
-            <div className="flex items-center gap-6">
-              <Link href="#" className="text-white/22 text-[12px] hover:text-white/60 transition-colors">{privacy}</Link>
+            <div className="flex items-center gap-4 sm:gap-6">
+              <Link href="/contact" className="text-white/30 text-[12px] hover:text-white/70 transition-colors">{privacy}</Link>
               <span className="text-white/15">{divider}</span>
-              <Link href="#" className="text-white/22 text-[12px] hover:text-white/60 transition-colors">{terms}</Link>
+              <Link href="/contact" className="text-white/30 text-[12px] hover:text-white/70 transition-colors">{terms}</Link>
             </div>
           </div>
 

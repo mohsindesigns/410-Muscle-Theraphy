@@ -20,26 +20,39 @@
       "hours": "Mon–Sat: 8:00 AM – 7:00 PM"
     }
   },
-
   "globalMetadata": {
     "title": "Performance Recovery Specialist | 410 Muscle Therapy",
     "description": "Elite performance recovery bodywork, mobility restoration, and injury prevention for athletes & active adults. Est. 2020. #bodywork #performancerecovery",
     "bookingUrl": "https://www.styleseat.com/m/v/410muscletherapy"
   },
-
   "navbar": {
     "logoText1": "MUSCLE",
     "logoText2": "THERAPY",
     "bookBtn": "BOOK APPOINTMENT",
     "links": [
-      { "label": "Home", "href": "/", "active": true },
-      { "label": "Services", "href": "/services" },
-      { "label": "Gallery", "href": "/gallery" },
-      { "label": "Blogs", "href": "/blogs" },
-      { "label": "Contact", "href": "/contact" }
+      {
+        "label": "Home",
+        "href": "/",
+        "active": true
+      },
+      {
+        "label": "Services",
+        "href": "/services"
+      },
+      {
+        "label": "Gallery",
+        "href": "/gallery"
+      },
+      {
+        "label": "Blogs",
+        "href": "/blogs"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
     ]
   },
-
   "hero": {
     "label": "Performance Recovery Specialist • Est. 2020",
     "title1": "Recover Faster.",
@@ -49,22 +62,44 @@
     "ctaServices": "EXPLORE SERVICES",
     "socialProofText": "Trusted by 500+ athletes & active adults"
   },
-
   "stats": {
     "label": "Our Achievements",
     "titleLine1": "Proven Results.",
     "titleLine2": "Standards.",
     "titleItalicWord": "Professional",
     "items": [
-      { "value": "8+", "label": "Years of Experience", "desc": "Providing dedicated clinical manual therapy and recovery." },
-      { "value": "5,000+", "label": "Clients Treated", "desc": "Helping athletes, active individuals, and professionals." },
-      { "value": "15,000+", "label": "Sessions Completed", "desc": "Targeted bodywork sessions tailored to specific needs." },
-      { "value": "98%", "label": "Client Satisfaction", "desc": "Ensuring every client experiences measurable pain relief." },
-      { "value": "Certified", "label": "& Fully Trained", "desc": "Equipped with advanced manual therapy certifications." },
-      { "value": "Trusted By", "label": "Athletes & Professionals", "desc": "Trusted by competitive teams, trainers, and athletes." }
+      {
+        "value": "8+",
+        "label": "Years of Experience",
+        "desc": "Providing dedicated clinical manual therapy and recovery."
+      },
+      {
+        "value": "5,000+",
+        "label": "Clients Treated",
+        "desc": "Helping athletes, active individuals, and professionals."
+      },
+      {
+        "value": "15,000+",
+        "label": "Sessions Completed",
+        "desc": "Targeted bodywork sessions tailored to specific needs."
+      },
+      {
+        "value": "98%",
+        "label": "Client Satisfaction",
+        "desc": "Ensuring every client experiences measurable pain relief."
+      },
+      {
+        "value": "Certified",
+        "label": "& Fully Trained",
+        "desc": "Equipped with advanced manual therapy certifications."
+      },
+      {
+        "value": "Trusted By",
+        "label": "Athletes & Professionals",
+        "desc": "Trusted by competitive teams, trainers, and athletes."
+      }
     ]
   },
-
   "services": {
     "label": "Our Services",
     "stickyLabel": "Capabilities",
@@ -187,7 +222,6 @@
       }
     ]
   },
-
   "whyChooseUs": {
     "label": "WHY CHOOSE 410 MUSCLE THERAPY",
     "titleLine1": "Engineered For Peak",
@@ -229,7 +263,6 @@
       }
     ]
   },
-
   "therapist": {
     "label": "The Specialist",
     "title": "Meet Antoine Lyles",
@@ -242,13 +275,24 @@
     "signatureName": "Antoine Lyles",
     "signatureTitle": "Performance Recovery Specialist",
     "features": [
-      { "title": "Est. 2020", "desc": "Performance practice" },
-      { "title": "Advanced", "desc": "Certifications" },
-      { "title": "Athletes", "desc": "Recovery focus" },
-      { "title": "5,000+", "desc": "Sessions completed" }
+      {
+        "title": "Est. 2020",
+        "desc": "Performance practice"
+      },
+      {
+        "title": "Advanced",
+        "desc": "Certifications"
+      },
+      {
+        "title": "Athletes",
+        "desc": "Recovery focus"
+      },
+      {
+        "title": "5,000+",
+        "desc": "Sessions completed"
+      }
     ]
   },
-
   "process": {
     "label": "THE CLINICAL PROCESS",
     "title": "Your Recovery Journey.",
@@ -309,7 +353,6 @@
       }
     ]
   },
-
   "testimonials": {
     "label": "Clients Love Us",
     "title1": "Real People.",
@@ -349,22 +392,44 @@
       }
     ],
     "results": [
-      { "id": 1, "label": "Reduced pain and improved performance.", "image": "/images/testimonial-1.webp" },
-      { "id": 2, "label": "More mobility, less stiffness, better daily life.", "image": "/images/testimonial-2.webp" },
-      { "id": 3, "label": "Back to training stronger than ever before.", "image": "/images/testimonial-3.webp" },
-      { "id": 4, "label": "Restored muscle balance and reduced tension.", "image": "/images/testimonial-4.webp" },
-      { "id": 5, "label": "Faster relief from sports-related soreness.", "image": "/images/testimonial-5.webp" },
-      { "id": 6, "label": "Deep recovery that fits an active lifestyle.", "image": "/images/testimonial-6.webp" }
+      {
+        "id": 1,
+        "label": "Reduced pain and improved performance.",
+        "image": "/images/testimonial-1.webp"
+      },
+      {
+        "id": 2,
+        "label": "More mobility, less stiffness, better daily life.",
+        "image": "/images/testimonial-2.webp"
+      },
+      {
+        "id": 3,
+        "label": "Back to training stronger than ever before.",
+        "image": "/images/testimonial-3.webp"
+      },
+      {
+        "id": 4,
+        "label": "Restored muscle balance and reduced tension.",
+        "image": "/images/testimonial-4.webp"
+      },
+      {
+        "id": 5,
+        "label": "Faster relief from sports-related soreness.",
+        "image": "/images/testimonial-5.webp"
+      },
+      {
+        "id": 6,
+        "label": "Deep recovery that fits an active lifestyle.",
+        "image": "/images/testimonial-6.webp"
+      }
     ]
   },
-
   "ctaBanner": {
     "tagline": "Take the First Step",
     "title": "Ready to Feel Your Best?",
     "description": "Book your appointment today and start your journey to a pain-free, stronger you.",
     "button": "BOOK APPOINTMENT"
   },
-
   "contactFaq": {
     "label": "Support & Booking",
     "title": "Booking & Common Questions.",
@@ -392,13 +457,34 @@
     "trustHipa": "Secure HIPAA Booking",
     "trustResponse": "Response within 2 hours",
     "formServicesOptions": [
-      { "value": "deep-tissue", "label": "Deep Tissue Therapy" },
-      { "value": "sports-massage", "label": "Sports Massage" },
-      { "value": "recovery", "label": "Muscle Recovery" },
-      { "value": "injury-recovery", "label": "Injury Recovery" },
-      { "value": "mobility-therapy", "label": "Mobility Therapy" },
-      { "value": "trigger-point", "label": "Trigger Point Therapy" },
-      { "value": "stretch-therapy", "label": "Stretch Therapy" }
+      {
+        "value": "deep-tissue",
+        "label": "Deep Tissue Therapy"
+      },
+      {
+        "value": "sports-massage",
+        "label": "Sports Massage"
+      },
+      {
+        "value": "recovery",
+        "label": "Muscle Recovery"
+      },
+      {
+        "value": "injury-recovery",
+        "label": "Injury Recovery"
+      },
+      {
+        "value": "mobility-therapy",
+        "label": "Mobility Therapy"
+      },
+      {
+        "value": "trigger-point",
+        "label": "Trigger Point Therapy"
+      },
+      {
+        "value": "stretch-therapy",
+        "label": "Stretch Therapy"
+      }
     ],
     "faqs": [
       {
@@ -423,7 +509,6 @@
       }
     ]
   },
-
   "servicesPageHero": {
     "metadata": {
       "title": "Services | Muscle Therapy & Sports Recovery",
@@ -439,14 +524,33 @@
     "image": "/images/service-massage.webp",
     "sealText": "PRECISION CARE • REAL RESULTS • FEEL BETTER • MOVE BETTER •",
     "features": [
-      { "icon": "shield", "title": "Personalized", "subtitle": "Treatments" },
-      { "icon": "users", "title": "Advanced", "subtitle": "Techniques" },
-      { "icon": "award", "title": "Experienced", "subtitle": "Therapists" },
-      { "icon": "check", "title": "Proven", "subtitle": "Results" },
-      { "icon": "star", "title": "Athlete & Active", "subtitle": "Focused" }
+      {
+        "icon": "shield",
+        "title": "Personalized",
+        "subtitle": "Treatments"
+      },
+      {
+        "icon": "users",
+        "title": "Advanced",
+        "subtitle": "Techniques"
+      },
+      {
+        "icon": "award",
+        "title": "Experienced",
+        "subtitle": "Therapists"
+      },
+      {
+        "icon": "check",
+        "title": "Proven",
+        "subtitle": "Results"
+      },
+      {
+        "icon": "star",
+        "title": "Athlete & Active",
+        "subtitle": "Focused"
+      }
     ]
   },
-
   "serviceDetailPage": {
     "backLink": "Back to All Services",
     "heroSectionLabel": "CLINICAL RECOVERY PROTOCOL",
@@ -490,7 +594,11 @@
     "protocolTitle1": "3-Phase Clinical",
     "protocolTitle2": "Treatment Sequence.",
     "protocolPhasePrefix": "PHASE 0",
-    "protocolDurations": ["15 MIN", "45 MIN", "15 MIN"],
+    "protocolDurations": [
+      "15 MIN",
+      "45 MIN",
+      "15 MIN"
+    ],
     "protocolBannerBadge": "CLINICAL EXCELLENCE",
     "protocolBannerTitlePrefix": "Ready to experience",
     "protocolBannerTitleSuffix": "?",
@@ -499,23 +607,46 @@
     "benefitCardDesc": "Targeted mechanical input designed to accelerate tissue recovery and restore movement.",
     "whoTitle": "Who Is This Therapy For?",
     "whoProfiles": [
-      { "label": "01. Athletes", "desc": "Competitive athletes needing accelerated recovery between high-intensity training sessions." },
-      { "label": "02. Desk Professionals", "desc": "Individuals suffering from postural neck, shoulder, or lower back tightness from prolonged sitting." },
-      { "label": "03. Chronic Pain Sufferers", "desc": "Anyone dealing with persistent muscle knots, joint stiffness, or old injury scar tissue buildup." },
-      { "label": "04. Post-Rehab Patients", "desc": "People looking to safely regain full range of motion following physical therapy or injury rehabilitation." }
+      {
+        "label": "01. Athletes",
+        "desc": "Competitive athletes needing accelerated recovery between high-intensity training sessions."
+      },
+      {
+        "label": "02. Desk Professionals",
+        "desc": "Individuals suffering from postural neck, shoulder, or lower back tightness from prolonged sitting."
+      },
+      {
+        "label": "03. Chronic Pain Sufferers",
+        "desc": "Anyone dealing with persistent muscle knots, joint stiffness, or old injury scar tissue buildup."
+      },
+      {
+        "label": "04. Post-Rehab Patients",
+        "desc": "People looking to safely regain full range of motion following physical therapy or injury rehabilitation."
+      }
     ],
     "sessionTitle": "What To Expect During Your Session",
     "sessionSteps": [
-      { "num": "01", "title": "Postural & Palpation Assessment", "desc": "We begin with an active range-of-motion test and palpation to pinpoint tight muscle groups and trigger points." },
-      { "num": "02", "title": "Targeted Clinical Bodywork", "desc": "Hands-on application of deep tissue pressure, myofascial release, and cross-fiber friction adjusted to your comfort level." },
-      { "num": "03", "title": "Post-Session Recovery Plan", "desc": "We measure mobility improvements post-therapy and provide personalized home stretching recommendations." }
+      {
+        "num": "01",
+        "title": "Postural & Palpation Assessment",
+        "desc": "We begin with an active range-of-motion test and palpation to pinpoint tight muscle groups and trigger points."
+      },
+      {
+        "num": "02",
+        "title": "Targeted Clinical Bodywork",
+        "desc": "Hands-on application of deep tissue pressure, myofascial release, and cross-fiber friction adjusted to your comfort level."
+      },
+      {
+        "num": "03",
+        "title": "Post-Session Recovery Plan",
+        "desc": "We measure mobility improvements post-therapy and provide personalized home stretching recommendations."
+      }
     ],
     "relatedLabel": "Explore More",
     "relatedTitle": "Related Therapies",
     "relatedViewAll": "View All",
     "relatedCardCta": "Explore Therapy"
   },
-
   "galleryPage": {
     "metadata": {
       "title": "Gallery | Muscle Therapy & Sports Recovery",
@@ -527,7 +658,6 @@
     "description": "Step inside our world. Experience the dedicated environment where we alleviate chronic pain, restore dynamic mobility, and optimize athletic output.",
     "ctaBook": "BOOK YOUR SESSION"
   },
-
   "contactPage": {
     "metadata": {
       "title": "Contact | 410 Muscle Therapy",
@@ -544,7 +674,6 @@
     "infoHoursLabel": "Clinic Hours",
     "mapLabel": "Map Location"
   },
-
   "blogsPage": {
     "metadata": {
       "title": "Blogs | Muscle Therapy Insights",
@@ -556,11 +685,9 @@
     "description": "Explore our latest articles, insights, and clinical tips on deep tissue therapy, mobility, and athletic recovery.",
     "ctaReadMore": "Read More"
   },
-
   "blogDetailPage": {
     "backLink": "Back to Blogs"
   },
-
   "blog": {
     "label": "Recovery Insights",
     "title": "Tips, Advice & Insights",
@@ -577,22 +704,70 @@
         "date": "October 12, 2023",
         "author": "Dr. James Vance",
         "content": [
-          { "type": "paragraph", "text": "Deep tissue therapy isn't just a luxury—it's a critical component of maintaining a healthy, highly functional musculoskeletal system. Often, we ignore the early signs of chronic tension until it develops into a debilitating injury." },
-          { "type": "paragraph", "text": "Many individuals assume that muscle tightness is just a normal part of getting older or a natural consequence of working out. However, chronic tightness is actually a sign that your body is compensating for weaknesses elsewhere, leading to a cascade of biomechanical imbalances." },
-          { "type": "heading", "text": "1. Persistent Lower Back Pain" },
-          { "type": "paragraph", "text": "If you sit at a desk all day or drive long distances, your hip flexors and hamstrings can become chronically tight, pulling on your lower back. Deep tissue work releases these restrictions, alleviating the structural pull on your lumbar spine." },
-          { "type": "paragraph", "text": "This constant pulling creates an anterior pelvic tilt, which compresses the discs in your lower back. By addressing the tight hip flexors (like the psoas) rather than just rubbing the lower back, a skilled manual therapist can fix the root cause of the pain." },
-          { "type": "heading", "text": "2. Limited Range of Motion" },
-          { "type": "paragraph", "text": "Struggling to tie your shoes or reach overhead? This indicates that your fascial layers have become adhered. Focused deep pressure helps break down these adhesions, restoring your full dynamic mobility." },
-          { "type": "paragraph", "text": "Fascia is the connective tissue that surrounds every muscle fiber. When we are sedentary or injured, this fascia becomes sticky and dehydrated, binding muscle layers together. Deep tissue therapy literally unglues these layers." },
-          { "type": "heading", "text": "3. Tension Headaches and Neck Stiffness" },
-          { "type": "paragraph", "text": "A forward head posture, commonly referred to as 'tech neck', places immense strain on the suboccipital muscles at the base of the skull. This constant strain frequently triggers tension headaches and migraines." },
-          { "type": "paragraph", "text": "By applying sustained, deep pressure to the upper traps, levator scapulae, and suboccipitals, a therapist can deactivate trigger points that refer pain directly into the head and behind the eyes." },
-          { "type": "heading", "text": "4. Lingering Sports Injuries" },
-          { "type": "paragraph", "text": "Old injuries that never quite healed right often leave behind scar tissue. This scar tissue is less flexible than normal muscle tissue, making it a prime candidate for re-injury." },
-          { "type": "paragraph", "text": "Deep cross-fiber friction is a specific technique used in deep tissue therapy to break down scar tissue and encourage the realignment of collagen fibers, essentially remodeling the injured area for better performance." },
-          { "type": "heading", "text": "5. Poor Posture You Can't seem to Fix" },
-          { "type": "paragraph", "text": "No matter how hard you try to sit up straight, if your chest muscles (pecs) are chronically tight and your upper back muscles are weak, you will inevitably slouch. Deep tissue therapy can release the tight anterior muscles, making it physically easier to maintain an upright posture." }
+          {
+            "type": "paragraph",
+            "text": "Deep tissue therapy isn't just a luxury—it's a critical component of maintaining a healthy, highly functional musculoskeletal system. Often, we ignore the early signs of chronic tension until it develops into a debilitating injury."
+          },
+          {
+            "type": "paragraph",
+            "text": "Many individuals assume that muscle tightness is just a normal part of getting older or a natural consequence of working out. However, chronic tightness is actually a sign that your body is compensating for weaknesses elsewhere, leading to a cascade of biomechanical imbalances."
+          },
+          {
+            "type": "heading",
+            "text": "1. Persistent Lower Back Pain"
+          },
+          {
+            "type": "paragraph",
+            "text": "If you sit at a desk all day or drive long distances, your hip flexors and hamstrings can become chronically tight, pulling on your lower back. Deep tissue work releases these restrictions, alleviating the structural pull on your lumbar spine."
+          },
+          {
+            "type": "paragraph",
+            "text": "This constant pulling creates an anterior pelvic tilt, which compresses the discs in your lower back. By addressing the tight hip flexors (like the psoas) rather than just rubbing the lower back, a skilled manual therapist can fix the root cause of the pain."
+          },
+          {
+            "type": "heading",
+            "text": "2. Limited Range of Motion"
+          },
+          {
+            "type": "paragraph",
+            "text": "Struggling to tie your shoes or reach overhead? This indicates that your fascial layers have become adhered. Focused deep pressure helps break down these adhesions, restoring your full dynamic mobility."
+          },
+          {
+            "type": "paragraph",
+            "text": "Fascia is the connective tissue that surrounds every muscle fiber. When we are sedentary or injured, this fascia becomes sticky and dehydrated, binding muscle layers together. Deep tissue therapy literally unglues these layers."
+          },
+          {
+            "type": "heading",
+            "text": "3. Tension Headaches and Neck Stiffness"
+          },
+          {
+            "type": "paragraph",
+            "text": "A forward head posture, commonly referred to as 'tech neck', places immense strain on the suboccipital muscles at the base of the skull. This constant strain frequently triggers tension headaches and migraines."
+          },
+          {
+            "type": "paragraph",
+            "text": "By applying sustained, deep pressure to the upper traps, levator scapulae, and suboccipitals, a therapist can deactivate trigger points that refer pain directly into the head and behind the eyes."
+          },
+          {
+            "type": "heading",
+            "text": "4. Lingering Sports Injuries"
+          },
+          {
+            "type": "paragraph",
+            "text": "Old injuries that never quite healed right often leave behind scar tissue. This scar tissue is less flexible than normal muscle tissue, making it a prime candidate for re-injury."
+          },
+          {
+            "type": "paragraph",
+            "text": "Deep cross-fiber friction is a specific technique used in deep tissue therapy to break down scar tissue and encourage the realignment of collagen fibers, essentially remodeling the injured area for better performance."
+          },
+          {
+            "type": "heading",
+            "text": "5. Poor Posture You Can't seem to Fix"
+          },
+          {
+            "type": "paragraph",
+            "text": "No matter how hard you try to sit up straight, if your chest muscles (pecs) are chronically tight and your upper back muscles are weak, you will inevitably slouch. Deep tissue therapy can release the tight anterior muscles, making it physically easier to maintain an upright posture."
+          }
         ]
       },
       {
@@ -605,17 +780,50 @@
         "date": "November 05, 2023",
         "author": "Sarah Jenkins",
         "content": [
-          { "type": "paragraph", "text": "Stretching is often the most neglected part of an athlete's routine. However, incorporating dynamic stretches before a workout and static stretches afterward can drastically reduce the risk of injury and improve explosive power." },
-          { "type": "paragraph", "text": "There is a massive misconception that stretching simply makes you 'more flexible'. In reality, targeted stretching actually improves your nervous system's tolerance to extreme ranges of motion, allowing you to access more strength safely." },
-          { "type": "heading", "text": "The World's Greatest Stretch" },
-          { "type": "paragraph", "text": "This movement targets the ankles, hamstrings, hips, and thoracic spine all at once. It's the perfect full-body warm-up before any intense physical activity, especially sprinting or heavy lifting." },
-          { "type": "paragraph", "text": "To perform it, step into a deep lunge. Place your opposite hand on the ground and reach the other hand towards the ceiling, rotating your upper back. This combination of hip extension and thoracic rotation is unparalleled." },
-          { "type": "heading", "text": "PNF Stretching Techniques" },
-          { "type": "paragraph", "text": "Proprioceptive Neuromuscular Facilitation (PNF) involves contracting and relaxing the muscle during a stretch. This actively tricks the nervous system into allowing a deeper stretch, leading to rapid mobility gains." },
-          { "type": "paragraph", "text": "For example, in a hamstring PNF stretch, you would stretch the muscle for 10 seconds, actively contract the hamstring by pushing against resistance for 5 seconds, and then immediately relax into a much deeper stretch for 20 seconds." },
-          { "type": "heading", "text": "Couch Stretch for Hip Flexors" },
-          { "type": "paragraph", "text": "The couch stretch is notoriously uncomfortable but highly effective. It targets the rectus femoris and psoas, which become notoriously tight from both sitting and heavy squatting or sprinting." },
-          { "type": "paragraph", "text": "By placing your knee against a wall or couch and maintaining a tall, braced torso, you force the anterior hip to open up, immediately alleviating tightness that often causes lower back pain during athletic movements." }
+          {
+            "type": "paragraph",
+            "text": "Stretching is often the most neglected part of an athlete's routine. However, incorporating dynamic stretches before a workout and static stretches afterward can drastically reduce the risk of injury and improve explosive power."
+          },
+          {
+            "type": "paragraph",
+            "text": "There is a massive misconception that stretching simply makes you 'more flexible'. In reality, targeted stretching actually improves your nervous system's tolerance to extreme ranges of motion, allowing you to access more strength safely."
+          },
+          {
+            "type": "heading",
+            "text": "The World's Greatest Stretch"
+          },
+          {
+            "type": "paragraph",
+            "text": "This movement targets the ankles, hamstrings, hips, and thoracic spine all at once. It's the perfect full-body warm-up before any intense physical activity, especially sprinting or heavy lifting."
+          },
+          {
+            "type": "paragraph",
+            "text": "To perform it, step into a deep lunge. Place your opposite hand on the ground and reach the other hand towards the ceiling, rotating your upper back. This combination of hip extension and thoracic rotation is unparalleled."
+          },
+          {
+            "type": "heading",
+            "text": "PNF Stretching Techniques"
+          },
+          {
+            "type": "paragraph",
+            "text": "Proprioceptive Neuromuscular Facilitation (PNF) involves contracting and relaxing the muscle during a stretch. This actively tricks the nervous system into allowing a deeper stretch, leading to rapid mobility gains."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, in a hamstring PNF stretch, you would stretch the muscle for 10 seconds, actively contract the hamstring by pushing against resistance for 5 seconds, and then immediately relax into a much deeper stretch for 20 seconds."
+          },
+          {
+            "type": "heading",
+            "text": "Couch Stretch for Hip Flexors"
+          },
+          {
+            "type": "paragraph",
+            "text": "The couch stretch is notoriously uncomfortable but highly effective. It targets the rectus femoris and psoas, which become notoriously tight from both sitting and heavy squatting or sprinting."
+          },
+          {
+            "type": "paragraph",
+            "text": "By placing your knee against a wall or couch and maintaining a tall, braced torso, you force the anterior hip to open up, immediately alleviating tightness that often causes lower back pain during athletic movements."
+          }
         ]
       },
       {
@@ -628,24 +836,62 @@
         "date": "December 20, 2023",
         "author": "Marcus Vance",
         "content": [
-          { "type": "paragraph", "text": "Recovery is when the actual physiological adaptations happen. If you train hard but recover poorly, you will eventually hit a plateau or suffer an overtraining injury." },
-          { "type": "paragraph", "text": "Many athletes focus 90% of their energy on training and only 10% on recovery. The world's best athletes flip this ratio. They treat their recovery protocols with the exact same intensity and focus as their workout regimens." },
-          { "type": "heading", "text": "Prioritize Sleep and Hydration" },
-          { "type": "paragraph", "text": "During deep sleep, your body releases human growth hormone (HGH), which is essential for tissue repair. Additionally, muscles are 70% water—dehydration severely limits nutrient transport to damaged muscle fibers." },
-          { "type": "paragraph", "text": "Aim for 8-9 hours of quality sleep per night in a pitch-black, cool room. Drink half your body weight in ounces of water daily, adding electrolytes if you are sweating heavily during training sessions." },
-          { "type": "heading", "text": "Active Recovery Days" },
-          { "type": "paragraph", "text": "Instead of sitting on the couch all day, engage in light blood-flow activities like walking, easy cycling, or mobility flows. This helps flush out metabolic waste products without adding additional strain to the muscles." },
-          { "type": "paragraph", "text": "The goal of an active recovery day is not to get a workout in; it is to stimulate circulation. Circulation brings oxygen and nutrients to the repairing tissues and removes lactic acid and other byproducts of heavy training." },
-          { "type": "heading", "text": "Contrast Therapy (Hot/Cold)" },
-          { "type": "paragraph", "text": "Alternating between heat (sauna or hot tub) and cold (ice bath or cold plunge) forces your blood vessels to rapidly dilate and constrict. This acts as a 'pump' for your circulatory system." },
-          { "type": "paragraph", "text": "This dramatic flushing effect can drastically reduce acute inflammation and Delayed Onset Muscle Soreness (DOMS), allowing you to get back to heavy training much faster than passive rest alone." },
-          { "type": "heading", "text": "Proper Post-Workout Nutrition" },
-          { "type": "paragraph", "text": "Consuming a balanced ratio of carbohydrates and high-quality protein within 60 minutes of finishing a tough workout is crucial. The carbohydrates replenish depleted glycogen stores, while the protein begins the muscle-protein synthesis process." }
+          {
+            "type": "paragraph",
+            "text": "Recovery is when the actual physiological adaptations happen. If you train hard but recover poorly, you will eventually hit a plateau or suffer an overtraining injury."
+          },
+          {
+            "type": "paragraph",
+            "text": "Many athletes focus 90% of their energy on training and only 10% on recovery. The world's best athletes flip this ratio. They treat their recovery protocols with the exact same intensity and focus as their workout regimens."
+          },
+          {
+            "type": "heading",
+            "text": "Prioritize Sleep and Hydration"
+          },
+          {
+            "type": "paragraph",
+            "text": "During deep sleep, your body releases human growth hormone (HGH), which is essential for tissue repair. Additionally, muscles are 70% water—dehydration severely limits nutrient transport to damaged muscle fibers."
+          },
+          {
+            "type": "paragraph",
+            "text": "Aim for 8-9 hours of quality sleep per night in a pitch-black, cool room. Drink half your body weight in ounces of water daily, adding electrolytes if you are sweating heavily during training sessions."
+          },
+          {
+            "type": "heading",
+            "text": "Active Recovery Days"
+          },
+          {
+            "type": "paragraph",
+            "text": "Instead of sitting on the couch all day, engage in light blood-flow activities like walking, easy cycling, or mobility flows. This helps flush out metabolic waste products without adding additional strain to the muscles."
+          },
+          {
+            "type": "paragraph",
+            "text": "The goal of an active recovery day is not to get a workout in; it is to stimulate circulation. Circulation brings oxygen and nutrients to the repairing tissues and removes lactic acid and other byproducts of heavy training."
+          },
+          {
+            "type": "heading",
+            "text": "Contrast Therapy (Hot/Cold)"
+          },
+          {
+            "type": "paragraph",
+            "text": "Alternating between heat (sauna or hot tub) and cold (ice bath or cold plunge) forces your blood vessels to rapidly dilate and constrict. This acts as a 'pump' for your circulatory system."
+          },
+          {
+            "type": "paragraph",
+            "text": "This dramatic flushing effect can drastically reduce acute inflammation and Delayed Onset Muscle Soreness (DOMS), allowing you to get back to heavy training much faster than passive rest alone."
+          },
+          {
+            "type": "heading",
+            "text": "Proper Post-Workout Nutrition"
+          },
+          {
+            "type": "paragraph",
+            "text": "Consuming a balanced ratio of carbohydrates and high-quality protein within 60 minutes of finishing a tough workout is crucial. The carbohydrates replenish depleted glycogen stores, while the protein begins the muscle-protein synthesis process."
+          }
         ]
       }
     ]
   },
-
   "footer": {
     "insuranceLabel": "We Accept Most Insurance Plans",
     "brandDescription": "Elite performance recovery bodywork, mobility optimization, and injury prevention for athletes and active adults since 2020. #bodywork #performancerecovery",
@@ -656,8 +902,23 @@
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions",
     "divider": "|",
-    "quickLinks": ["Home", "About", "Services", "Conditions", "Reviews", "Blog", "Contact"],
-    "services": ["Deep Tissue Therapy", "Sports Massage", "Muscle Recovery", "Injury Recovery", "Mobility Therapy", "Trigger Point Therapy"],
+    "quickLinks": [
+      "Home",
+      "About",
+      "Services",
+      "Conditions",
+      "Reviews",
+      "Blog",
+      "Contact"
+    ],
+    "services": [
+      "Deep Tissue Therapy",
+      "Sports Massage",
+      "Muscle Recovery",
+      "Injury Recovery",
+      "Mobility Therapy",
+      "Trigger Point Therapy"
+    ],
     "insurers": [
       {
         "name": "aetna",

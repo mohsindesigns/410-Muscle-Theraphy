@@ -45,17 +45,22 @@ export default function GalleryPage() {
             </p>
           </div>
 
-          <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
             {galleryImages.map((src, idx) => (
-              <div key={idx} className="relative overflow-hidden break-inside-avoid group rounded-sm shadow-2xl border border-border-dark/50 bg-black/40">
+              <div key={idx} className="relative aspect-[4/3] w-full overflow-hidden group rounded-lg shadow-xl border border-border-dark/60 bg-dark-3">
                 <Image 
                   src={src} 
                   alt={`Muscle Therapy Gallery Image ${idx + 1}`} 
-                  className="w-full h-auto object-cover transition-all duration-700 group-hover:scale-105 group-hover:opacity-80"
+                  fill
+                  className="object-cover transition-all duration-700 group-hover:scale-105 filter contrast-[1.02]"
                   placeholder="blur"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
-                <div className="absolute inset-0 pointer-events-none ring-1 ring-inset ring-white/10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-0 left-0 w-5 h-5 m-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div className="absolute top-0 left-0 w-full h-[2px] bg-gold" />
+                  <div className="absolute top-0 left-0 h-full w-[2px] bg-gold" />
+                </div>
               </div>
             ))}
           </div>

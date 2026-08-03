@@ -26,7 +26,7 @@ export default function HeroSection() {
 
   return (
     <section className="relative bg-dark min-h-screen flex items-center overflow-hidden border-b border-border-dark">
-      
+
       {/* Subtle gold glow behind text for luxury depth */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[400px] h-[400px] bg-gold/[0.05] rounded-full blur-[120px] pointer-events-none z-0" />
 
@@ -45,7 +45,7 @@ export default function HeroSection() {
           className="object-cover object-right lg:object-center opacity-85 filter contrast-105"
           priority
         />
-        
+
         {/* Multi-directional Luxury Gradient Masks */}
         <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/70 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-b from-dark/50 via-transparent to-dark/80" />
@@ -69,10 +69,10 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Headline */}
-          <motion.h1 variants={itemVariants} className="display-heading text-[28px] min-[400px]:text-[38px] md:text-[58px] text-white leading-[1.1] mb-0 tracking-tight">
+          <motion.h1 variants={itemVariants} className="display-heading text-[33px] min-[400px]:text-[41px] md:text-[60px] text-white leading-[1.1] mb-0 tracking-tight">
             {title1}
           </motion.h1>
-          <motion.h1 variants={itemVariants} className="display-heading text-[28px] min-[400px]:text-[38px] md:text-[58px] text-gold italic leading-[1.1] mb-6 md:mb-8 tracking-tight">
+          <motion.h1 variants={itemVariants} className="display-heading text-[33px] min-[400px]:text-[41px] md:text-[60px] text-gold italic leading-[1.1] mb-6 md:mb-8 tracking-tight">
             {title2}
           </motion.h1>
 

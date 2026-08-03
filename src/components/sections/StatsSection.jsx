@@ -15,23 +15,23 @@ export default function StatsSection() {
 
   // 3D perspective fly-in entry animation
   const item3DVariants = {
-    hidden: { 
-      opacity: 0, 
-      rotateX: 35, 
-      rotateY: -8, 
+    hidden: {
+      opacity: 0,
+      rotateX: 35,
+      rotateY: -8,
       z: -120,
       y: 20
     },
-    visible: { 
-      opacity: 1, 
-      rotateX: 0, 
-      rotateY: 0, 
+    visible: {
+      opacity: 1,
+      rotateX: 0,
+      rotateY: 0,
       z: 0,
       y: 0,
-      transition: { 
-        duration: 0.8, 
-        ease: [0.16, 1, 0.3, 1] 
-      } 
+      transition: {
+        duration: 0.8,
+        ease: [0.16, 1, 0.3, 1]
+      }
     },
   };
 
@@ -73,27 +73,27 @@ export default function StatsSection() {
               whileInView="visible"
               viewport={{ once: true, margin: '-60px' }}
               style={{ transformStyle: 'preserve-3d' }}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8"
+              className="grid grid-cols-2 gap-x-4 gap-y-6 sm:gap-x-8 sm:gap-y-8"
             >
               {items.map((stat, i) => (
                 <motion.div
                   key={i}
                   variants={item3DVariants}
                   style={{ transformStyle: 'preserve-3d', backfaceVisibility: 'hidden' }}
-                  className="flex flex-col pl-4 border-l border-gold-dark/45 hover:border-gold-dark transition-colors duration-300 group cursor-default"
+                  className="flex flex-col pl-3 sm:pl-4 border-l border-gold-dark/45 hover:border-gold-dark transition-colors duration-300 group cursor-default"
                 >
                   {/* Large Value */}
-                  <span className="text-[34px] md:text-[38px] font-medium text-dark tracking-tight leading-none mb-2 font-serif group-hover:text-gold-dark transition-colors duration-300">
+                  <span className="text-[26px] min-[400px]:text-[30px] md:text-[38px] font-medium text-dark tracking-tight leading-none mb-1.5 font-serif group-hover:text-gold-dark transition-colors duration-300">
                     {stat.value}
                   </span>
 
                   {/* Label */}
-                  <span className="text-[10px] md:text-[11px] font-bold text-gold-dark uppercase tracking-[0.15em] mb-2 leading-none">
+                  <span className="text-[9.5px] min-[400px]:text-[10.5px] font-bold text-gold-dark uppercase tracking-wider mb-1.5 leading-tight">
                     {stat.label}
                   </span>
 
                   {/* Short description */}
-                  <p className="text-muted text-[12.5px] leading-relaxed max-w-[240px]">
+                  <p className="text-muted text-[11.5px] min-[400px]:text-[12.5px] leading-relaxed max-w-[240px]">
                     {stat.desc}
                   </p>
                 </motion.div>
