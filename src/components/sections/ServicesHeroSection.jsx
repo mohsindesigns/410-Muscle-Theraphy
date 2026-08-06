@@ -36,7 +36,7 @@ export default function ServicesHeroSection() {
       >
         <Image
           src={image}
-          alt="Precision Care & Recovery"
+          alt={data.servicesPageHero.imageAlt || "Precision Care & Recovery"}
           fill
           className="object-cover object-right lg:object-center opacity-80 filter contrast-105"
           priority

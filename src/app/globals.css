@@ -34,6 +34,12 @@
   --color-border-dark:    rgba(255, 255, 255, 0.10);
   --color-border-dark-2:  rgba(255, 255, 255, 0.06);
 
+  /* ── Custom Theme Extracted Colors ─────────────────── */
+  --color-brand-bg-light:      #FAF8F5;
+  --color-brand-border-light:  #EBEAE6;
+  --color-brand-border-muted:  #E2E1DD;
+  --color-brand-hover-cream:   #FAF5EA;
+
   /* ── Typography ─────────────────────────────────────── */
   --font-sans:    var(--font-inter), Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-display: var(--font-playfair), 'Playfair Display', Georgia, 'Times New Roman', serif;
@@ -322,4 +328,32 @@
   .font-signature {
     font-family: var(--font-signature), cursive;
   }
+}
+
+/* ── Custom Extracted Utility Background Patterns ──── */
+.bg-radial-dots-gold {
+  background-image: radial-gradient(circle, var(--color-gold-dark) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-radial-dots-black {
+  background-image: radial-gradient(#000 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-grid-pattern-black {
+  background-image: linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-grid-pattern-white {
+  background-image: repeating-linear-gradient(0deg, #fff 0px, #fff 1px, transparent 1px, transparent 20px), repeating-linear-gradient(90deg, #fff 0px, #fff 1px, transparent 1px, transparent 20px);
+}
+
+.bg-grid-pattern-white-faint {
+  background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 20px), repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 20px);
+}
+
+.bg-diagonal-stripes-black {
+  background-image: repeating-linear-gradient(-45deg, #000 0px, #000 1px, transparent 1px, transparent 12px);
 }

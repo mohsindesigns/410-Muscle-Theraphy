@@ -7,7 +7,7 @@ import logo from '../../../public/images/logo.png';
 function FooterLogo() {
   return (
     <Link href="/" className="inline-flex items-center gap-3 mb-4">
-      <Image src={logo} width={130} height={130} alt="410 Muscle Therapy Logo" className="object-contain w-[110px] h-[110px] sm:w-[130px] sm:h-[130px]" />
+      <Image src={logo} width={130} height={130} alt={data.footer.logoAlt || "410 Muscle Therapy Logo"} className="object-contain w-[110px] h-[110px] sm:w-[130px] sm:h-[130px]" />
     </Link>
   );
 }
@@ -56,10 +56,7 @@ function MapPlaceholder({ addressText }) {
   return (
     <div className="mt-5 h-24 sm:h-28 bg-dark-3 rounded-md overflow-hidden relative flex items-center justify-center border border-border-dark">
       <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: 'repeating-linear-gradient(0deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 20px), repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 20px)',
-        }}
+        className="absolute inset-0 bg-grid-pattern-white-faint"
       />
       <div className="relative flex flex-col items-center gap-1.5">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="#C8960C">
@@ -89,22 +86,15 @@ export default function Footer() {
     hours
   } = data.footer;
 
-  const quickLinksData = [
-    { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
-    { label: 'Gallery', href: '/gallery' },
-    { label: 'Blogs', href: '/blogs' },
-    { label: 'Contact', href: '/contact' }
-  ];
+  const quickLinksData = data.navbar.links.map(link => ({
+    label: link.label,
+    href: link.href
+  }));
 
-  const servicesData = [
-    { label: 'Deep Tissue Therapy', href: '/services/deep-tissue-therapy' },
-    { label: 'Sports Massage', href: '/services/sports-massage' },
-    { label: 'Muscle Recovery', href: '/services/muscle-recovery' },
-    { label: 'Injury Recovery', href: '/services/injury-recovery' },
-    { label: 'Mobility Therapy', href: '/services/mobility-therapy' },
-    { label: 'Trigger Point Therapy', href: '/services/trigger-point-therapy' }
-  ];
+  const servicesData = data.services.items.slice(0, 6).map(svc => ({
+    label: svc.name,
+    href: `/services/${svc.slug}`
+  }));
 
   return (
     <footer>

@@ -36,8 +36,7 @@ export default function BlogPostPage() {
 
       <main className="bg-dark min-h-screen pt-[140px] pb-24 relative">
         {/* Subtle background texture */}
-        <div className="absolute inset-0 opacity-[0.03]"
-          style={{ backgroundImage: 'radial-gradient(circle, #C8960C 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+        <div className="absolute inset-0 opacity-[0.03] bg-radial-dots-gold" />
 
         <div className="site-container relative z-10">
           

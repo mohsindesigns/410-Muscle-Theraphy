@@ -23,8 +23,8 @@ export default function StatsSection() {
           {/* ── Left Column: Editorial Photo Frame ──────── */}
           <div className="relative h-[300px] sm:h-[400px] md:h-[480px] w-full rounded-sm overflow-hidden shadow-xl border border-border-light">
             <Image
-              src="/images/blog-3.webp"
-              alt="Clinical sports massage session"
+              src={data.stats.image || "/images/blog-3.webp"}
+              alt={data.stats.imageAlt || "Clinical sports massage session"}
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"
               className="object-cover"

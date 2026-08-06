@@ -23,12 +23,14 @@
   "globalMetadata": {
     "title": "Performance Recovery Specialist | 410 Muscle Therapy",
     "description": "Elite performance recovery bodywork, mobility restoration, and injury prevention for athletes & active adults. Est. 2020. #bodywork #performancerecovery",
-    "bookingUrl": "https://www.styleseat.com/m/v/410muscletherapy"
+    "bookingUrl": "https://www.styleseat.com/m/v/410muscletherapy",
+    "giftCardUrl": "https://app.squareup.com/gift/V4MA1Q75Q5VJ5/order"
   },
   "navbar": {
     "logoText1": "MUSCLE",
     "logoText2": "THERAPY",
-    "bookBtn": "BOOK APPOINTMENT",
+    "bookBtn": "BUY GIFT CARD",
+    "logoAlt": "410 Muscle Therapy Logo",
     "links": [
       {
         "label": "Home",
@@ -48,8 +50,8 @@
         "href": "/blogs"
       },
       {
-        "label": "Contact",
-        "href": "/contact"
+        "label": "Book Appointment",
+        "href": "https://www.styleseat.com/m/v/410muscletherapy"
       }
     ]
   },
@@ -60,7 +62,9 @@
     "description": "Specialized performance bodywork, mobility restoration, and injury prevention designed for athletes and active adults since 2020. #bodywork #performancerecovery",
     "ctaBook": "BOOK RECOVERY SESSION",
     "ctaServices": "EXPLORE SERVICES",
-    "socialProofText": "Trusted by 500+ athletes & active adults"
+    "socialProofText": "Trusted by 500+ athletes & active adults",
+    "image": "/images/hero-bg.webp",
+    "imageAlt": "Expert muscle therapy session"
   },
   "stats": {
     "label": "Our Achievements",
@@ -68,6 +72,8 @@
     "titleLine2": "Professional",
     "titleItalicWord": "Standards.",
     "description": "At 410 Muscle Therapy, we believe that true recovery is built on specialized bodywork and precision movement science. Since our founding in 2020, we have dedicated ourselves to helping competitive athletes and active individuals overcome chronic pain, restore joint mobility, and achieve peak physical performance. Our targeted manual therapies address the root causes of muscular imbalances, ensuring long-term health and accelerated recovery times so you can return to what you love with confidence.",
+    "image": "/images/blog-3.webp",
+    "imageAlt": "Clinical sports massage session",
     "items": [
       {
         "value": "8+",
@@ -237,6 +243,8 @@
     "provenCheck1": "Movement & Posture Analysis",
     "provenCheck2": "Targeted Myofascial Release",
     "cta": "Experience Performance Recovery",
+    "image": "/images/theraphist.jpeg",
+    "imageAlt": "Clinical Precision Therapy",
     "items": [
       {
         "id": "01",
@@ -268,6 +276,8 @@
     "label": "The Specialist",
     "title": "Meet Antoine Lyles",
     "tagline": "Performance Recovery Specialist",
+    "image": "/images/theraphist.jpeg",
+    "imageAlt": "Antoine Lyles — Performance Recovery Specialist",
     "desc1": "Since founding 410 Muscle Therapy in 2020, Antoine Lyles has evolved the practice beyond standard therapy into a premier sports recovery destination. Specializing in performance bodywork, structural mobility restoration, targeted myofascial release, and injury prevention, he helps athletes and active adults eliminate pain, recover faster, and perform at their highest potential. #bodywork #performancerecovery",
     "desc2": "Antoine’s approach combines hands-on soft tissue manipulation with functional biomechanics to restore fluid movement patterns. By working closely with each individual, he designs custom recovery protocols that target tight muscle groups, relieve joint pressure, and optimize neural pathways. His passion for performance science ensures that whether you are a professional athlete or simply seeking relief from daily tension, you receive elite-level care tailored to your unique physical demands.",
     "certBadgeLabel": "Certified Specialist",
@@ -524,6 +534,7 @@
     "btn1": "BOOK APPOINTMENT",
     "btn2": "SEE HOW WE HELP",
     "image": "/images/service-massage.webp",
+    "imageAlt": "Precision Care & Recovery",
     "sealText": "PRECISION CARE • REAL RESULTS • FEEL BETTER • MOVE BETTER •",
     "features": [
       {
@@ -895,6 +906,7 @@
     ]
   },
   "footer": {
+    "logoAlt": "410 Muscle Therapy Logo",
     "insuranceLabel": "We Accept Most Insurance Plans",
     "brandDescription": "Elite performance recovery bodywork, mobility optimization, and injury prevention for athletes and active adults since 2020. #bodywork #performancerecovery",
     "quickLinksLabel": "Quick Links",

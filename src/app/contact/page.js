@@ -31,8 +31,7 @@ export default function ContactPage() {
 
       <main className="bg-dark min-h-screen pt-[140px] pb-24 relative overflow-hidden">
         {/* Subtle background texture */}
-        <div className="absolute inset-0 opacity-[0.03]"
-          style={{ backgroundImage: 'radial-gradient(circle, #C8960C 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+        <div className="absolute inset-0 opacity-[0.03] bg-radial-dots-gold" />
 
         <div className="site-container relative z-10">
           <div className="mb-16 md:mb-24 text-center flex flex-col items-center">
@@ -128,7 +127,7 @@ export default function ContactPage() {
               </div>
               
               <div className="h-[250px] bg-black/40 border border-border-dark/50 relative flex items-center justify-center rounded-sm shadow-2xl">
-                 <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'repeating-linear-gradient(0deg, #fff 0px, #fff 1px, transparent 1px, transparent 20px), repeating-linear-gradient(90deg, #fff 0px, #fff 1px, transparent 1px, transparent 20px)' }} />
+                 <div className="absolute inset-0 opacity-10 bg-grid-pattern-white" />
                  <span className="relative z-10 text-gold/40 text-[11px] font-bold tracking-widest uppercase">{data.contactPage.mapLabel}</span>
               </div>
             </div>

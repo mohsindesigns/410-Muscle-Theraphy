@@ -45,26 +45,38 @@ export default function Navbar() {
 
           {/* ── Logo ───────────────────────────────────── */}
           <Link href="#" className="flex items-center gap-2 md:gap-3">
-            <Image src={logo} width={150} height={150} alt="logo" className="object-contain w-[85px] h-[85px] min-[400px]:w-[110px] min-[400px]:h-[110px] sm:w-[150px] sm:h-[150px]" />
+            <Image src={logo} width={150} height={150} alt={data.navbar.logoAlt || "410 Muscle Therapy Logo"} className="object-contain w-[85px] h-[85px] min-[400px]:w-[110px] min-[400px]:h-[110px] sm:w-[150px] sm:h-[150px]" />
           </Link>
 
           {/* ── Desktop Nav Links ──────────────────────── */}
           <ul className="hidden md:flex items-center gap-7">
             {links.map((link) => {
               const active = isLinkActive(link.href);
+              const isExternal = link.href.startsWith('http');
               return (
                 <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className={`flex items-center gap-1 text-[13.5px] font-medium transition-colors duration-200
-                      ${active
-                        ? 'text-gold border-b border-gold pb-0.5'
-                        : 'text-white/75 hover:text-white'
-                      }`}
-                  >
-                    {link.label}
-                    {link.hasDropdown && <ChevronDown size={14} className="opacity-70" />}
-                  </Link>
+                  {isExternal ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/75 hover:text-gold text-[13.5px] font-medium transition-colors duration-200"
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className={`flex items-center gap-1 text-[13.5px] font-medium transition-colors duration-200
+                        ${active
+                          ? 'text-gold border-b border-gold pb-0.5'
+                          : 'text-white/75 hover:text-white'
+                        }`}
+                    >
+                      {link.label}
+                      {link.hasDropdown && <ChevronDown size={14} className="opacity-70" />}
+                    </Link>
+                  )}
                 </li>
               );
             })}
@@ -73,7 +85,7 @@ export default function Navbar() {
           {/* ── Desktop CTA / Mobile Trigger ───────────── */}
           <div className="flex items-center gap-3">
             <a
-              href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
+              href={data.globalMetadata?.giftCardUrl || "https://app.squareup.com/gift/V4MA1Q75Q5VJ5/order"}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-flex btn-gold"
@@ -107,22 +119,35 @@ export default function Navbar() {
             <ul className="flex flex-col gap-4">
               {links.map((link) => {
                 const active = isLinkActive(link.href);
+                const isExternal = link.href.startsWith('http');
                 return (
                   <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className={`block text-[15px] font-medium py-1 transition-colors
-                        ${active ? 'text-gold' : 'text-white/70 hover:text-white'}`}
-                    >
-                      {link.label}
-                    </Link>
+                    {isExternal ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="block text-[15px] font-medium py-1 text-white/70 hover:text-gold transition-colors"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className={`block text-[15px] font-medium py-1 transition-colors
+                          ${active ? 'text-gold' : 'text-white/70 hover:text-white'}`}
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 );
               })}
             </ul>
             <a
-              href={data.globalMetadata?.bookingUrl || "https://www.styleseat.com/m/v/410muscletherapy"}
+              href={data.globalMetadata?.giftCardUrl || "https://app.squareup.com/gift/V4MA1Q75Q5VJ5/order"}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}

@@ -56,11 +56,12 @@ export default function ContactFaqSection() {
   };
 
   return (
-    <section id="contact-support" className="bg-[#FAF9F5] py-20 md:py-28 overflow-hidden relative border-t border-[#EBEAE6]">
+    <section id="contact-support" className="bg-warm-cream py-20 md:py-28 overflow-hidden relative border-t border-brand-border-light">
       
-      {/* Decorative clean grid background */}
-      <div className="absolute inset-0 opacity-[0.015] pointer-events-none"
-        style={{ backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+      {/* Editorial grid background */}
+      <div 
+        className="absolute inset-0 opacity-[0.012] bg-grid-pattern-black pointer-events-none" 
+      /> 
 
       <div className="site-container relative">
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-20 items-start">
@@ -80,7 +81,7 @@ export default function ContactFaqSection() {
             </h2>
 
             {/* Form wrapper */}
-            <div className="bg-white border border-[#EBEAE6] p-6 min-[400px]:p-8 md:p-10 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.06)] relative h-fit transition-all duration-300">
+            <div className="bg-white border border-brand-border-light p-6 min-[400px]:p-8 md:p-10 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.06)] relative h-fit transition-all duration-300">
               
               {/* Gold frame accent in top-right */}
               <div className="absolute top-0 right-0 w-8 h-8 m-5 opacity-40 pointer-events-none">
@@ -89,7 +90,7 @@ export default function ContactFaqSection() {
               </div>
 
               {/* Direct StyleSeat Booking Banner */}
-              <div className="mb-8 p-5 rounded-lg bg-gradient-to-r from-gold-dark/15 via-[#FAF9F5] to-warm-white border border-gold-dark/40 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="mb-8 p-5 rounded-lg bg-gradient-to-r from-gold-dark/15 via-warm-cream to-warm-white border border-gold-dark/40 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div>
                   <span className="text-gold-dark font-mono text-[10.5px] font-bold tracking-widest uppercase block mb-0.5">{formClinicPortal || "INSTANT ONLINE BOOKING"}</span>
                   <p className="text-dark font-bold text-[14px]">{formClinicPortalSub || "Book directly on StyleSeat portal"}</p>
@@ -118,7 +119,7 @@ export default function ContactFaqSection() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder={formNamePlaceholder}
-                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md"
+                    className="w-full bg-warm-cream border border-brand-border-muted px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md"
                   />
                 </div>
 
@@ -135,7 +136,7 @@ export default function ContactFaqSection() {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder={formEmailPlaceholder}
-                      className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md"
+                      className="w-full bg-warm-cream border border-brand-border-muted px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md"
                     />
                   </div>
 
@@ -151,7 +152,7 @@ export default function ContactFaqSection() {
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder={formPhonePlaceholder}
-                      className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md"
+                      className="w-full bg-warm-cream border border-brand-border-muted px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md"
                     />
                   </div>
                 </div>
@@ -166,7 +167,7 @@ export default function ContactFaqSection() {
                     required
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md appearance-none cursor-pointer"
+                    className="w-full bg-warm-cream border border-brand-border-muted px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md appearance-none cursor-pointer"
                   >
                     <option value="" disabled>{formServicePlaceholder}</option>
                     {formServicesOptions.map((opt) => (
@@ -188,7 +189,7 @@ export default function ContactFaqSection() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder={formMessagePlaceholder}
-                    className="w-full bg-[#FAF9F5] border border-[#E2E1DD] px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md resize-none"
+                    className="w-full bg-warm-cream border border-brand-border-muted px-4 py-3.5 text-dark text-[14px] focus:border-gold-dark focus:bg-white focus:ring-1 focus:ring-gold-dark/30 focus:outline-none transition-all rounded-md resize-none"
                   />
                 </div>
 
@@ -211,7 +212,7 @@ export default function ContactFaqSection() {
               </form>
 
               {/* Trust markers */}
-              <div className="mt-8 pt-6 border-t border-[#EBEAE6] flex items-center justify-between gap-4 text-[12px] text-dark/50 font-mono">
+              <div className="mt-8 pt-6 border-t border-brand-border-light flex items-center justify-between gap-4 text-[12px] text-dark/50 font-mono">
                 <span className="flex items-center gap-2">
                   <ShieldCheck size={16} className="text-gold-dark" />
                   {trustHipa}
@@ -253,14 +254,14 @@ export default function ContactFaqSection() {
             </h2>
 
             {/* Accordion Layout */}
-            <div className="flex flex-col border-t border-[#E2E1DD]">
+            <div className="flex flex-col border-t border-brand-border-muted">
               {faqs.map((faq, i) => {
                 const isOpen = openIdx === i;
 
                 return (
                   <div
                     key={i}
-                    className={`border-b border-[#E2E1DD] py-5 md:py-6 transition-all duration-300
+                    className={`border-b border-brand-border-muted py-5 md:py-6 transition-all duration-300
                       ${isOpen ? 'bg-white/40' : ''}`}
                   >
                     <button

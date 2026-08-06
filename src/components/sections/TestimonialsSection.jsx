@@ -15,11 +15,12 @@ export default function TestimonialsSection() {
   const next = () => setActiveIdx((i) => (i === items.length - 1 ? 0 : i + 1));
 
   return (
-    <section id="testimonials" className="bg-dark py-16 md:py-24 overflow-hidden relative">
+    <section id="testimonials" className="bg-dark py-20 md:py-32 relative overflow-hidden border-t border-white/10">
 
-      {/* Subtle bg texture */}
-      <div className="absolute inset-0 opacity-[0.03]"
-        style={{ backgroundImage: 'radial-gradient(circle, #C8960C 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+      {/* Delicate Ambient radial dot grid */}
+      <div 
+        className="absolute inset-0 opacity-[0.03] bg-radial-dots-gold" 
+      />
 
       <div className="site-container relative">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.35fr] gap-12 lg:gap-16 items-stretch">

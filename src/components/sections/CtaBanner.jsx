@@ -12,10 +12,7 @@ export default function CtaBanner() {
 
       {/* Diagonal stripe texture */}
       <div
-        className="absolute inset-0 opacity-[0.07]"
-        style={{
-          backgroundImage: 'repeating-linear-gradient(-45deg, #000 0px, #000 1px, transparent 1px, transparent 12px)',
-        }}
+        className="absolute inset-0 opacity-[0.07] bg-diagonal-stripes-black"
       />
 
       {/* Left decorative circle */}

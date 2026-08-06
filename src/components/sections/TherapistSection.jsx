@@ -33,8 +33,7 @@ export default function TherapistSection() {
   return (
     <section className="bg-white py-28 relative overflow-hidden border-t border-border-light/40">
       {/* Decorative background grid pattern */}
-      <div className="absolute inset-0 opacity-[0.015] pointer-events-none"
-        style={{ backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+      <div className="absolute inset-0 opacity-[0.015] bg-grid-pattern-black pointer-events-none" />
 
       <div className="site-container relative">
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1.3fr] gap-16 lg:gap-24 items-center">
@@ -53,8 +52,8 @@ export default function TherapistSection() {
             {/* Main photo container */}
             <div className="img-therapist h-[400px] md:h-[600px] rounded-sm overflow-hidden shadow-2xl relative z-10 border border-border-light group">
               <Image
-                src="/images/theraphist.jpeg"
-                alt="Antoine Lyles — Performance Recovery Specialist"
+                src={data.therapist.image || "/images/theraphist.jpeg"}
+                alt={data.therapist.imageAlt || "Antoine Lyles — Performance Recovery Specialist"}
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"
                 className="object-cover object-top transition-transform duration-750 group-hover:scale-105"

@@ -14,12 +14,11 @@ export default function WhyChooseUsSection() {
   } = data.whyChooseUs;
 
   return (
-    <section className="bg-[#FAF8F5] relative py-24 md:py-36 border-b border-black/10 overflow-hidden">
+    <section className="bg-brand-bg-light relative py-24 md:py-36 border-b border-black/10 overflow-hidden">
       
       {/* Subtle Luxury Pattern & Background Glows */}
       <div 
-        className="absolute inset-0 opacity-[0.02] pointer-events-none" 
-        style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '32px 32px' }} 
+        className="absolute inset-0 opacity-[0.02] bg-radial-dots-black pointer-events-none" 
       />
       <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-gold-dark/10 rounded-full blur-[180px] pointer-events-none" />
       <div className="absolute bottom-0 left-10 w-[450px] h-[450px] bg-gold-dark/5 rounded-full blur-[140px] pointer-events-none" />
@@ -58,8 +57,8 @@ export default function WhyChooseUsSection() {
           >
             <div className="absolute inset-0">
               <Image
-                src="/images/theraphist.jpeg"
-                alt="Clinical Precision Therapy"
+                src={data.whyChooseUs.image || "/images/theraphist.jpeg"}
+                alt={data.whyChooseUs.imageAlt || "Clinical Precision Therapy"}
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
                 className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
@@ -111,7 +110,7 @@ export default function WhyChooseUsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="group relative bg-white hover:bg-[#FAF5EA] border border-black/10 hover:border-gold-dark/60 rounded-3xl p-7 lg:p-8 transition-all duration-500 hover:-translate-y-1 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-2xl flex flex-col justify-between overflow-hidden min-h-[260px]"
+              className="group relative bg-white hover:bg-brand-hover-cream border border-black/10 hover:border-gold-dark/60 rounded-3xl p-7 lg:p-8 transition-all duration-500 hover:-translate-y-1 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-2xl flex flex-col justify-between overflow-hidden min-h-[260px]"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
@@ -140,7 +139,7 @@ export default function WhyChooseUsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="group relative bg-white hover:bg-[#FAF5EA] border border-black/10 hover:border-gold-dark/60 rounded-3xl p-7 lg:p-8 transition-all duration-500 hover:-translate-y-1 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-2xl flex flex-col justify-between overflow-hidden min-h-[260px]"
+              className="group relative bg-white hover:bg-brand-hover-cream border border-black/10 hover:border-gold-dark/60 rounded-3xl p-7 lg:p-8 transition-all duration-500 hover:-translate-y-1 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-2xl flex flex-col justify-between overflow-hidden min-h-[260px]"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
@@ -169,7 +168,7 @@ export default function WhyChooseUsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="sm:col-span-2 group relative bg-white hover:bg-[#FAF5EA] border border-black/10 hover:border-gold-dark/60 rounded-3xl p-7 lg:p-8 transition-all duration-500 hover:-translate-y-1 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 overflow-hidden"
+              className="sm:col-span-2 group relative bg-white hover:bg-brand-hover-cream border border-black/10 hover:border-gold-dark/60 rounded-3xl p-7 lg:p-8 transition-all duration-500 hover:-translate-y-1 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 overflow-hidden"
             >
               <div className="flex items-start gap-5">
                 <div className="w-12 h-12 rounded-2xl bg-gold-dark/10 border border-gold-dark/30 flex items-center justify-center text-gold-dark group-hover:bg-gold-dark group-hover:text-white transition-all duration-500 shadow-sm flex-shrink-0">

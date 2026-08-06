@@ -243,7 +243,7 @@ export default function ServiceDetailPage() {
                     {service.benefits.map((benefit, idx) => (
                       <div
                         key={idx}
-                        className="p-5 rounded-lg bg-[#FAF9F6] border border-border-light/80 hover:border-gold-dark/60 hover:bg-white transition-all duration-300 shadow-sm hover:shadow-xl flex items-start gap-4 group relative overflow-hidden"
+                        className="p-5 rounded-lg bg-card-bg border border-border-light/80 hover:border-gold-dark/60 hover:bg-white transition-all duration-300 shadow-sm hover:shadow-xl flex items-start gap-4 group relative overflow-hidden"
                       >
                         <div className="h-[2px] w-full bg-gradient-to-r from-gold-dark/60 via-gold-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity absolute top-0 left-0" />
                         
@@ -289,7 +289,7 @@ export default function ServiceDetailPage() {
         {/* ════════════════════════════════════════════════════════
            3. TARGET CANDIDATES (Clean Light-Mode Luxury Editorial Grid)
            ════════════════════════════════════════════════════════ */}
-        <section className="py-20 md:py-28 bg-[#FAF8F5] border-b border-border-light relative">
+        <section className="py-20 md:py-28 bg-brand-bg-light border-b border-border-light relative">
           <div className="site-container">
             
             {/* Centered Editorial Header */}

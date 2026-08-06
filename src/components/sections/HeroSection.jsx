@@ -38,8 +38,8 @@ export default function HeroSection() {
         className="absolute inset-0 z-0 pointer-events-none"
       >
         <Image
-          src="/images/hero-bg.webp"
-          alt="Expert muscle therapy session"
+          src={data.hero.image || "/images/hero-bg.webp"}
+          alt={data.hero.imageAlt || "Expert muscle therapy session"}
           fill
           sizes="100vw"
           className="object-cover object-right lg:object-center opacity-85 filter contrast-105"
