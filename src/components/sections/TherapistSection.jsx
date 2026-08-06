@@ -1,8 +1,7 @@
 'use client';
 import Image from 'next/image';
 import data from '@/lib/data.json';
-import Link from 'next/link';
-import { ArrowRight, Trophy, Sparkles, HeartHandshake, ShieldCheck } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function TherapistSection() {
@@ -11,24 +10,12 @@ export default function TherapistSection() {
     title, 
     tagline, 
     desc1, 
-    certBadgeLabel, 
-    certBadgeSub, 
+    desc2,
     photoBadge, 
     ctaMore, 
     signatureName, 
-    signatureTitle, 
-    features 
+    signatureTitle 
   } = data.therapist;
-
-  // Icon mapping helper
-  const getIconComponent = (idx) => {
-    switch(idx) {
-      case 0: return Trophy;
-      case 1: return Sparkles;
-      case 2: return HeartHandshake;
-      default: return ShieldCheck;
-    }
-  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -83,7 +70,7 @@ export default function TherapistSection() {
             </div>
           </motion.div>
 
-          {/* ── Right Column: Editorial Text & Grid ───────── */}
+          {/* ── Right Column: Editorial Text ───────── */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -103,37 +90,13 @@ export default function TherapistSection() {
               {tagline}
             </motion.p>
 
-            <motion.p variants={itemVariants} className="text-dark/60 text-[14.5px] md:text-[15px] leading-relaxed mb-6">
+            <motion.p variants={itemVariants} className="text-dark/60 text-[14.5px] md:text-[15px] leading-relaxed mb-5 font-light">
               {desc1}
             </motion.p>
 
-            {/* Dynamic Grid Features */}
-            <motion.div
-              variants={itemVariants}
-              className="grid grid-cols-1 min-[380px]:grid-cols-2 gap-4 mb-8 pt-8 border-t border-border-light"
-            >
-              {features.map((feat, idx) => {
-                const Icon = getIconComponent(idx);
-                return (
-                  <div
-                    key={idx}
-                    className="flex items-center gap-3 bg-warm-white border border-border-light/50 p-4 hover:border-gold-dark/30 hover:bg-white transition-all duration-300 group"
-                  >
-                    <div className="w-9 h-9 rounded-full bg-gold-muted flex items-center justify-center text-gold-dark group-hover:bg-gold-dark group-hover:text-white transition-colors duration-300 flex-shrink-0">
-                      <Icon size={16} strokeWidth={2} />
-                    </div>
-                    <div>
-                      <p className="text-dark font-bold text-[13px] leading-none mb-1">
-                        {feat.title}
-                      </p>
-                      <p className="text-dark/45 text-[11px] uppercase tracking-wider font-semibold">
-                        {feat.desc}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </motion.div>
+            <motion.p variants={itemVariants} className="text-dark/65 text-[14.5px] md:text-[15px] leading-relaxed mb-8 border-l-2 border-gold-dark/30 pl-4 py-1 font-light">
+              {desc2}
+            </motion.p>
 
             {/* Signature + CTA Row */}
             <motion.div

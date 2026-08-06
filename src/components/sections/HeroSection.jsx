@@ -69,11 +69,9 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Headline */}
-          <motion.h1 variants={itemVariants} className="display-heading text-[33px] min-[400px]:text-[41px] md:text-[60px] text-white leading-[1.1] mb-0 tracking-tight">
-            {title1}
-          </motion.h1>
-          <motion.h1 variants={itemVariants} className="display-heading text-[33px] min-[400px]:text-[41px] md:text-[60px] text-gold italic leading-[1.1] mb-6 md:mb-8 tracking-tight">
-            {title2}
+          <motion.h1 variants={itemVariants} className="display-heading text-[33px] min-[400px]:text-[41px] md:text-[60px] leading-[1.1] mb-6 md:mb-8 tracking-tight">
+            <span className="block text-white mb-0">{title1}</span>
+            <span className="block text-gold italic">{title2}</span>
           </motion.h1>
 
           {/* Description */}
