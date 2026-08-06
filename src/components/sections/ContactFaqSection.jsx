@@ -69,8 +69,14 @@ export default function ContactFaqSection() {
           <div className="w-full h-fit">
             <p className="section-label text-gold-dark mb-4">{formLabel}</p>
             <h2 className="display-heading text-[26px] min-[360px]:text-[30px] min-[400px]:text-[36px] md:text-[44px] text-dark leading-tight mb-8">
-              {formTitle.split('<br />')[0]}<br />
-              <span className="text-gold-dark italic font-light">{formTitle.split('<br />')[1] || 'Consultation.'}</span>
+              {formTitle.includes(' ') ? (
+                <>
+                  {formTitle.substring(0, formTitle.lastIndexOf(' '))} {' '}
+                  <span className="text-gold-dark italic font-light">{formTitle.substring(formTitle.lastIndexOf(' ') + 1)}</span>
+                </>
+              ) : (
+                formTitle
+              )}
             </h2>
 
             {/* Form wrapper */}
@@ -235,10 +241,16 @@ export default function ContactFaqSection() {
           {/* ── Right Column: Editorial Underlined FAQs ──── */}
           <div className="w-full">
             <p className="section-label text-gold-dark mb-4">{faqLabel}</p>
-            <h3 className="display-heading text-[30px] min-[400px]:text-[36px] md:text-[44px] text-dark leading-tight mb-10">
-              {faqTitle.split('<br />')[0]}<br />
-              <span className="text-gold-dark italic font-light">{faqTitle.split('<br />')[1] || 'Information.'}</span>
-            </h3>
+            <h2 className="display-heading text-[30px] min-[400px]:text-[36px] md:text-[44px] text-dark leading-tight mb-10">
+              {faqTitle.includes(' ') ? (
+                <>
+                  {faqTitle.substring(0, faqTitle.lastIndexOf(' '))} {' '}
+                  <span className="text-gold-dark italic font-light">{faqTitle.substring(faqTitle.lastIndexOf(' ') + 1)}</span>
+                </>
+              ) : (
+                faqTitle
+              )}
+            </h2>
 
             {/* Accordion Layout */}
             <div className="flex flex-col border-t border-[#E2E1DD]">
@@ -262,10 +274,10 @@ export default function ContactFaqSection() {
                       </span>
                       
                       {/* Question */}
-                      <span className={`text-[15.5px] md:text-[16.5px] font-semibold flex-1 transition-all duration-300
+                      <h3 className={`text-[15.5px] md:text-[16.5px] font-semibold flex-1 transition-all duration-300
                         ${isOpen ? 'text-dark font-medium translate-x-1' : 'text-dark/70 group-hover:text-dark group-hover:translate-x-1'}`}>
                         {faq.q}
-                      </span>
+                      </h3>
                       
                       {/* Icon */}
                       <span className={`text-gold-dark mt-1.5 transition-transform duration-300 ${isOpen ? 'rotate-180 text-dark' : 'group-hover:scale-110'}`}>
@@ -284,9 +296,9 @@ export default function ContactFaqSection() {
                         >
                           <div className="pl-12 md:pl-14 pr-4 pt-3 pb-2">
                             <div className="border-l-2 border-gold-dark/45 pl-4 py-0.5">
-                              <p className="text-dark/55 text-[13.5px] leading-relaxed">
+                              <h3 className="text-dark/55 text-[13.5px] leading-relaxed font-light">
                                 {faq.a}
-                              </p>
+                              </h3>
                             </div>
                           </div>
                         </motion.div>

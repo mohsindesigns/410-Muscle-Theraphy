@@ -75,7 +75,6 @@ function MapPlaceholder({ addressText }) {
 
 export default function Footer() {
   const {
-    insuranceLabel,
     brandDescription,
     quickLinksLabel,
     servicesLabel,
@@ -84,7 +83,6 @@ export default function Footer() {
     privacy,
     terms,
     divider,
-    insurers,
     address,
     phone,
     email,
@@ -110,29 +108,6 @@ export default function Footer() {
 
   return (
     <footer>
-
-      {/* ══ Insurance Strip ════════════════════════════ */}
-      <div className="bg-dark border-t border-border-dark py-6 relative overflow-hidden">
-        <div className="site-container relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 opacity-70">
-            
-            <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-gold/80 whitespace-nowrap text-center">
-              {insuranceLabel}
-            </p>
-
-            <div className="hidden md:block w-px h-3 bg-white/20" />
-
-            <div className="flex flex-wrap items-center justify-center gap-4 min-[400px]:gap-6 md:gap-10">
-              {insurers.map((ins) => (
-                <span key={ins.name} className="font-bold text-[10px] tracking-widest uppercase text-white/40 hover:text-white transition-colors duration-300 cursor-default">
-                  {ins.display}
-                </span>
-              ))}
-            </div>
-
-          </div>
-        </div>
-      </div>
 
       {/* ══ Main Footer ════════════════════════════════ */}
       <div className="bg-dark-2 pt-12 md:pt-16 pb-0 border-t border-border-dark/60">
